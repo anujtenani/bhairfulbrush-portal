@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Logo from "../components/Logo";
 import LoginForm from "../components/LoginForm";
 import Feedback from "../components/Feedback";

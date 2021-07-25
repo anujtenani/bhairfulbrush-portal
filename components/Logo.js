@@ -1,9 +1,17 @@
-import styles from '../styles/Logo.module.css'
-
 const Logo = () => {
     return (
-            <div className={styles.logo}>
+            <div className={"header"}>
                 <h1>Behairfulbrush</h1>
+                <style jsx>{`
+                    .header {
+                        text-align: center;
+                        background-color: black;
+                        padding: 2.5rem;
+                    }  
+                    h1 {
+                        color: white;
+                    }        
+                `}</style>
             </div>
     );
 }
