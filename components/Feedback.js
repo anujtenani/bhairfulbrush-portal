@@ -3,15 +3,12 @@ import Image from "next/image";
 
 const Cards = ({ src, title, content }) => {
     return (
-        <div className = "card" style={{borderRadius: '20px'}}>
-            <div className={'circle'}>
-                <Image src={src} width={'250px'} height={'250px'} alt={title} />
-            </div>
-            <div className = "card-body">
-                <h5 className = "card-title" style={{textAlign: "center", paddingTop: '4rem'}}>{title}</h5>
-                <p style={{textAlign: "center"}}>{content}</p>
-            </div>
+        <>
             <style jsx>{`
+                .card{
+                    margin-top:75px;
+                    border-radius:20px;
+                }
                 .circle {
                     display: flex;
                     justify-content: center;
@@ -25,54 +22,43 @@ const Cards = ({ src, title, content }) => {
                     margin-left: -75px;
                 }
             `}</style>
+        <div className="card">
+            <div className={'circle'}>
+                <Image src={src} width={'250px'} height={'250px'} alt={title} />
+            </div>
+            <div className = "card-body text-dark">
+                <h5 className = "card-title" style={{textAlign: "center", paddingTop: '4rem'}}>{title}</h5>
+                <p style={{textAlign: "center"}}>{content}</p>
+            </div>
+
         </div>
+        </>
     )
 }
 
+
+
 const Feedback = () => {
     return (
-        <div className={"feedback-container"}>
-            <div className={"row"}>
-                <div className={'col-sm-12 user-feedback'}>
-                    <h3>Our Users Love Behairful</h3>
+        <div className={"bg-dark py-4"}>
+            <div className={"container px-4"}>
+                <h5 className={"text-center text-light"}>OUR PARTNERS <span>
+                            <img src="/heart.svg" alt="heart icon" style={{width:36, height:36}}/></span> BEHAIRFUL</h5>
+                <div className="row" style={{marginTop:25}}>
+                    <FeedbackItem  src={'/img1.png'} title={'Daisy'} content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
+                    <FeedbackItem  src={'/img2.png'} title={'Gill'} content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
+                    <FeedbackItem  src={'/img3.png'} title={'Rose'} content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
+                    <FeedbackItem  src={'/img4.png'} title={'Stacy'} content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
                 </div>
             </div>
-            <div className = "row flex-align">
-                <div className = "col-10 col-sm-7 col-md-5 col-lg-4 col-xl-2 column">
-                    <Cards src={'/img1.jpg'} title={'Daisy'} content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
-                </div>
-                <div className = "col-10 col-sm-7 col-md-5 col-lg-4 col-xl-2 column">
-                    <Cards src={'/img2.jpg'} title={'Gill'} content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
-                </div>
-                <div className = "col-10 col-sm-7 col-md-5 col-lg-4 col-xl-2 column">
-                    <Cards src={'/img3.jpg'} title={'Rose'} content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
-                </div>
-                <div className = "col-10 col-sm-7 col-md-5 col-lg-4 col-xl-2 column">
-                    <Cards src={'/img4.jpg'} title={'Stacy'} content={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
-                </div>
-            </div>
-            <style jsx>{`
-                .feedback-container {
-                    background-color: black;
-                    color: black;
-                    padding: 5rem 3rem 2rem 0;
-                }
-                .flex-align {
-                    display: flex;
-                    justify-content: center;
-                }
-                .column {
-                    margin: 3rem 1.5rem 1.5rem 1.5rem;
-                    padding-bottom: 2rem;
-                }
-                .user-feedback {
-                    color: white;
-                    margin: -3rem 0 3rem 0 ;
-                    text-align: center;
-                }
-            `}</style>
         </div>
     );
+}
+
+function FeedbackItem({src, title, content}){
+    return      <div className="col-lg-3 col-md-6 mb-4">
+        <Cards src={src} title={title} content={content}/>
+    </div>
 }
 
 export default Feedback

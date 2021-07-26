@@ -1,0 +1,21 @@
+$body-bg: rgb(7,7,10);
+$body-color: #fff;
+$dark: rgb(7,7,10);
+$gray-900:#212529;
+$border-color:$gray-900;
+$primary:#fff;
+$card-border-color: $gray-900;
+$modal-content-color: #fff;
+$modal-content-bg: #000;
+$modal-content-border-color: $gray-900;
+$btn-border-radius:0;
+@import "node_modules/bootstrap/scss/bootstrap";
+.btn-primary:hover{
+  background-color: #000 !important;
+  color:#fff !important;
+  border-color: $gray-900 !important;
+}
+
+#topbar{
+  background-color: rgba(0,0,0,0.8);
+}
