@@ -88,7 +88,7 @@ const LoginForm = () => {
                   .flex-container {
                       display: flex;
                       padding: 6rem 4rem 8rem 4rem;
-                      background-image: url("/form_bg.png");
+                      //background-image: url('/form_bg.png');
                       background-repeat: no-repeat;
                       background-size: 55% 98%;
                       background-position: 330px;
