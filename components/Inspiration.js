@@ -1,4 +1,4 @@
-import Image from "next/Image";
+import Image from "next/image";
 
 const ImageRow = ({ src1, src2, src3 }) => {
     return (
