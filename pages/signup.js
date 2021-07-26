@@ -1,8 +1,20 @@
+import Head from "next/head";
+import Logo from "../components/Logo";
+import Footer from "../components/Footer";
+import SignUpForm from "../components/SignUpForm";
+import Feedback from "../components/Feedback";
+
 const signup = () => {
     return (
-        <div>
-            <h1>RANDOM TEXT</h1>
-        </div>
+        <>
+            <Head>
+                <title>Behairful</title>
+            </Head>
+            <Logo />
+            <SignUpForm />
+            <Feedback />
+            <Footer />
+        </>
     );
 }
 
