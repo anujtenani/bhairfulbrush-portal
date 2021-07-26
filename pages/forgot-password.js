@@ -1,8 +1,20 @@
+import Head from "next/head";
+import Logo from "../components/Logo";
+import ForgotPasswordForm from "../components/ForgotPasswordForm";
+import Feedback from "../components/Feedback";
+import Footer from "../components/Footer";
+
 const forgotPassword = () => {
     return (
-        <div>
-            <h1>RANDOM TEXT</h1>
-        </div>
+        <>
+            <Head>
+                <title>Behairful</title>
+            </Head>
+            <Logo />
+            <ForgotPasswordForm />
+            <Feedback />
+            <Footer />
+        </>
     )
 }
 

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Image from "next/image";
+import SideImage from "./SideImage";
 
 const LoginForm = () => {
     const [email, setEmail] = useState(null);
@@ -13,7 +13,7 @@ const LoginForm = () => {
         <div className = "container-class">
             <div className = "row">
                 <div className = "col-md-11 col-lg-9 col-xl-5 left-image">
-                    <Image src={'/goli_left_side.png'} width={'550px'} height={'550px'} alt={'goli-image'} />
+                    <SideImage />
                 </div>
                 <div className = "col-12 col-sm-12 col-md-10 col-lg-8 col-xl-7">
                     <div className={"flex-container"}>

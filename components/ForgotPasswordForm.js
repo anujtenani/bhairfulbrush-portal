@@ -1,10 +1,8 @@
-import SideImage from "./SideImage";
 import React, {useState} from "react";
+import SideImage from "./SideImage";
 
-const SignUpForm = () => {
+const ForgotPasswordForm = () => {
     const [email, setEmail] = useState(null);
-    const [username, setUsername] = useState(null);
-    const [password, setPassword] = useState(null);
 
     const onFormSubmit = (e) => {
         e.preventDefault();
@@ -20,7 +18,7 @@ const SignUpForm = () => {
                     <div className={"flex-container"}>
                         <div className = "col-xl-9">
                             <form className={"form-container"} onSubmit={onFormSubmit}>
-                                <h2 className={'sign-up-title'}>Sign Up</h2>
+                                <h2 className={'forgot-password-title'}>Password Reset</h2>
                                 <p className={'dashboard-title'}>Access your Dashboard</p>
                                 <div className = "form-group">
                                     <label htmlFor = "exampleInputEmail1">Email Address</label>
@@ -33,33 +31,9 @@ const SignUpForm = () => {
                                         onChange={(e) => setEmail(e.target.value)}
                                     />
                                 </div>
-                                <div className = "form-group">
-                                    <label htmlFor = "formGroupExampleInput">Username</label>
-                                    <input
-                                        type = "text"
-                                        className = "form-control"
-                                        id = "formGroupExampleInput"
-                                        placeholder = "Johndoe"
-                                        onChange={(e) => setUsername(e.target.value)}
-                                    />
-                                </div>
-                                <div className = "form-group">
-                                    <label htmlFor = "exampleInputPassword1">Password</label>
-                                    <input
-                                        type = "password"
-                                        className = "form-control"
-                                        id = "exampleInputPassword1"
-                                        placeholder={"Password"}
-                                        onChange={(e) => setPassword(e.target.value)}
-                                    />
-                                </div>
                                 <button type = "submit" className = "btn btn-dark btn-style">
-                                    Sign Up
+                                    Reset Password
                                 </button>
-                                <h6 style={{textAlign: "center"}}>
-                                    Already Have an Account?
-                                    <a href={'/login'}> Login</a>
-                                </h6>
                             </form>
                         </div>
                     </div>
@@ -74,15 +48,12 @@ const SignUpForm = () => {
                     width: 100%;
                     margin: 0.5rem 0 2rem 0
                   }
-                  a {
-                    color: inherit;
-                  }
                   .form-container {
                     padding: 2rem;
                     border-radius: 0.5%;
                     background-color: indianred;
                   }
-                  .sign-up-title {
+                  .forgot-password-title {
                     text-align: center;
                     padding-bottom: 0.5rem;
                   }
@@ -109,4 +80,4 @@ const SignUpForm = () => {
     );
 }
 
-export default SignUpForm
+export default ForgotPasswordForm
