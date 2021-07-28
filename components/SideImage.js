@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SideImage = ({ width, height }) => {
     return <Image
-        src = {'/goli_left_side.png'}
+        src = {'/left_image.png'}
         width = {width}
         height = {height}
         alt = {'left_side-image'}

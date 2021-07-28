@@ -38,25 +38,24 @@ const Feedback = () => {
                 <img src="/heart.svg" alt="heart icon" style={{width:36, height:36}}/></span> BEHAIRFUL
             </h5>
             <div className={"flex-item"}>
-                <FeedbackItem  src={'/img1.png'} title={'Maegan Blinka'} content={"Lorem ipsum dolor sit amet," +
+                <FeedbackItem  src={'/maegan-blinka.png'} title={'Maegan Blinka'} content={"Lorem ipsum dolor sit" +
+                " amet," +
                      " consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
             </div>
-            <hr />
 
             <div className={"flex-container flex-item"}>
-                <FeedbackItem  src={'/img2.png'} title={'Stacy Joy'} content={"Lorem ipsum dolor sit amet," +
+                <FeedbackItem  src={'/stacy-joy.png'} title={'Stacy Joy'} content={"Lorem ipsum dolor sit amet," +
                      " consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
             </div>
-            <hr />
 
             <div className={"flex-container flex-item"}>
-                <FeedbackItem  src={'/img3.png'} title={'Kim'} content={"Lorem ipsum dolor sit amet, consectetur" +
+                <FeedbackItem  src={'/kim.png'} title={'Kim'} content={"Lorem ipsum dolor sit amet, consectetur" +
                      " adipisicing elit. Asperiores eveniet illo officia ratione similique! Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
             </div>
-            <hr />
 
             <div className={"flex-container flex-item"}>
-                <FeedbackItem  src={'/img4.png'} title={'Christina Rodriguez'} content={"Lorem ipsum dolor sit" +
+                <FeedbackItem  src={'/christina-rodriguez.png'} title={'Christina Rodriguez'} content={"Lorem ipsum" +
+                " dolor sit" +
                      " amet, consectetur adipisicing elit. Asperiores eveniet illo officia ratione similique!" +
                 " Aliquid amet aperiam aspernatur at delectus doloremque dolores enim et explicabo facilis fuga harum hic laborum nemo nostrum perferendis perspiciatis porro quae recusandae rem saepe sapiente, soluta suscipit, tempore totam vitae voluptatem! Eaque eveniet laborum provident."}/>
             </div>
@@ -64,10 +63,6 @@ const Feedback = () => {
               .flex-item {
                 display: flex;
                 justify-content: center;
-              }
-              hr {
-                background-color: white;
-                margin: -2rem 20rem 1rem 20rem
               }
             `}</style>
         </>

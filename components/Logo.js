@@ -1,14 +1,10 @@
+import Image from "next/image";
+
 const Logo = () => {
     return (
-            <div className={"header"}>
-                <h1>Behairfulbrush</h1>
-                <style jsx>{`
-                    .header {
-                        text-align: center;
-                        padding: 2.5rem;
-                    }
-                `}</style>
-            </div>
+        <div style={{textAlign: "center", padding: "2.5rem"}}>
+            <Image src={'/behairful-logo.png'} width={'180px'} height={'95px'} alt={'behairful-logo'} />
+        </div>
     );
 }
 

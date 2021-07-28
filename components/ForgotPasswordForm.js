@@ -36,7 +36,7 @@ const ForgotPasswordForm = () => {
     return (
         <div className = "row">
             <div className = "col-md-11 col-lg-9 col-xl-5 left-image">
-                <SideImage width={'550px'} height={'550px'} />
+                <SideImage width={'490px'} height={'530px'} />
             </div>
             <div className = "col-12 col-sm-12 col-md-10 col-lg-8 col-xl-7">
                 <div className={"flex-container"}>
@@ -89,17 +89,23 @@ const ForgotPasswordForm = () => {
               }
               .flex-container {
                   display: flex;
-                  padding: 6rem 4rem 8rem 4rem;
-                  background-image: url('/form_bg.png');
-                  background-repeat: no-repeat;
-                  background-size: 55% 98%;
-                  background-position: 330px;
+                  padding: 15rem 4rem 18rem 3rem;
+                  background-image: url('/image-bg-person.png'), url("/image-bg-brush.png");
+                  background-repeat: no-repeat, no-repeat;
+                  background-position: 100px 85px , right top;;
+                  background-size: 220px 470px, 250px 840px;
               }
               .left-image {
                   padding: 2rem 2rem 4rem 5rem;
                   display: flex;
                   justify-content: flex-end;
                   align-items: center;
+              }
+              @media (max-width: 575px) {
+                  .form-container {
+                      padding: 2rem 0;
+                      margin: 0 -5rem 0 -3rem;
+                  }
               }
         `}</style>
         </div>
