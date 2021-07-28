@@ -27,8 +27,6 @@ const Inspiration = () => {
             </div>
             <style jsx>{`
             .inspiration-grid {
-                background-color: black;
-                color: white;
                 display: grid;
                 justify-content: center;
             }
@@ -39,8 +37,6 @@ const Inspiration = () => {
                 border-radius: 5px;
             }
             h3 {
-                background-color: black;
-                color: white;
                 text-align: center;
                 margin-bottom: 2rem;
             }

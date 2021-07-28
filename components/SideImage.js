@@ -1,12 +1,11 @@
 import Image from "next/image";
-import React from "react";
 
-const SideImage = () => {
+const SideImage = ({ width, height }) => {
     return <Image
         src = {'/goli_left_side.png'}
-        width = {'550px'}
-        height = {'550px'}
-        alt = {'goli-image'}
+        width = {width}
+        height = {height}
+        alt = {'left_side-image'}
     />
 }
 

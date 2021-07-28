@@ -5,12 +5,8 @@ const Logo = () => {
                 <style jsx>{`
                     .header {
                         text-align: center;
-                        background-color: black;
                         padding: 2.5rem;
-                    }  
-                    h1 {
-                        color: white;
-                    }        
+                    }
                 `}</style>
             </div>
     );

@@ -3,7 +3,6 @@ import Logo from "../components/Logo";
 import LoginForm from "../components/LoginForm";
 import Feedback from "../components/Feedback";
 import Footer from "../components/Footer";
-import Inspiration from "../components/Inspiration";
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
         <Logo />
         <LoginForm />
         <Feedback />
-        <Inspiration />
         <Footer />
     </>
   );

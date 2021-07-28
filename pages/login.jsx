@@ -14,7 +14,6 @@ export default function Login() {
             <Logo />
             <LoginForm />
             <Feedback />
-            <Inspiration />
             <Footer />
         </>
     );
