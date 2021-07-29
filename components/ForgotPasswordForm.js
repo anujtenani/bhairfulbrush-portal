@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {getHttpClient} from "../utils/api";
 import {FormattedMessage} from "react-intl";
 import SideImage from "./SideImage";
+import Image from "next/image";
 
 const ForgotPasswordForm = () => {
     const [email, setEmail] = useState(null);
@@ -35,14 +36,14 @@ const ForgotPasswordForm = () => {
 
     return (
         <div className = "row">
-            <div className = "col-md-11 col-lg-9 col-xl-5 left-image">
+            <section className = "col-11 col-sm-11 col-md-10 col-lg-6 col-xl-5 left-image">
                 <SideImage width={'490px'} height={'530px'} />
-            </div>
-            <div className = "col-12 col-sm-12 col-md-10 col-lg-8 col-xl-7">
-                <div className={"flex-container"}>
-                    <div className = "col-xl-9">
-                        <form className={"form-container"} onSubmit={onFormSubmit}>
-                            <h2 className={'forgot-password-title'}><strong>Password Reset</strong></h2>
+            </section>
+            <div className = "col-lg-6 col-xl-7">
+                <section className={"flex-container"}>
+                    <div className = "col-xl-11">
+                        <form className={"form-container"} onSubmit={onFormSubmit} >
+                            <h2 className={'main-title'}><strong>Reset Password</strong></h2>
                             <p className={'dashboard-title'}><strong>Access your dashboard</strong></p>
                             <div className = "form-group">
                                 <label htmlFor = "exampleInputEmail1"><strong>Email Address</strong></label>
@@ -55,59 +56,18 @@ const ForgotPasswordForm = () => {
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
+
                             <div style={{margin: '0.5rem 3rem 1.5rem 3rem'}}>
                                 <button type = "submit" className = "btn btn-dark">Reset Password</button>
                             </div>
+
+                            <div className={'img-design col-md'}>
+                                <Image src={'/image-bg.png'} height={'858px'} width={'991px'} alt={'background-image'} />
+                            </div>
                         </form>
                     </div>
-                </div>
+                </section>
             </div>
-            <style jsx>{`
-              .btn {
-                width: 100%;
-                border-radius: 200px;
-              }
-              a {
-                color: inherit;
-              }
-              .form-container {
-                padding: 2rem;
-                border-radius: 10px;
-                background-color: white;
-                color: black;
-              }
-              .form-group {
-                padding: 0 3rem 1rem 3rem;
-              }
-              .forgot-password-title {
-                text-align: center;
-                padding-bottom: 0.2rem;
-              }
-              .dashboard-title {
-                text-align: center;
-                padding-bottom: 0.5rem;
-              }
-              .flex-container {
-                  display: flex;
-                  padding: 15rem 4rem 18rem 3rem;
-                  background-image: url('/image-bg-person.png'), url("/image-bg-brush.png");
-                  background-repeat: no-repeat, no-repeat;
-                  background-position: 100px 85px , right top;;
-                  background-size: 220px 470px, 250px 840px;
-              }
-              .left-image {
-                  padding: 2rem 2rem 4rem 5rem;
-                  display: flex;
-                  justify-content: flex-end;
-                  align-items: center;
-              }
-              @media (max-width: 575px) {
-                  .form-container {
-                      padding: 2rem 0;
-                      margin: 0 -5rem 0 -3rem;
-                  }
-              }
-        `}</style>
         </div>
     );
 }

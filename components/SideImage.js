@@ -5,7 +5,7 @@ const SideImage = ({ width, height }) => {
         src = {'/left_image.png'}
         width = {width}
         height = {height}
-        alt = {'left_side-image'}
+        alt = {'behairful-image'}
     />
 }
 

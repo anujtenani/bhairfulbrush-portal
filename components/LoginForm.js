@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {getHttpClient} from "../utils/api";
+import Image from "next/image";
 import SideImage from "./SideImage";
 
 const LoginForm = () => {
@@ -32,14 +33,14 @@ const LoginForm = () => {
 
     return (
         <div className = "row">
-            <div className = "col-md-11 col-lg-9 col-xl-5 left-image">
+            <section className = "col-11 col-sm-11 col-md-10 col-lg-6 col-xl-5 left-image">
                 <SideImage width={'490px'} height={'530px'} />
-            </div>
-            <div className = "col-12 col-sm-12 col-md-10 col-lg-8 col-xl-7">
-                <div className={"flex-container"}>
-                    <div className = "col-xl-9">
+            </section>
+            <div className = "col-lg-6 col-xl-7">
+                <section className={"flex-container"}>
+                    <div className = "col-xl-11">
                          <form className={"form-container"} onSubmit={onFormSubmit}>
-                             <h2 className={'sign-in-title'}><strong>Sign In</strong></h2>
+                             <h2 className={'main-title'}><strong>Sign In</strong></h2>
                              <p className={'dashboard-title'}><strong>Access your dashboard</strong></p>
                              <div className = "form-group">
                                  <label htmlFor = "exampleInputEmail1"><strong>Email Address</strong></label>
@@ -52,6 +53,7 @@ const LoginForm = () => {
                                      onChange={(e) => setEmail(e.target.value)}
                                  />
                              </div>
+
                              <div className = "form-group">
                                  <label htmlFor = "exampleInputPassword1"><strong>Password</strong></label>
                                  <input
@@ -62,68 +64,106 @@ const LoginForm = () => {
                                      onChange={(e) => setPassword(e.target.value)}
                                  />
                              </div>
+
                              <div className={"form-group"} style={{textAlign: "right"}}>
                                  <a href={'/forgot-password'} tabIndex={'-1'}>Forgot Password?</a>
                              </div>
+
                              <div style={{margin: '0.5rem 3rem 1.5rem 3rem'}}>
                                 <button type = "submit" className = "btn btn-dark">SIGN IN</button>
                              </div>
+
                              <h6 style={{textAlign: "center", fontWeight: "bold"}}>
                                  Don't have an account yet?
                                  <a style={{textDecoration: "underline"}} href={'/signup'}> Sign Up</a>
                              </h6>
+                             <div className={'img-design col-md'}>
+                                <Image src={'/image-bg.png'} height={'858px'} width={'991px'} alt={'background-image'} />
+                             </div>
                          </form>
                     </div>
-                </div>
+                </section>
             </div>
-            <style jsx>{`
-              .btn {
-                width: 100%;
-                border-radius: 200px;
-              }
-              a {
-                color: inherit;
-              }
-              .form-container {
-                padding: 2rem;
-                border-radius: 2%;
-                background-color: white;
-                color: black;
-              }
-              .form-group {
-                padding: 0 3rem;
-              }
-              .sign-in-title {
-                text-align: center;
-                padding-bottom: 0.2rem;
-              }
-              .dashboard-title {
-                text-align: center;
-                padding-bottom: 0.5rem;
-              }
-              .flex-container {
-                  display: flex;
-                  padding: 15rem 4rem 18rem 3rem;
-                  background-image: url('/image-bg-person.png'), url("/image-bg-brush.png");
-                  background-repeat: no-repeat, no-repeat;
-                  background-position: 100px 85px, right top;
-                  background-size: 220px 470px, 250px 840px;
-              }
-              .left-image {
-                  padding: 2rem 2rem 4rem 5rem;
-                  display: flex;
-                  justify-content: flex-end;
-                  align-items: center;
-              }
-              @media (max-width: 575px) {
-                  .form-container {
-                      padding: 2rem 0;
-                      margin: 0 -5rem 0 -3rem;
-                  }
-              }
-        `}</style>
         </div>
     );
 }
 
 export default LoginForm
+
+// {/*    <style jsx>{`*/}
+// {/*      .btn {*/}
+// {/*        width: 100%;*/}
+// {/*        border-radius: 200px;*/}
+// {/*      }*/}
+// {/*      a {*/}
+// {/*        color: inherit;*/}
+// {/*      }*/}
+// {/*      .form-container {*/}
+// {/*        padding: 2rem;*/}
+// {/*        border-radius: 2%;*/}
+// {/*        background-color: white;*/}
+// {/*        color: black;*/}
+// {/*        z-index: 1;*/}
+// {/*      }*/}
+// {/*      .form-group {*/}
+// {/*        padding: 0 3rem;*/}
+// {/*      }*/}
+// {/*      .sign-in-title {*/}
+// {/*        text-align: center;*/}
+// {/*        padding-bottom: 0.2rem;*/}
+// {/*      }*/}
+// {/*      .dashboard-title {*/}
+// {/*        text-align: center;*/}
+// {/*        padding-bottom: 0.5rem;*/}
+// {/*      }*/}
+// {/*      .flex-container {*/}
+// {/*          display: flex;*/}
+// {/*          padding: 10rem 4rem 5rem 3rem;*/}
+// {/*      }*/}
+// {/*      .img-design {*/}
+// {/*          position: absolute;*/}
+// {/*          z-index: -1;*/}
+// {/*          top: -11rem;*/}
+// {/*          left: 2rem;*/}
+// {/*          right: -13rem;*/}
+// {/*      }*/}
+// {/*      .left-image {*/}
+// {/*          padding: 2rem 2rem 5rem 5rem;*/}
+// {/*          display: flex;*/}
+// {/*          justify-content: flex-end;*/}
+// {/*          align-items: center;*/}
+// {/*      }*/}
+// {/*      @media (max-width: 575px) {*/}
+// {/*          .form-container {*/}
+// {/*              padding: 2rem 0;*/}
+// {/*              margin: 0 -4rem 0 -3rem;*/}
+// {/*          }*/}
+// {/*          .flex-container {*/}
+// {/*              padding-top: 4rem;*/}
+// {/*          }*/}
+// {/*          .img-design {*/}
+// {/*              margin: 5rem 0 0 2rem;*/}
+// {/*          }*/}
+// {/*      }*/}
+// {/*      @media (max-width: 767px) {*/}
+// {/*          .form-container {*/}
+// {/*              padding: 2rem 0;*/}
+// {/*              margin: 0 -4rem 0 -3rem;*/}
+// {/*          }*/}
+// {/*          .flex-container {*/}
+// {/*              padding-top: 5rem;*/}
+// {/*          }*/}
+// {/*          .img-design {*/}
+// {/*              top: -8rem;*/}
+// {/*          }*/}
+// {/*      }*/}
+// {/*      @media (max-width: 1199px) {*/}
+// {/*          .form-container {*/}
+// {/*              padding: 2rem 0;*/}
+// {/*              margin: 0 -4rem 0 -3rem;*/}
+// {/*          }*/}
+// {/*          .flex-container {*/}
+// {/*              padding-bottom: 7rem;*/}
+// {/*          }*/}
+// {/*      }*/}
+// {/*`}</style>*/}

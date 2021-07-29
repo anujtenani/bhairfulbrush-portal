@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className={'footer'}>
+        <footer className={'footer'}>
             <p><strong>Finally, A Gentle way to Detangle Curly Hair</strong></p>
             <style jsx>{`
                 .footer {
@@ -13,7 +13,7 @@ const Footer = () => {
                   margin: 0;
                 }
             `}</style>
-        </div>
+        </footer>
     );
 };
 
