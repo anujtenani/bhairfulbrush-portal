@@ -32,7 +32,7 @@ const SignUpForm = () => {
     }
 
     return (
-        <div className = "row">
+        <div className = "row row-style">
             <section className = "col-11 col-sm-11 col-md-10 col-lg-6 col-xl-5 left-image">
                 <SideImage width={'490px'} height={'530px'} />
             </section>

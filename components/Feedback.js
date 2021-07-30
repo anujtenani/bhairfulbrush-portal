@@ -80,7 +80,7 @@ const Feedback = () => {
 }
 
 function FeedbackItem({src, title, content}){
-    return      <div className="col-lg-3 col-md-6 mb-4">
+    return <div className="col-lg-3 col-md-6 mb-4">
         <Cards src={src} title={title} content={content}/>
     </div>
 }
