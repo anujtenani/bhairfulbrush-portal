@@ -17,19 +17,3 @@ export default function Login() {
         </>
     );
 }
-
-// export async function getServerSideProps(context) {
-//     console.log(context)
-//     const cookies = context.req.cookies;
-//     console.log(cookies)
-//     return !cookies.access_token ? {
-//         redirect:{
-//             destination:'/signup',
-//             permanent:false
-//         }
-//     }: {
-//         props:{
-//
-//         }
-//     }
-// }
