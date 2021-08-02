@@ -59,7 +59,6 @@ const SignUpForm = () => {
                                 <input
                                     type = "text"
                                     className = "form-control"
-                                    id = "exampleInputPassword1"
                                     placeholder={"Johndoe"}
                                     onChange={(e) => setInstagram(e.target.value)}
                                 />

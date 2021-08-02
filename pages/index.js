@@ -1,19 +1,5 @@
-import Head from 'next/head'
-import Logo from "../components/Logo";
-import LoginForm from "../components/LoginForm";
-import Feedback from "../components/Feedback";
-import Footer from "../components/Footer";
+import Login from "./login";
 
 export default function Home() {
-  return (
-    <>
-        <Head>
-            <title>Behairful</title>
-        </Head>
-        <Logo />
-        <LoginForm />
-        <Feedback />
-        <Footer />
-    </>
-  );
+  return <Login />
 }

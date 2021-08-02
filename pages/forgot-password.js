@@ -8,7 +8,7 @@ const forgotPassword = () => {
     return (
         <>
             <Head>
-                <title>Behairful</title>
+                <title>Behairful | Reset Password</title>
             </Head>
             <Logo />
             <ForgotPasswordForm />

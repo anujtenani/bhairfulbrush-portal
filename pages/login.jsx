@@ -3,13 +3,12 @@ import Logo from "../components/Logo";
 import LoginForm from "../components/LoginForm";
 import Feedback from "../components/Feedback";
 import Footer from "../components/Footer";
-import Inspiration from "../components/Inspiration";
 
 export default function Login() {
     return (
         <>
             <Head>
-                <title>Behairful</title>
+                <title>Behairful | User Login</title>
             </Head>
             <Logo />
             <LoginForm />
@@ -18,3 +17,19 @@ export default function Login() {
         </>
     );
 }
+
+// export async function getServerSideProps(context) {
+//     console.log(context)
+//     const cookies = context.req.cookies;
+//     console.log(cookies)
+//     return !cookies.access_token ? {
+//         redirect:{
+//             destination:'/signup',
+//             permanent:false
+//         }
+//     }: {
+//         props:{
+//
+//         }
+//     }
+// }
