@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {getHttpClient} from "../utils/api";
 import Image from "next/image";
 import SideImage from "./SideImage";
+import Cookies from "js-cookie";
 
 const LoginForm = () => {
     const [email, setEmail] = useState(null);
