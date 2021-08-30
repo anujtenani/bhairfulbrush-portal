@@ -19,7 +19,6 @@ function PayMe(props) {
                 }
                 `
             }
-
             </style>
             <PageBanner bgSrc={"/dashboard-bg-1.jpg"} height={400} title={"Pay Me"} />
             <PaypalEmailAddressUpdater />

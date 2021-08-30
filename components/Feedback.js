@@ -1,61 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-const Cards = ({ src, title, content }) => {
-    return (
-        <>
-            <style jsx>{`
-                .circle {
-                    display: flex;
-                    justify-content: center;
-                    border-radius: 129px;
-                    width: 150px;
-                    height: 150px;
-                    position: absolute;
-                    overflow: hidden;
-                    top: 10px;
-                    left: 50%;
-                    margin-left: -95px;
-                }
-                .element {
-                    text-align: center;
-                    padding: 11rem 0 0 0;
-                    margin-right: 3rem;
-                }
-                @media (max-width: 575px) {
-                    .element {
-                        padding-left: 4rem;
-                    }
-                    .circle {
-                        left: 57%;
-                    }
-                }
-                @media (max-width: 767px) {
-                    .element {
-                         padding-left: 4rem;
-                    }
-                    .circle {
-                        left: 57%;
-                    }
-                }
-                @media (max-width: 991px) {
-                    .element {
-                        margin: 0 2.5rem 2rem 0;
-                    }
-                }
-            `}</style>
-        <div className={'circle'}>
-            <Image src={src} width={'250px'} height={'250px'} alt={title} />
-        </div>
-        <div className = "card-body text-light element">
-            <h5 className = "card-title"><strong>{title}</strong></h5>
-            <p>{content}</p>
-        </div>
-        </>
-    )
-}
-
-
 
 const Feedback = () => {
     return (
@@ -84,5 +29,21 @@ function FeedbackItem({src, title, content}){
         <Cards src={src} title={title} content={content}/>
     </div>
 }
+
+
+const Cards = ({ src, title, content }) => {
+    return (
+        <div className={"border rounded-lg"} style={{marginTop:64}}>
+            <div className={'text-center'} style={{marginTop:-64}}>
+                <img style={{border:'2px solid white', borderRadius:64}} src={src} width={'128px'} height={'128px'} alt={title} />
+            </div>
+            <div className = "card-body text-light element">
+                <h5 className={"text-center card-title"}>{title}</h5>
+                <p className={"text-center text-muted"}>{content}</p>
+            </div>
+        </div>
+    )
+}
+
 
 export default Feedback

@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import {getHttpClient} from "../utils/api";
 import Image from "next/image";
 import SideImage from "./SideImage";
-
+import Button from "./Button";
+import Cookies from 'js-cookie'
 const LoginForm = () => {
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
@@ -18,6 +19,7 @@ const LoginForm = () => {
             email,
             password,
         }).then(({data})=>{
+            console.log('received data',{data})
             if(data.access_token) {
                 Cookies.set('access_token', data.access_token, {expires:7})
                 window.location = "/"
@@ -70,7 +72,7 @@ const LoginForm = () => {
                              </div>
 
                              <div style={{margin: '0.5rem 3rem 1.5rem 3rem'}}>
-                                <button type = "submit" className = "btn btn-dark">SIGN IN</button>
+                                <Button loading={loading} type = "submit" className = "btn btn-dark">SIGN IN</Button>
                              </div>
 
                              <h6 style={{textAlign: "center", fontWeight: "bold"}}>
