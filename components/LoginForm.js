@@ -3,7 +3,7 @@ import {getHttpClient} from "../utils/api";
 import Image from "next/image";
 import SideImage from "./SideImage";
 import Button from "./Button";
-import Cookies from 'js-cookie'
+import Cookies from "js-cookie";
 const LoginForm = () => {
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);

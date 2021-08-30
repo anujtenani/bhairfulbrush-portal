@@ -8,7 +8,7 @@ export default function Login() {
     return (
         <>
             <Head>
-                <title>Behairful | User Login</title>
+                <title>Behairful | Partner Login</title>
             </Head>
             <Logo />
             <LoginForm />
@@ -16,19 +16,4 @@ export default function Login() {
             <Footer />
         </>
     );
-}
-
-export async function getServerSideProps(context) {
-    const cookies = context.req.cookies;
-    console.log('got cookies', cookies)
-    return !cookies.access_token ? {
-        redirect:{
-            destination:'/login',
-            permanent:false
-        }
-    }: {
-        props:{
-
-        }
-    }
 }
