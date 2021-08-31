@@ -35,11 +35,11 @@ function Dashboard(props) {
                 </div>
 
             </div>
+
             <div className="py-4">
                 <OurPartnersSection />
             </div>
             <DashboardFooter />
-
         </DashboardContainer>
     );
 }

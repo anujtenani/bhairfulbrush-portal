@@ -56,8 +56,9 @@ function Sales(props) {
                     <span>
                         Showing {(pageIndex * limit) + 1} to {(pageIndex+1) * limit} of {data && data.total} entries
                     </span>
+
                     <nav>
-                        <ul className="pagination">
+                        <ul className="pagination mt-4">
                             <li className={`page-item ${hasPrevious ? '' : 'disabled'}`}>
                                 <button disabled={!hasPrevious}
                                         onClick={()=>setPageIndex((prev)=>prev-1)} className="page-link">Previous</button>

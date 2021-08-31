@@ -20,6 +20,7 @@ import {
      FiActivity
 } from "react-icons/fi";
 import  Link from 'next/link'
+
 const navItems = [
     {
         title:'Dashboard',

@@ -48,26 +48,22 @@ function DashboardFooter(props) {
                     <div className="col-12 col-md-12 col-lg-5 col-xl-6">
                         <div className="footer-block-inner d-inline-block footer_text_left">
                             <h5><strong>WHY WE DO IT</strong></h5>
+
                             <div className="d-block">
                                 <p>
-                                    Goli Nutrition is an inventive, people focused nutrition company driven by the
-                                    belief that happiness and wellness go hand in hand. Our goal was to create an easy,
-                                    nutritious and delicious way for everyone to incorporate Apple Cider Vinegar into
-                                    their daily routine. We are proud that our Goli Gummies are gluten-free,
-                                    gelatin-free, vegan, non-GMO and made with select organic ingredients, free from
-                                    artificial sweeteners and preservatives.
+                                    Behairful is an innovative hair care company that is driven by the belief that with love, anything is possible. Our goal is to continue to evolve hair care and create products that consumers love for years to come. Creating Hair Full of Happiness each strand at a time.
                                 </p>
-                                <p>– Goli Nutrition. Health Simple.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <hr className={"bg-white"}/>
 
                 <div className="row">
-                    <div className="col mt-4">
+                    <div className="col mt-2">
                         <div className="text-center main-foot-rights-reserved">
-                            © 2021 Behariful. All Rights Reserved.
+                            <h5>© 2021 Behariful. All Rights Reserved.</h5>
                         </div>
                     </div>
                 </div>
