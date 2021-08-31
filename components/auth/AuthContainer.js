@@ -9,8 +9,11 @@ function AuthContainer({children}) {
         <>
             <Logo />
             <div className="container">
+                <div style={{position:'absolute', right:0}}>
+                    <img src="/signup_form_bg.png" alt="" style={{height:600}}/>
+                </div>
                 <h2 className={"text-center mb-4"}>Finally! A Platform Made For Influencers.</h2>
-                <div className="row flex-md-row-reverse">
+                <div className="row flex-md-row-reverse" style={{paddingRight:36, paddingLeft:36}}>
                     <div className="col-md-6 mb-4">
                         <div className={"card"}>
                             <div className="card-body">
@@ -18,11 +21,11 @@ function AuthContainer({children}) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6  mb-4">
+                    <div className="col-md-6 mb-4">
                         <div className={"text-center"}>
                             <img
-                                src = {'/Card.png'}
-                                style={{maxWidth:'90%', maxHeight:400}}
+                                src = {'/signup_form_left_image.png'}
+                                style={{maxHeight:480, maxWidth:'100%'}}
                                 alt = {'behairful-image'}
                             />
                         </div>
