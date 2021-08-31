@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import {getHttpClient} from "../utils/api";
-import SideImage from "./SideImage";
-import Image from "next/image";
 import FormGroup from "./FormGroup";
 import Button from "./Button";
 import Link from 'next/link'
+import AuthErrorRenderer from "./AuthErrorRenderer";
 const SignUpForm = () => {
     const [email, setEmail] = useState(null);
     const [instagram, setInstagram] = useState(null);
@@ -25,7 +24,7 @@ const SignUpForm = () => {
                 Cookies.set('access_token', data.access_token, {expires:7})
                 window.location = "/"
             }else{
-                setCode(data.code)
+                setError(data.code || data.error || 'Invalid credentials');
             }
             setLoading(false)
         }).catch(() => {
@@ -63,7 +62,10 @@ const SignUpForm = () => {
                     onChange={(e) => setPassword(e.target.value)}
                 />
             </FormGroup>
-            <Button type="submit" className = "w-100 btn btn-primary">SIGN UP</Button>
+            {
+                error ?    <AuthErrorRenderer code={error}/> : null
+            }
+            <Button loading={loading} type="submit" className = "w-100 btn btn-primary">SIGN UP</Button>
             <h6 className={"text-center mt-4"}>Already have an account? <Link href={'/login'}><a className={"text-dark"}>Sign In</a></Link>
             </h6>
         </form>

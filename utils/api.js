@@ -2,16 +2,17 @@ import useSWR, {mutate} from "swr";
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import {useState} from "react";
-
+const storeFrontToken = process.env.NODE_ENV === 'development' ? 'my-storefront-token' : 'd42527327635a46d7e4373c03d892da21d0d6ece35d2f06551c6962f9b3e7fd7'
+const apiServer = process.env.NODE_ENV === "development" ? 'https://api-server-1.goaffpro.com' : 'https://api.goaffpro.com'
 export function getHttpClient(){
     const headers = {
-        'X-GOAFFPRO-PUBLIC-TOKEN':'my-storefront-token',
+        'X-GOAFFPRO-PUBLIC-TOKEN':storeFrontToken
     }
     if(Cookies.get('access_token')){
         headers['Authorization'] = 'Bearer '+Cookies.get('access_token')
     }
     return axios.create({
-            baseURL: 'https://api-server-1.goaffpro.com',
+            baseURL: apiServer,
             headers: headers
         }
     )
@@ -120,11 +121,4 @@ export function useCreatives(){
 export function upload(endpoint, body){
     //remove the content type header
     return getHttpClient().post(endpoint, body).then(({data}) => data);
-}
-
-function useSignup(){
-
-}
-function useForgotPassword(){
-
 }

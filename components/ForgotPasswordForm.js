@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import {getHttpClient} from "../utils/api";
 import {FormattedMessage} from "react-intl";
-import SideImage from "./SideImage";
-import Image from "next/image";
 import FormGroup from "./FormGroup";
 import Button from "./Button";
+import AuthErrorRenderer from "./AuthErrorRenderer";
 
 const ForgotPasswordForm = () => {
     const [email, setEmail] = useState(null);
@@ -48,7 +47,10 @@ const ForgotPasswordForm = () => {
                     onChange={(e) => setEmail(e.target.value)}
                 />
             </FormGroup>
-            <Button type = "submit" className = "btn w-100 btn-primary">Reset Password</Button>
+            {
+                code ?    <AuthErrorRenderer code={code}/> : null
+            }
+            <Button loading={loading} type = "submit" className = "btn w-100 btn-primary">Reset Password</Button>
         </form>
     );
 }

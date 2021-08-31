@@ -5,6 +5,7 @@ import Button from "./Button";
 import Cookies from "js-cookie";
 import Link from 'next/link'
 import FormGroup from "./FormGroup";
+import AuthErrorRenderer from "./AuthErrorRenderer";
 const LoginForm = () => {
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
@@ -25,7 +26,7 @@ const LoginForm = () => {
                 Cookies.set('access_token', data.access_token, {expires:7})
                 window.location = "/"
             } else {
-                setError(data.error || 'Invalid credentials');
+                setError(data.code || data.error || 'Invalid credentials');
             }
             setLoading(false);
         }).catch(() => {
@@ -55,6 +56,9 @@ const LoginForm = () => {
                          <a className={"text-dark"}>Forgot Password?</a>
                      </Link>
                  </div>
+                 {
+                     error ?    <AuthErrorRenderer code={error}/> : null
+                 }
                  <Button loading={loading} type = "submit" className="btn btn-primary w-100">SIGN IN</Button>
 
                  <h6 className={"text-center mt-4 text-dark"}>
