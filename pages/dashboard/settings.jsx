@@ -13,6 +13,7 @@ import EditPromoCodeModal from "./settings-components/EditPromoCodeModal";
 import EditPasswordModal from "./settings-components/EditPasswordModal";
 import EditAddressModal from "./settings-components/EditAddressModal";
 import PageBanner from "./components/general/PageBanner";
+import PageHeaderBanner from "../../components/PageHeaderBanner";
 function Settings(props) {
     const [activeTab, setActiveTab] = useState('profile');
     const {data, isLoading} = useProfile();
@@ -20,8 +21,8 @@ function Settings(props) {
     if(!data) return null;
     return (
         <DashboardContainer title={"Settings"}>
-            <PageBanner bgSrc={"/dashboard-bg-1.jpg"} height={400} title={"Settings"} />
             <div>
+                <PageHeaderBanner src={"/dashboard/settings_banner.png"}/>
                 <section className={"container mx-auto d-flex"}>
                     {
                         isLoading ? <Skeleton width={200}/> : <>

@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Logo from "../components/Logo";
-import Footer from "../components/Footer";
 import SignUpForm from "../components/SignUpForm";
-import Feedback from "../components/Feedback";
+import AuthContainer from "../components/auth/AuthContainer";
 
 const signup = () => {
     return (
@@ -10,10 +8,9 @@ const signup = () => {
             <Head>
                 <title>Behairful | User Signup</title>
             </Head>
-            <Logo />
+           <AuthContainer>
             <SignUpForm />
-            <Feedback />
-            <Footer />
+           </AuthContainer>
         </>
     );
 }

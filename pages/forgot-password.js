@@ -3,6 +3,7 @@ import Logo from "../components/Logo";
 import ForgotPasswordForm from "../components/ForgotPasswordForm";
 import Feedback from "../components/Feedback";
 import Footer from "../components/Footer";
+import AuthContainer from "../components/auth/AuthContainer";
 
 const forgotPassword = () => {
     return (
@@ -10,10 +11,9 @@ const forgotPassword = () => {
             <Head>
                 <title>Forgot Password : Behairful Partners</title>
             </Head>
-            <Logo />
+        <AuthContainer>
             <ForgotPasswordForm />
-            <Feedback />
-            <Footer />
+        </AuthContainer>
         </>
     )
 }

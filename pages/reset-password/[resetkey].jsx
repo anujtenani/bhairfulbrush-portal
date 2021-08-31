@@ -12,7 +12,7 @@ export default function Resetkey() {
     return (
         <>
             <Head>
-                <title>Reset Password: Kitsch Partners</title>
+                <title>Reset Password: Behairful Partners</title>
             </Head>
             <div className={"container"}>
                 <TopLogo />

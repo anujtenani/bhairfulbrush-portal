@@ -8,7 +8,7 @@ import {Image} from "react-bootstrap";
 function PerfectPost(props) {
     return (
         <DashboardContainer title={"Crafting the perfect post"}>
-            <PageBanner title={"Crafting the Perfect Post"} height={500}  bgSrc={"/dashboard-bg-1.jpg"} />
+            <PageBanner title={"CRAFTING THE PERFECT POST"} height={500}  bgSrc={"/dashboard/perfect_post.png"} />
 
             <div className="bg-dark ml-lg-3 text-white">
                 <section>

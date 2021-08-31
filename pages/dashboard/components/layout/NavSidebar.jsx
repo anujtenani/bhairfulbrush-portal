@@ -12,7 +12,7 @@ function NavSidebar(props) {
                  }}
                  className="d-none  d-lg-block border-right border min-vh-100">
             <div className="container">
-                <a className="navbar-brand" href="/">
+                <a className="navbar-brand p-2" href="/">
                     <img src="/behairful-logo.png"
                          style={{width:"100%"}}
                          alt="Behairful logo" />

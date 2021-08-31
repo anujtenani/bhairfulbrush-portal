@@ -57,16 +57,6 @@ function DashboardFooter(props) {
                         </div>
                     </div>
                 </div>
-
-                <hr className={"bg-white"}/>
-
-                <div className="row">
-                    <div className="col mt-2">
-                        <div className="text-center main-foot-rights-reserved">
-                            <h5>© 2021 Behariful. All Rights Reserved.</h5>
-                        </div>
-                    </div>
-                </div>
             </div>
         </footer>
     );

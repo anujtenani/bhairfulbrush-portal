@@ -8,12 +8,13 @@ import Skeleton from "react-loading-skeleton";
 import RenderDateAndTime from "../../components/general/RenderDateAndTime";
 import DefaultCurrencyRender from "../../components/general/DefaultCurrencyRender";
 import PageBanner from "./components/general/PageBanner";
+import PageHeaderBanner from "../../components/PageHeaderBanner";
 
 function Sales(props) {
     const {data, isLoading, error, setPageIndex, setLimit, limit, pageIndex, hasNext, hasPrevious} = useSales()
     return (
         <DashboardContainer title={"Sales"}>
-            <PageBanner title={"Watch your sales grow"} bgSrc={"/dashboard-bg-1.jpg"} height={600} />
+            <PageHeaderBanner title={"Watch your sales grow"} src={"/dashboard/sales_banner.png"} height={300} />
             <div className="py-4">
                 <div className="container mt-4">
 

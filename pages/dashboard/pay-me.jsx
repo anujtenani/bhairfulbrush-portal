@@ -11,16 +11,7 @@ import PageBanner from "./components/general/PageBanner";
 function PayMe(props) {
     return (
         <DashboardContainer title={"Pay Me"}>
-            <style jsx>{
-                `
-                #bg{
-                  background:url(/payme_banner.png) no-repeat;
-                  height:490px;
-                }
-                `
-            }
-            </style>
-            <PageBanner bgSrc={"/dashboard-bg-1.jpg"} height={400} title={"Pay Me"} />
+            <PageBanner bgSrc={"/dashboard/pay_me.png"} height={400} title={"PAY ME"} />
             <PaypalEmailAddressUpdater />
             <div>
                 <div className="container p-4">

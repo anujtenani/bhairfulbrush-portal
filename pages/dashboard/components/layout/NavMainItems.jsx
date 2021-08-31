@@ -17,7 +17,7 @@ import {
     FiHelpCircle,
     FiInfo,
     FiAward,
-     FiActivity
+    FiActivity, FiArchive
 } from "react-icons/fi";
 import  Link from 'next/link'
 
@@ -37,8 +37,12 @@ const navItems = [
         href:'/dashboard/perfect-post',
     },
     {
-        title:'Grab n\' Go',
+        title:'Inspiration',
         Icon: FiImage,
+        href:'/dashboard/grab-n-go'
+    },{
+        title:'Product Presentation',
+        Icon: FiArchive,
         href:'/dashboard/grab-n-go'
     },{
         title:"Pay Me",

@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import Logo from "../components/Logo";
 import LoginForm from "../components/LoginForm";
-import Feedback from "../components/Feedback";
-import Footer from "../components/Footer";
+import AuthContainer from "../components/auth/AuthContainer";
 
 export default function Login() {
     return (
@@ -10,10 +8,9 @@ export default function Login() {
             <Head>
                 <title>Behairful | PARTNER HUB</title>
             </Head>
-            <Logo />
+           <AuthContainer>
             <LoginForm />
-            <Feedback />
-            <Footer />
+           </AuthContainer>
         </>
     );
 }

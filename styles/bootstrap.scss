@@ -9,12 +9,28 @@ $modal-content-color: #fff;
 $modal-content-bg: #000;
 $modal-content-border-color: $gray-900;
 $btn-border-radius:0;
+$input-border-radius:0px;
+$input-focus-border-color:$border-color;
 @import "node_modules/bootstrap/scss/bootstrap";
 $text-muted: $gray-100;
 .btn-primary:hover{
   background-color: #000 !important;
   color:#fff !important;
   border-color: $gray-900 !important;
+}
+
+.btn-primary{
+  background-color: rgb(61, 63, 65) !important;
+  color:#fff !important;
+  border-bottom-width:1px;
+  border-color: $gray-900 !important;
+  letter-spacing: .1em;
+  font-size:.8125em;
+  min-height: 48px;
+  text-transform: uppercase;
+}
+.form-control{
+  min-height: 48px;
 }
 
 

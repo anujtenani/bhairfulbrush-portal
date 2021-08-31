@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import {getHttpClient} from "../utils/api";
 import Image from "next/image";
-import SideImage from "./SideImage";
 import Button from "./Button";
 import Cookies from "js-cookie";
+import Link from 'next/link'
+import FormGroup from "./FormGroup";
 const LoginForm = () => {
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
@@ -34,63 +35,32 @@ const LoginForm = () => {
 
 
     return (
-        <div className = "row row-style">
-            <section className = "col-11 col-sm-11 col-md-10 col-lg-6 col-xl-5 left-image">
-                <SideImage width={'510px'} height={'530px'} />
-            </section>
+             <form onSubmit={onFormSubmit} className={"text-dark"}>
+                 <h2 className={"text-dark text-center"}><strong>Sign In</strong></h2>
+                 <p className={'text-dark text-center'}><strong>Members please login</strong></p>
+                 <FormGroup label={"Email address"}>
+                     <input placeholder={"Email"} type = "email" className = "form-control" onChange={(e) => setEmail(e.target.value)}/>
+                 </FormGroup>
+                 <FormGroup label={"Password"}>
+                     <input
+                         placeholder={"Password"}
+                         type = "password"
+                         className = "form-control"
+                         onChange={(e) => setPassword(e.target.value)}
+                     />
+                 </FormGroup>
 
-            <div className = "col-lg-6 col-xl-7">
-                <section className={"flex-container"}>
-                    <div className = "col-xl-11">
-                         <form className={"form-container"} onSubmit={onFormSubmit}>
-                             <h2 className={'main-title'}><strong>Sign In</strong></h2>
+                 <div className={"form-group text-right"}>
+                     <Link href={'/forgot-password'} tabIndex={'-1'}>
+                         <a className={"text-dark"}>Forgot Password?</a>
+                     </Link>
+                 </div>
+                 <Button loading={loading} type = "submit" className="btn btn-primary w-100">SIGN IN</Button>
 
-                             <p className={'dashboard-title'}><strong>Members please login*</strong></p>
-
-                             <div className = "form-group">
-                                 <label className={"ml-1"} htmlFor = "exampleInputEmail1"><strong>Email Address</strong></label>
-                                 <input
-                                     type = "email"
-                                     className = "form-control"
-                                     style={{borderRadius: '20px'}}
-                                     id = "exampleInputEmail1"
-                                     aria-describedby = "emailHelp"
-                                     onChange={(e) => setEmail(e.target.value)}
-                                 />
-                             </div>
-
-                             <div className = "form-group">
-                                 <label className={"ml-1"} htmlFor = "exampleInputPassword1"><strong>Password</strong></label>
-                                 <input
-                                     type = "password"
-                                     style={{borderRadius: '20px'}}
-                                     className = "form-control"
-                                     id = "exampleInputPassword1"
-                                     onChange={(e) => setPassword(e.target.value)}
-                                 />
-                             </div>
-
-                             <div className={"form-group"} style={{textAlign: "right"}}>
-                                 <a href={'/forgot-password'} tabIndex={'-1'}>Forgot Password?</a>
-                             </div>
-
-                             <div style={{margin: '0.5rem 3rem 1.5rem 3rem'}}>
-                                <Button loading={loading} type = "submit" className = "btn btn-dark">SIGN IN</Button>
-                             </div>
-
-                             <h6 style={{textAlign: "center", fontWeight: "bold"}}>
-                                 Don't have an account yet?
-                                 <a style={{textDecoration: "underline"}} href={'/signup'}> Sign Up</a>
-                             </h6>
-
-                             <div className={'img-design col-md-10'}>
-                                <Image src={'/back_main_img.png'} objectFit={"contain"} objectPosition={"100% 0"} height={'1050px'} width={'850px'} alt={'background-image'} />
-                             </div>
-                         </form>
-                    </div>
-                </section>
-            </div>
-        </div>
+                 <h6 className={"text-center mt-4 text-dark"}>
+                     Don't have an account yet? <Link href={'/signup'}><a className={"text-dark"}>Sign up</a></Link>
+                 </h6>
+             </form>
     );
 }
 
