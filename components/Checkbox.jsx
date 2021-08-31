@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ({checked, value, label, onChange, small, disabled}) {
+export default function Checkbox({checked, value, label, onChange, small, disabled}) {
     return (<div className={'mb-2 pl-4'}>
         <input disabled={disabled} className="form-check-input" onChange={onChange} type="checkbox" id={label + value}
                value={value}

@@ -28,7 +28,7 @@ function PayMeDropdown(props) {
                 </div>
             </DropdownToggle>
             <DropdownMenu className={"py-0"}>
-                <Link href={"/dashboard/pay-me"}>
+                <Link href={"/dashboard/pay-me"} passHref>
                     <button className={"btn btn-light w-100"}>
                     <small className={"text-muted"}>Commission</small>
                     <div>
@@ -40,7 +40,7 @@ function PayMeDropdown(props) {
                     <strong className={"d-block"}>Pay Me <FaHandHoldingUsd /></strong>
                     </button>
                 </Link>
-                <Link href={"/dashboard/pay-me"}>
+                <Link href={"/dashboard/pay-me"} passHref>
                     <button className={"btn btn-light w-100"}>
                     <small className={"text-muted"}>Total Lifetime Payouts</small>
                         {

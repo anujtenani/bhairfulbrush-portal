@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from 'reactstrap/lib/Modal';
+import ReactStrapModal from 'reactstrap/lib/Modal';
 import ModalBody from 'reactstrap/lib/ModalBody';
 import ModalHeader from 'reactstrap/lib/ModalHeader';
 import ModalFooter from 'reactstrap/lib/ModalFooter';
@@ -7,9 +7,9 @@ import PropTypes from 'prop-types';
 import {FormattedMessage} from "react-intl";
 import Button from "./Button";
 
-export default function ({confirmLoading, onOk, onCancel, onClose, okText, cancelText, title, visible, onSubmit, children, size, disabled}) {
+export default function Modal({confirmLoading, onOk, onCancel, onClose, okText, cancelText, title, visible, onSubmit, children, size, disabled}) {
     return (
-        <Modal isOpen={visible} toggle={onCancel || onClose} size={size}>
+        <ReactStrapModal isOpen={visible} toggle={onCancel || onClose} size={size}>
             {
                 (title || onClose) &&
                 <ModalHeader toggle={onCancel || onClose}>
@@ -42,7 +42,7 @@ export default function ({confirmLoading, onOk, onCancel, onClose, okText, cance
                     </ModalFooter>
                 }
             </Form>
-        </Modal>
+        </ReactStrapModal>
     );
 }
 

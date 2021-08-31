@@ -38,14 +38,14 @@ const LoginForm = () => {
     return (
              <form onSubmit={onFormSubmit} className={"text-dark"}>
                  <h2 className={"text-dark text-center"}><strong>Sign In</strong></h2>
-                 <p className={'text-dark text-center'}><strong>Members please login</strong></p>
+                 <p className={"text-dark text-center"}><strong>Members please login</strong></p>
                  <FormGroup label={"Email address"}>
                      <input placeholder={"Email"} type = "email" className = "form-control" onChange={(e) => setEmail(e.target.value)}/>
                  </FormGroup>
                  <FormGroup label={"Password"}>
                      <input
                          placeholder={"Password"}
-                         type = "password"
+                         type={"password"}
                          className = "form-control"
                          onChange={(e) => setPassword(e.target.value)}
                      />
@@ -62,7 +62,7 @@ const LoginForm = () => {
                  <Button loading={loading} type = "submit" className="btn btn-primary w-100">SIGN IN</Button>
 
                  <h6 className={"text-center mt-4 text-dark"}>
-                     Don't have an account yet? <Link href={'/signup'}><a className={"text-dark"}>Sign up</a></Link>
+                     Don&apos;t have an account yet? <Link href={"/signup"}><a className={"text-dark"}>Sign up</a></Link>
                  </h6>
              </form>
     );

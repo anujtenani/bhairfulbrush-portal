@@ -9,7 +9,7 @@ function DashboardFooter(props) {
                 <div className="row pt-3">
                     <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-3 text-center">
                         <div className="d-block pb-4">
-                            <Link href="/dashboard">
+                            <Link href="/dashboard" passHref>
                                 <img src="/behairful-logo.png" alt="Behairful Logo"
                                      className="img-fluid main-footer-logo"/>
                             </Link>
@@ -63,7 +63,7 @@ function DashboardFooter(props) {
 }
 
 function FooterLink({title, href}){
-    return <Link href={href} className={"text-nowrap"}>
+    return <Link href={href} className={"text-nowrap"} passHref>
         <a>
              <li className={"py-1"}>{title}</li>
         </a>

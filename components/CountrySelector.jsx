@@ -247,8 +247,10 @@ let country_list = [
     {name: 'Zimbabwe', code: 'ZW'}
 ];
 
-export default (props) => (<select className={'form-control'}{...props}>
-    {
-        country_list.map(({name, code}) => <option key={code} value={code}>{name}</option>)
-    }
-</select>);
+export default function CountrySelector(props) {
+    return (<select className={'form-control'}{...props}>
+        {
+            country_list.map(({name, code}) => <option key={code} value={code}>{name}</option>)
+        }
+    </select>);
+}
