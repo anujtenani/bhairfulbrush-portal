@@ -8,7 +8,7 @@ export default function Login() {
     return (
         <>
             <Head>
-                <title>Behairful | Partner Login</title>
+                <title>Behairful | PARTNER HUB</title>
             </Head>
             <Logo />
             <LoginForm />
