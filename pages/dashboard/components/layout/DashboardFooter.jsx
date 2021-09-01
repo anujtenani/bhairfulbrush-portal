@@ -37,10 +37,10 @@ function DashboardFooter(props) {
                         <div className="footer-block-inner d-inline-block text-left">
                             <h5><strong>SOCIAL</strong></h5>
                             <ul className="list-unstyled footer-list-social text-center">
-                                <li><a href="https://www.facebook.com/mykitsch"><FaFacebook /></a></li>
-                                <li><a href="https://www.youtube.com/mykitsch"><FaYoutube/></a></li>
-                                <li><a href="https://instagram.com/mykitsch"><FaInstagram /></a></li>
-                                <li><a href="https://www.pinterest.com/MyKitsch/"><FaPinterest/></a></li>
+                                <li><a href="https://www.facebook.com/behairfulbrush/"><FaFacebook /></a></li>
+                                <li className={"d-none"}><a href="https://www.youtube.com/mykitsch"><FaYoutube/></a></li>
+                                <li><a href="https://www.instagram.com/behairfulbrush/"><FaInstagram /></a></li>
+                                <li className={"d-none"}><a href="https://www.pinterest.com/MyKitsch/"><FaPinterest/></a></li>
                             </ul>
                         </div>
                     </div>
