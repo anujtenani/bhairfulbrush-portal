@@ -1,15 +1,5 @@
 import React from 'react';
 import {
-    FaApple,
-    FaCamera,
-    FaChartLine,
-    FaDollarSign,
-    FaHandHoldingUsd,
-    FaHome, FaInfo,
-    FaLightbulb,
-    FaQuestionCircle
-} from "react-icons/fa";
-import {
     FiHome,
     FiTrendingUp,
     FiDollarSign,
@@ -39,11 +29,11 @@ const navItems = [
     {
         title:'Inspiration',
         Icon: FiImage,
-        href:'/dashboard/grab-n-go'
+        href:'/dashboard/inspiration'
     },{
         title:'Product Presentation',
         Icon: FiArchive,
-        href:'/dashboard/grab-n-go'
+        href:'/dashboard/product-presentation'
     },{
         title:"Pay Me",
         Icon: FiDollarSign,

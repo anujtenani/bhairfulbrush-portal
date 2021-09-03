@@ -5,7 +5,7 @@ import Skeleton from "react-loading-skeleton";
 import PageBanner from "./components/general/PageBanner";
 import DashboardFooter from "./components/layout/DashboardFooter";
 
-function GrabNGo(props) {
+function Inspiration(props) {
     const {data, error, isLoading} = useCreatives();
     return (
         <DashboardContainer title={"Inspiration"}>
@@ -49,4 +49,4 @@ export async function getServerSideProps(context) {
 }
 
 
-export default GrabNGo;
+export default Inspiration;
