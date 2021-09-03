@@ -1,13 +1,10 @@
 import React from 'react';
 import DashboardContainer from "./components/layout/DashboardContainer";
 import DashboardFooter from "./components/layout/DashboardFooter";
-import PageBannerImage from "./components/general/PageBannerImage";
-import {FaChartLine} from "react-icons/fa";
 import {useSales} from "../../utils/api";
 import Skeleton from "react-loading-skeleton";
 import RenderDateAndTime from "../../components/general/RenderDateAndTime";
 import DefaultCurrencyRender from "../../components/general/DefaultCurrencyRender";
-import PageBanner from "./components/general/PageBanner";
 import PageHeaderBanner from "../../components/PageHeaderBanner";
 
 function Sales(props) {
@@ -117,6 +114,5 @@ export async function getServerSideProps(context) {
             }
     }
 }
-
 
 export default Sales;

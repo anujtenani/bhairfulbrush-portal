@@ -1,9 +1,10 @@
 import React, {useState} from "react";
-import {getHttpClient} from "../utils/api";
+import {getHttpClient} from "../../utils/api";
 import FormGroup from "./FormGroup";
-import Button from "./Button";
+import Button from "../general/Button";
 import Link from 'next/link'
-import AuthErrorRenderer from "./AuthErrorRenderer";
+import AuthErrorRenderer from "../AuthErrorRenderer";
+
 const SignUpForm = () => {
     const [email, setEmail] = useState(null);
     const [instagram, setInstagram] = useState(null);
@@ -40,7 +41,6 @@ const SignUpForm = () => {
                 <input
                     type = "email"
                     className = "form-control"
-                    placeholder={"Email address"}
                     onChange={(e) => setEmail(e.target.value)}
                 />
             </FormGroup>
@@ -49,7 +49,6 @@ const SignUpForm = () => {
                 <input
                     type = "text"
                     className = "form-control"
-                    placeholder={"Johndoe"}
                     onChange={(e) => setInstagram(e.target.value)}
                 />
             </FormGroup>
@@ -58,7 +57,6 @@ const SignUpForm = () => {
                 <input
                     type = "password"
                     className = "form-control"
-                    placeholder={"Password"}
                     onChange={(e) => setPassword(e.target.value)}
                 />
             </FormGroup>

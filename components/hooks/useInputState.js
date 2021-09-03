@@ -1,6 +1,5 @@
 import {useCallback, useState} from "react";
 
-
 function useInputState(props){
     const [val, setVal] = useState(props)
     const inputVal = useCallback((e) => {

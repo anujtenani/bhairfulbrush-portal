@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-import {getHttpClient} from "../utils/api";
-import Image from "next/image";
-import Button from "./Button";
+import {getHttpClient} from "../../utils/api";
+import Button from "../general/Button";
 import Cookies from "js-cookie";
 import Link from 'next/link'
 import FormGroup from "./FormGroup";
-import AuthErrorRenderer from "./AuthErrorRenderer";
+import AuthErrorRenderer from "../AuthErrorRenderer";
+
 const LoginForm = () => {
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
@@ -28,23 +28,21 @@ const LoginForm = () => {
             } else {
                 setError(data.code || data.error || 'Invalid credentials');
             }
-            setLoading(false);
+            setLoading(false)
         }).catch(() => {
             setLoading(false)
         });
     }
-
 
     return (
              <form onSubmit={onFormSubmit} className={"text-dark"}>
                  <h2 className={"text-dark text-center"}><strong>Sign In</strong></h2>
                  <p className={"text-dark text-center"}><strong>Members please login</strong></p>
                  <FormGroup label={"Email address"}>
-                     <input placeholder={"Email"} type = "email" className = "form-control" onChange={(e) => setEmail(e.target.value)}/>
+                     <input type = "email" className = "form-control" onChange={(e) => setEmail(e.target.value)}/>
                  </FormGroup>
                  <FormGroup label={"Password"}>
                      <input
-                         placeholder={"Password"}
                          type={"password"}
                          className = "form-control"
                          onChange={(e) => setPassword(e.target.value)}

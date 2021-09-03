@@ -5,7 +5,7 @@ import PageBannerImage from "./components/general/PageBannerImage";
 import {updateProfile, upload, useProfile} from "../../utils/api";
 import Skeleton from "react-loading-skeleton";
 import {useDropzone} from 'react-dropzone'
-import Avatar from "../../components/Avatar";
+import Avatar from "../../components/general/Avatar";
 import UpdatePaymentCard from "./settings-components/payment-tab";
 import EditProfileModal from "./settings-components/EditProfileModal";
 import EditEmailModal from "./settings-components/EditEmailModal";

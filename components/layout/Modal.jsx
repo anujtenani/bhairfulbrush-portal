@@ -5,7 +5,7 @@ import ModalHeader from 'reactstrap/lib/ModalHeader';
 import ModalFooter from 'reactstrap/lib/ModalFooter';
 import PropTypes from 'prop-types';
 import {FormattedMessage} from "react-intl";
-import Button from "./Button";
+import Button from "../general/Button";
 
 export default function Modal({confirmLoading, onOk, onCancel, onClose, okText, cancelText, title, visible, onSubmit, children, size, disabled}) {
     return (

@@ -1,5 +1,3 @@
-import React from 'react';
-
 function FormGroup({label, htmlFor, children, info}) {
     return (
         <div className="form-group">

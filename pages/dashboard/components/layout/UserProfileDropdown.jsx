@@ -3,7 +3,7 @@ import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdo
 import Link from 'next/link'
 import {useProfile} from "../../../../utils/api";
 import Skeleton from "react-loading-skeleton";
-import Avatar from "../../../../components/Avatar";
+import Avatar from "../../../../components/general/Avatar";
 function UserProfileDropdown(props) {
     const {data, error, isLoading} = useProfile();
     return (

@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {updateProfile, useProfile} from "../../../utils/api";
-import FormGroup from "../../../components/FormGroup";
+import FormGroup from "../../../components/forms/FormGroup";
 import CountrySelector from "../../../components/CountrySelector";
-import Modal from "../../../components/Modal";
+import Modal from "../../../components/layout/Modal";
 
 export default function EditAddressModal(props) {
     const [vals, setVals] = useState({

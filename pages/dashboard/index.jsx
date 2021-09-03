@@ -4,7 +4,7 @@ import CopyButton from "../../components/general/CopyButton";
 import DashboardFooter from "./components/layout/DashboardFooter";
 import {useProfile} from "../../utils/api";
 import Skeleton from "react-loading-skeleton";
-import OurPartnersSection from "../../components/Feedback";
+import OurPartnersSection from "../../components/layout/Feedback";
 import {FiCreditCard, FiMonitor, FiBarChart2, FiDollarSign} from "react-icons/fi";
 
 function Dashboard(props) {
@@ -20,8 +20,8 @@ function Dashboard(props) {
                         <div className="col-md-5">
                             <div className="p-4">
                                 <h1 className={"text-left display-4"}>Earning With Behairful Is Easy</h1>
-                                <div className={"mb-2 rounded text-center bg-dark text-white p-2"} style={{fontSize:24}}>GIVE 10% OFF get 10% PAYOUT</div>
-                                <p>Use your dedicated promo code and link below to share Behairful with the world, they will receive 10% OFF their order and you will a receive 10% PAYOUT for each completed sale.</p>
+                                <div className={"mb-2 rounded text-center bg-dark text-white p-2"} style={{fontSize:24}}><strong>GIVE 10% OFF get 10% PAYOUT</strong></div>
+                                <p>Use your dedicated promo code and link below to share Behairful with the world, they will receive <strong>10% OFF</strong> their order and you will a receive <strong>10% PAYOUT</strong> for each completed sale.</p>
                             </div>
                             <div className="row d-none d-lg-flex">
                                 <RowItem title={"Craft The Perfect Post"} Icon={FiMonitor} />

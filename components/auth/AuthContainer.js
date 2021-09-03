@@ -1,8 +1,7 @@
 import React from 'react';
-import Logo from "../Logo";
-import Feedback from "../Feedback";
-import Footer from "../Footer";
-
+import Logo from "../general/Logo";
+import Feedback from "../layout/Feedback";
+import Footer from "../layout/Footer";
 
 function AuthContainer({children}) {
     return (

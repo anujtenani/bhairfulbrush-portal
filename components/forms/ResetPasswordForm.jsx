@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import Cookies from "js-cookie";
-import {getHttpClient} from "../utils/api";
-import AuthErrorRenderer from "./AuthErrorRenderer";
+import {getHttpClient} from "../../utils/api";
+import AuthErrorRenderer from "../AuthErrorRenderer";
 import FormGroup from "./FormGroup";
-import Checkbox from "./Checkbox";
-import Button from "./Button";
+import Checkbox from "../general/Checkbox";
+import Button from "../general/Button";
 
 function ResetPasswordForm({resetkey}) {
     const [passwordVisible, setPasswordVisible] = useState(false)

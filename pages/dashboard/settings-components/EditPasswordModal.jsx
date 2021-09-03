@@ -1,8 +1,8 @@
 import useInputState from "../../../components/hooks/useInputState";
 import React, {useEffect, useState} from "react";
 import {updatePassword} from "../../../utils/api";
-import Modal from "../../../components/Modal";
-import FormGroup from "../../../components/FormGroup";
+import Modal from "../../../components/layout/Modal";
+import FormGroup from "../../../components/forms/FormGroup";
 
 export default function EditPasswordModal(){
     const [currentPassword, setCurrentPassword] = useInputState(null)

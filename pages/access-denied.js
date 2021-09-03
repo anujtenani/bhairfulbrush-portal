@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Logo from "../components/Logo";
-import ForgotPasswordForm from "../components/ForgotPasswordForm";
-import Feedback from "../components/Feedback";
-import Footer from "../components/Footer";
+import Logo from "../components/general/Logo";
+import Footer from "../components/layout/Footer";
 import AccessDenied from "../components/AccessDenied";
 
 const accessDenied = () => {

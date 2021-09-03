@@ -1,8 +1,9 @@
-import React, { useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import {UncontrolledTooltip } from 'reactstrap';
+import {UncontrolledTooltip} from 'reactstrap';
 import {FiClipboard} from "react-icons/fi";
 import {customAlphabet} from 'nanoid'
+
 const nanoid = customAlphabet('abcdefghijklmnopqrstupvxyz', 6)
 function CopyButton({value, className, style}) {
     const [elementId, setElementId] = useState(null); //to prevent different server side render and client side render IDs

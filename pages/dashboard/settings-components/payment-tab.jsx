@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {useProfile} from "../../../utils/api";
 import Skeleton from "react-loading-skeleton";
-import FormGroup from "../../../components/FormGroup";
-import Button from "../../../components/Button";
+import FormGroup from "../../../components/forms/FormGroup";
+import Button from "../../../components/general/Button";
 
 export default function UpdatePaymentCard(){
     const [loading, setLoading] = useState(false)

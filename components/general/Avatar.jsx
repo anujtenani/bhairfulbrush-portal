@@ -1,5 +1,6 @@
 import React from 'react';
 import BoringAvatar from 'boring-avatars';
+
 function Avatar({src, size, style, alt, identifier}) {
     const st = {
         width: size, height: size, borderRadius: size / 2, objectFit: 'cover',

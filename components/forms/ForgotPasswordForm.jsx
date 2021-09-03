@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import {getHttpClient} from "../utils/api";
+import {getHttpClient} from "../../utils/api";
 import {FormattedMessage} from "react-intl";
 import FormGroup from "./FormGroup";
-import Button from "./Button";
-import AuthErrorRenderer from "./AuthErrorRenderer";
+import Button from "../general/Button";
+import AuthErrorRenderer from "../AuthErrorRenderer";
 
 const ForgotPasswordForm = () => {
     const [email, setEmail] = useState(null);
@@ -43,7 +43,6 @@ const ForgotPasswordForm = () => {
                 <input
                     type = "email"
                     className = "form-control"
-                    placeholder={"Email address"}
                     onChange={(e) => setEmail(e.target.value)}
                 />
             </FormGroup>

@@ -1,6 +1,6 @@
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
 import Link from 'next/link'
+
 export default function AuthErrorRenderer({code}) {
     if(!code)return null;
     switch (code) {

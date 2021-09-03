@@ -6,7 +6,7 @@ import InputGroup from "../../components/InputGroup";
 import DefaultCurrencyRender from "../../components/general/DefaultCurrencyRender";
 import Big from 'big.js'
 import PageBanner from "./components/general/PageBanner";
-import FormGroup from "../../components/FormGroup";
+import FormGroup from "../../components/forms/FormGroup";
 import PageHeaderBanner from "../../components/PageHeaderBanner";
 
 function Forecaster(props) {

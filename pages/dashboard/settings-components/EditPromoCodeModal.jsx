@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {updatePromoCode, useProfile} from "../../../utils/api";
-import Modal from "../../../components/Modal";
-import FormGroup from "../../../components/FormGroup";
+import Modal from "../../../components/layout/Modal";
+import FormGroup from "../../../components/forms/FormGroup";
 
 function EditPromoCodeModal(){
     const [newPromoCode, setNewPromoCode] = useState(null)

@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Button({title, onClick, loading, children, disabled, className}) {
     return (
         <button onClick={onClick} className={`btn ${className || 'btn-outline-primary w-100'}`} type="submit" disabled={loading || disabled}>

@@ -1,7 +1,3 @@
-import React from "react";
-import Image from "next/image";
-
-
 const Feedback = () => {
     return (
         <section className={"py-4"}>
@@ -22,7 +18,6 @@ function FeedbackItem({src, title, content}){
         <Cards src={src} title={title} content={content}/>
     </div>
 }
-
 
 const Cards = ({ src, title, content }) => {
     return (
@@ -51,6 +46,5 @@ const Cards = ({ src, title, content }) => {
         </>
     )
 }
-
 
 export default Feedback

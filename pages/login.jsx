@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import LoginForm from "../components/LoginForm";
+import LoginForm from "../components/forms/LoginForm";
 import AuthContainer from "../components/auth/AuthContainer";
 
 export default function Login() {
