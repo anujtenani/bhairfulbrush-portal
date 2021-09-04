@@ -2,7 +2,6 @@ import React from 'react';
 import DashboardContainer from "./components/layout/DashboardContainer";
 import DashboardFooter from "./components/layout/DashboardFooter";
 import PageBanner from "./components/general/PageBanner";
-import {FiClock, FiMessageSquare, FiList, FiCamera} from "react-icons/fi";
 import {Image} from "react-bootstrap";
 
 function PerfectPost(props) {
@@ -13,7 +12,7 @@ function PerfectPost(props) {
             <div className="bg-dark ml-lg-3 text-white">
                 <section>
                     <div className="row p-4 bg-white">
-                        <Card title={"When should I post ?"} description={"It's important to know when to capture your audience's attention. Instagram's users are most active between 12pm to 1pm Monday to Friday."} src={"/post.png"} />
+                        <Card title={"When should I post?"} description={"It's important to know when to capture your audience's attention. Instagram's users are most active between 12pm to 1pm Monday to Friday."} src={"/post.png"} />
                         <Card title={"Set the Scene"} description={"Create an engaging photo. Authenticity is key!"} src={"/scene.png"} />
                         <Card title={"Captions, Captions"} description={"Your words matter. Using #'s, trackable links and promo codes are important."} src={"/captions.png"} />
                         <Card title={"Check Your Work"} noBorder description={"Check over your work. Make sure you added all the necessary information, most importantly your promo code."} src={"/work.png"} />
@@ -142,7 +141,7 @@ function PerfectPost(props) {
 
                 <div className="bg-white text-dark">
                     <section className={"container"}>
-                        <div className="my-4 p-4">
+                        <div className="my-2 p-4">
                             <h1><strong>Posting a Video Vs. Story</strong></h1>
 
                             <div className="p-3 row align-items-center">
@@ -192,7 +191,9 @@ function Card({src, title, Icon, description, noBorder}){
         <div className="text-center p-4">
             <Image src={src} alt={title} />
         </div>
+
         <h5 className={"mt-2"}><strong>{title}</strong></h5>
+
         <p>
             {description}
         </p>

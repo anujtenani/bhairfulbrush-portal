@@ -7,6 +7,7 @@ import DashboardFooter from "./components/layout/DashboardFooter";
 
 function Inspiration(props) {
     const {data, error, isLoading} = useCreatives();
+
     return (
         <DashboardContainer title={"Inspiration"}>
             <PageBanner title={"Inspiration"}

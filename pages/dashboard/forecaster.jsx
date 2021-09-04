@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
 import DashboardContainer from "./components/layout/DashboardContainer";
 import DashboardFooter from "./components/layout/DashboardFooter";
-import PageBannerImage from "./components/general/PageBannerImage";
 import InputGroup from "../../components/InputGroup";
 import DefaultCurrencyRender from "../../components/general/DefaultCurrencyRender";
 import Big from 'big.js'
-import PageBanner from "./components/general/PageBanner";
 import FormGroup from "../../components/forms/FormGroup";
 import PageHeaderBanner from "../../components/PageHeaderBanner";
 
@@ -18,7 +16,8 @@ function Forecaster(props) {
     return (
         <DashboardContainer title={"Earning Forecaster"}>
             <PageHeaderBanner height={400} src={"/dashboard/forecaster_banner.png"} />
-                <div className="mt-4 py-4">
+
+                <div className="container mt-4 py-4">
                     <div className="row no-gutters align-items-center">
                         <div className="col-md-4 text-dark bg-white">
                             <div className="p-4">
@@ -30,6 +29,7 @@ function Forecaster(props) {
                                                    value={followers} onChange={(e)=>setFollowers(e.target.value)}
                                                    className="form-control"/>
                                         </FormGroup>
+
                                         <FormGroup label={"Engagement Rate"}>
                                             <InputGroup suffix={"%"}>
                                                 <input type="number"
@@ -37,24 +37,29 @@ function Forecaster(props) {
                                                        className="form-control"/>
                                             </InputGroup>
                                         </FormGroup>
+
                                         <FormGroup label={"Number of posts per month"}>
                                             <input type="number" className="form-control"
                                                    value={postsPerMonth} onChange={(e)=>setPostsPerMonth(e.target.value)}
                                             />
                                         </FormGroup>
+
                                         <button className={"btn btn-primary w-100"}>Calculate</button>
                                     </div>
                         </div>
+
                         <div className="col-md-8">
                             <div className={"pl-2"}>
                                 <div className={"bg-light mb-2 text-dark p-4"}>
                                     Forecasted conversions Calculate at 4% conversion on engagements. Earnings per month (Take Home commissions)
                                     Earnings are calculated based on a baseline conversion rate and average lifetime value of our customers at 10% commission on each sale.
                                 </div>
+
                                 <div className="p-4  mb-2 text-dark bg-white">
                                     <h5><strong>FORECASTED CONVERSIONS</strong></h5>
                                     <h1>{conversion || '-'}</h1>
                                 </div>
+
                                 <div className="p-4 text-dark bg-white">
                                     <h5><strong>EARNINGS PER MONTH</strong> (TAKE HOME COMMISSIONS)</h5>
                                     <h1>
@@ -64,12 +69,12 @@ function Forecaster(props) {
                                                 :'-'
                                         }
                                         </h1>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             <DashboardFooter/>
         </DashboardContainer>
     );

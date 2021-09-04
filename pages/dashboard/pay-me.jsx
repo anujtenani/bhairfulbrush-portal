@@ -29,7 +29,7 @@ function PayoutsTable(){
         return <Skeleton count={20}/>
     }
     const items = data.data;
-    return <><table className="table border shadow mb-4">
+    return <><table className="table border mb-4">
         <thead>
             <tr>
                 <th>Date</th>
@@ -70,11 +70,13 @@ function PaypalEmailAddressUpdater(){
     const {data, isLoading} = useProfile();
     const [saving, setSaving] = useState(false)
     const [success, setSuccess] = useState(false)
+
     useEffect(()=>{
         if(data) {
             setPaypalEmail(data.paypal_email)
         }
     },[data])
+
     if(isLoading) return <Skeleton count={4} />
 
     function onSubmit(e){
@@ -90,12 +92,14 @@ function PaypalEmailAddressUpdater(){
             })
     }
 
-    return    <div className="bg-white text-dark p-4">
+    return <div className="bg-white text-dark p-4">
         <h5 className="text-center"><strong>Register your PayPal email for instant payouts.</strong></h5>
+
         <form onSubmit={onSubmit} className="row mt-4 align-items-center">
             <div className="col-md-4 text-md-right">
                 <div style={{fontSize:18}}><strong>PAYPAL EMAIL</strong></div>
             </div>
+
             <div className="col-md-4  my-2">
                 <input type="email" name={"paypal_email"}
                        value={paypal_email}
@@ -103,6 +107,7 @@ function PaypalEmailAddressUpdater(){
                        onChange={(e)=>setPaypalEmail(e.target.value)}
                        className="form-control"/>
             </div>
+
             <div className="col-md-4 ">
                 <Button className={'btn btn-primary w-50 border-0'}
                         loading={saving}
@@ -110,11 +115,10 @@ function PaypalEmailAddressUpdater(){
                         title={"submit"}/>
             </div>
         </form>
-        <div className="text-center text-light">{success ? 'Paypal email address updated successfully' : null}</div>
 
+        <div className="text-center text-light">{success ? 'Paypal email address updated successfully' : null}</div>
     </div>
 }
-
 
 export async function getServerSideProps(context) {
     const cookies = context.req.cookies;

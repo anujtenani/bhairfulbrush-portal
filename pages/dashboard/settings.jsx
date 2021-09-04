@@ -1,7 +1,6 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useCallback, useState} from 'react';
 import DashboardContainer from "./components/layout/DashboardContainer";
 import DashboardFooter from "./components/layout/DashboardFooter";
-import PageBannerImage from "./components/general/PageBannerImage";
 import {updateProfile, upload, useProfile} from "../../utils/api";
 import Skeleton from "react-loading-skeleton";
 import {useDropzone} from 'react-dropzone'
@@ -12,8 +11,8 @@ import EditEmailModal from "./settings-components/EditEmailModal";
 import EditPromoCodeModal from "./settings-components/EditPromoCodeModal";
 import EditPasswordModal from "./settings-components/EditPasswordModal";
 import EditAddressModal from "./settings-components/EditAddressModal";
-import PageBanner from "./components/general/PageBanner";
 import PageHeaderBanner from "../../components/PageHeaderBanner";
+
 function Settings(props) {
     const [activeTab, setActiveTab] = useState('profile');
     const {data, isLoading} = useProfile();
@@ -21,8 +20,9 @@ function Settings(props) {
     if(!data) return null;
     return (
         <DashboardContainer title={"Settings"}>
+            <PageHeaderBanner src={"/dashboard/settings_banner.png"}/>
+
             <div>
-                <PageHeaderBanner src={"/dashboard/settings_banner.png"}/>
                 <section className={"container mx-auto d-flex"}>
                     {
                         isLoading ? <Skeleton width={200}/> : <>
@@ -34,6 +34,7 @@ function Settings(props) {
                         </>
                     }
                 </section>
+
                 <section className={"container py-4"}>
                     <TabItem title={"Profile"} active={activeTab === "profile"} onClick={()=>setActiveTab('profile')} />
                     <TabItem title={"Payment"} active={activeTab === "payment"} onClick={()=>setActiveTab('payment')} />

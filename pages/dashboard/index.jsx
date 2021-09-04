@@ -20,9 +20,10 @@ function Dashboard(props) {
                         <div className="col-md-5">
                             <div className="p-4">
                                 <h1 className={"text-left display-4"}>Earning With Behairful Is Easy</h1>
-                                <div className={"mb-2 rounded text-center bg-dark text-white p-2"} style={{fontSize:24}}><strong>GIVE 10% OFF get 10% PAYOUT</strong></div>
+                                <div className={"my-2 rounded text-center bg-dark text-white p-2"} style={{fontSize:24}}><strong>GIVE 10% OFF get 10% PAYOUT</strong></div>
                                 <p>Use your dedicated promo code and link below to share Behairful with the world, they will receive <strong>10% OFF</strong> their order and you will a receive <strong>10% PAYOUT</strong> for each completed sale.</p>
                             </div>
+
                             <div className="row d-none d-lg-flex">
                                 <RowItem title={"Craft The Perfect Post"} Icon={FiMonitor} />
                                 <RowItem title={"Make commissions"} Icon={FiDollarSign} />
@@ -30,28 +31,26 @@ function Dashboard(props) {
                                 <RowItem title={"Get Instant Payouts"} Icon={FiCreditCard} />
                             </div>
                         </div>
-
                     </div>
+
                     <div className="text-center mt-4">
-                        <div className="row d-lg-none d-flex">
-                            <RowItem title={"Craft The Perfect Post"} Icon={FiMonitor} />
-                            <RowItem title={"Make commissions"} Icon={FiDollarSign} />
-                            <RowItem title={"Track Commissions"} Icon={FiBarChart2} />
-                            <RowItem title={"Get Instant Payouts"} Icon={FiCreditCard} />
-                        </div>
                         <span style={{borderRadius:12, fontSize:18, backgroundColor:"black", color:"white"}} className={"px-3 py-2 lead"}>PROMO CODE AND LINKS</span>
                         {
-                            isLoading ? <Skeleton count={5}/> : <div className={"py-4"}>
-                                <RenderItem color={'#000'} value={data.coupon} text={"Promo Code"}/>
-                                <RenderItem color={'#000'} value={data.referral_link} text={"Promo Link"}/>
-                            </div>
+                            isLoading
+                                ? <Skeleton count={5}/>
+                                : <div className={"py-4"}>
+                                    <RenderItem color={'#000'} value={data.coupon} text={"Promo Code"}/>
+                                    <RenderItem color={'#000'} value={data.referral_link} text={"Promo Link"}/>
+                                </div>
                         }
                     </div>
                 </div>
             </div>
+
             <div className="py-4">
                 <OurPartnersSection />
             </div>
+
             <DashboardFooter />
         </DashboardContainer>
     );
@@ -71,13 +70,13 @@ function RowItem({Icon, title}){
 
 function RenderItem({color, text, value}){
     if(!value) return null;
+
     return <div className={"text-center mb-4"} style={{color}}>
         <strong className={"lead d-block text-center"}>{text}</strong>
         <span style={{fontSize:17}}>
             <span className={"mr-2"}>{value}</span><CopyButton value={value} style={{color}}/> </span>
     </div>
 }
-
 
 export async function getServerSideProps(context) {
     const cookies = context.req.cookies;

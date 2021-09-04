@@ -1,5 +1,4 @@
 import '../styles/bootstrap.scss';
-import '../styles/landing-page.css';
 import '../styles/globals.css'
 import {IntlProvider} from "react-intl";
 import Head from 'next/head'

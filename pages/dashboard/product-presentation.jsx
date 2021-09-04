@@ -35,8 +35,8 @@ const HairFactsContainer = () => {
 
 const HairFacts = ({ title }) => {
     return (
-        <div className={"mt-4 d-flex flex-column"}>
-            <Image src={'/happy_face.png'} width={"75px"} height={"80px"} />
+        <div className={"my-4 d-flex flex-column"}>
+            <Image src={'/happy_face.png'} width={"100px"} height={"100px"} />
 
             <p className={"font-weight-bold mt-2"}>{title}</p>
         </div>
@@ -45,7 +45,7 @@ const HairFacts = ({ title }) => {
 
 const ProductContentContainer = () => {
     return (
-        <div className={"container p-4 my-4 d-flex justify-content-between"}>
+        <div className={"container p-4 my-4 d-flex justify-content-around"}>
             <ProductContent src={'/presentation_pg_1.jpg'} title={"Gift"}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias doloremque dolores esse mollitia necessitatibus pariatur qui ratione reiciendis sunt.
             </ProductContent>
@@ -66,11 +66,25 @@ const ProductContent = ({ src, title, children }) => {
         <div>
             <Image src={src} width={"300px"} height={"250px"} />
 
-            <h3>{title}</h3>
+            <h3 className={"my-2"}>{title}</h3>
 
             {children}
         </div>
     )
+}
+
+export async function getServerSideProps(context) {
+    const cookies = context.req.cookies;
+    return !cookies.access_token ? {
+        redirect:{
+            destination:'/login',
+            permanent:false
+        }
+    }: {
+        props:{
+
+        }
+    }
 }
 
 export default ProductPresentation
