@@ -1,5 +1,6 @@
 import React from 'react';
 import DashboardContainer from "./components/layout/DashboardContainer";
+import DashboardFooter from "./components/layout/DashboardFooter";
 
 function About(props) {
     return (
@@ -60,6 +61,7 @@ function About(props) {
                     </div>
                 </div>
             </div>
+            <DashboardFooter />
         </DashboardContainer>
     );
 }
