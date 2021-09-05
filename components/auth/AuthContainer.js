@@ -14,7 +14,7 @@ function AuthContainer({children}) {
                 <h2 className={"text-center mb-4"}>Finally! A Platform Made For Influencers.</h2>
                 <div className="row flex-md-row-reverse" style={{paddingRight:36, paddingLeft:36}}>
                     <div className="col-md-6 mb-4">
-                        <div className={"card"}>
+                        <div className={"card border-0"}>
                             <div className="card-body">
                                 {children}
                             </div>

@@ -20,6 +20,8 @@ export default function AuthErrorRenderer({code}) {
             return <p className={"alert alert-danger"}>The password reset link has expired</p>
         case 'EMAILINVALID':
             return <p className={"alert alert-danger"}>Email address is invalid</p>
+        case 'ALLFIELDS':
+            return <p className={"alert alert-danger"}>You need to fill all fields correctly</p>
         default:
             return <FormattedError/>;
     }

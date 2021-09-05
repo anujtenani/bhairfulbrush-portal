@@ -12,9 +12,10 @@ function NavSidebar(props) {
                  }}
                  className="d-none  d-lg-block border-right border min-vh-100">
             <div className="container">
-                <Link className="navbar-brand p-2" href="/" passHref>
+                <Link className="" href="/" passHref>
                     <img src="/behairful-logo.png"
-                         style={{width:"100%"}}
+                         className={"navbar-brand p-2"}
+                         style={{maxWidth:'100%', maxHeight:80}}
                          alt="Behairful logo" />
                 </Link>
                 <div className="d-flex flex-column h-100">

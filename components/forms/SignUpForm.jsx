@@ -4,7 +4,7 @@ import FormGroup from "./FormGroup";
 import Button from "../general/Button";
 import Link from 'next/link'
 import AuthErrorRenderer from "../AuthErrorRenderer";
-
+import Cookies from 'js-cookie'
 const SignUpForm = () => {
     const [email, setEmail] = useState(null);
     const [instagram, setInstagram] = useState(null);
@@ -25,7 +25,7 @@ const SignUpForm = () => {
                 Cookies.set('access_token', data.access_token, {expires:7})
                 window.location = "/"
             }else{
-                setError(data.code || data.error || 'Invalid credentials');
+                setCode(data.code || data.error || 'Invalid credentials');
             }
             setLoading(false)
         }).catch(() => {
