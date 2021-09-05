@@ -25,8 +25,14 @@ function DashboardFooter(props) {
                                         <FooterLink href={"/dashboard/pay-me"} title={"Pay Me"} />
                                         <FooterLink href="/forecaster/" title={"Earnings Forecaster"} />
                                         <FooterLink href="/dashboard/faq" title={"FAQ"} />
-                                        <FooterLink href="/content/talking_points/" title={"Talking Points"} />
-                                        <FooterLink href="/dashboard/terms/" title={"Terms & Conditions"} />
+                                        {
+                                            false &&
+                                            <FooterLink href="/content/talking_points/" title={"Talking Points"}/>
+                                        }
+                                        {
+                                            false &&
+                                            <FooterLink href="/dashboard/terms/" title={"Terms & Conditions"}/>
+                                        }
                                     </ul>
                                 </div>
                             </div>
