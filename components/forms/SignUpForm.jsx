@@ -7,6 +7,7 @@ import AuthErrorRenderer from "../AuthErrorRenderer";
 import Cookies from 'js-cookie'
 const SignUpForm = () => {
     const [email, setEmail] = useState(null);
+    const [name, setName] = useState(null)
     const [instagram, setInstagram] = useState(null);
     const [password, setPassword] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -19,7 +20,8 @@ const SignUpForm = () => {
         setLoading(true);
         setCode(null)
         getHttpClient().post('/partner/register_new', {
-            email, password, instagram
+            email, password, instagram,
+            name,
         }).then(({data}) => {
             if(data.access_token){
                 Cookies.set('access_token', data.access_token, {expires:7})
@@ -37,9 +39,18 @@ const SignUpForm = () => {
         <form onSubmit={onFormSubmit} className={"text-dark"}>
             <h2 className={"text-center"}><strong>Sign Up</strong></h2>
             <p className={'text-center'}><strong>Access your dashboard</strong></p>
+            <FormGroup label={"Your name"}>
+                <input
+                    type = "text"
+                    name={"name"}
+                    className = "form-control"
+                    onChange={(e) => setName(e.target.value)}
+                />
+            </FormGroup>
             <FormGroup label={"Email address"}>
                 <input
                     type = "email"
+                    name={"email"}
                     className = "form-control"
                     onChange={(e) => setEmail(e.target.value)}
                 />
