@@ -140,7 +140,9 @@ function UpdateProfileCard(){
                     </div>
                     <div className="col-md-8 d-flex justify-content-between">
                         <span>{email}</span>
-                        <span><EditEmailModal /></span>
+                        <div className="d-none">
+                            <span><EditEmailModal /></span>
+                        </div>
                     </div>
                 </div>
                 <hr/>

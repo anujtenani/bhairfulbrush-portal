@@ -25,6 +25,7 @@ export default function EditEmailModal(){
                title={"Email address"}
                okText={"Submit"}
                onSubmit={onSubmit}
+               confirmLoading={loading}
                onClose={()=>setVisible(false)}>
             <FormGroup label={"Email address"}>
                 <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} className="form-control"/>
