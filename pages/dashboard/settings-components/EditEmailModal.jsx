@@ -4,8 +4,8 @@ import Modal from "../../../components/layout/Modal";
 import FormGroup from "../../../components/forms/FormGroup";
 
 export default function EditEmailModal(){
-    const {data,} = useProfile();
-
+    const {data} = useProfile();
+    const [loading, setLoading] = useState(false)
     const [visible, setVisible] = useState(null)
     const [email, setEmail] = useState(null)
     useEffect(()=>{
@@ -17,7 +17,6 @@ export default function EditEmailModal(){
             e.stopPropagation();
         }
     }
-
 
     return <>
         <button className="btn btn-link" onClick={()=>setVisible(true)}>Edit</button>
