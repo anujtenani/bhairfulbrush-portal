@@ -14,10 +14,10 @@ function PayMeDropdown(props) {
         <Dropdown isOpen={dropdownOpen} toggle={()=>setDropdownOpen(prevState => !prevState)}>
             <DropdownToggle color={"transparent"}>
                 <div className={"d-flex align-items-center"}>
-                    <div className={"text-center"}>
+                    <div className={"text-center paymesmall"}>
                         <small>Pay Me</small>
                         {
-                            isLoading ? <Skeleton count={1} width={30} /> : <div className={"d-flex align-items-center"}>
+                            isLoading ? <Skeleton count={1} width={30} /> : <div className={"d-flex align-items-center paymetotal"}>
                                 <strong className={"d-block"} style={{fontSize: 18}}>
                                     <DefaultCurrencyRender value={data.amount_pending} />
                                 </strong>
@@ -27,7 +27,7 @@ function PayMeDropdown(props) {
                     </div>
                 </div>
             </DropdownToggle>
-            <DropdownMenu className={"py-0"}>
+            <DropdownMenu className={"py-0 paymedroppage"}>
                 <Link href={"/dashboard/pay-me"} passHref>
                     <button className={"btn btn-light w-100"}>
                     <small className={"text-muted"}>Commission</small>

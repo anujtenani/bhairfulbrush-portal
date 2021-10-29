@@ -5,26 +5,26 @@ function NavSidebar(props) {
     return (
         <>
             <nav id="sidebar"
-                 style={{
-                     minWidth:200, maxWidth:200, width:200,
+                 style={{                     
                      position:'fixed',
                      zIndex:4,
                  }}
-                 className="d-none  d-lg-block border-right border min-vh-100">
-            <div className="container">
-                <Link className="" href="/" passHref>
-                    <img src="/behairful-logo.png"
-                         className={"navbar-brand p-2"}
-                         style={{maxWidth:'100%', maxHeight:80}}
-                         alt="Behairful logo" />
-                </Link>
-                <div className="d-flex flex-column h-100">
-                    <NavMainItems />
-                    <NavBottomItems />
+                     className="d-none sideoffbar  d-lg-block min-vh-100">
+                <div className="sidecontainer">
+                    <Link className="" href="/" passHref>
+                       <a href="/dashboard/" className="navbar-brand"> <img src="/behairful-logo.png"
+                             className={"logohome p-2"}
+                             style={{maxWidth:'100%', maxHeight:80}}
+                             alt="Behairful logo" />
+                             </a>
+                    </Link>
+                    <div className="d-flex flex-column h-100">
+                        <NavMainItems />
+                        <NavBottomItems />
+                    </div>
                 </div>
-            </div>
             </nav>
-            <div  className="d-none  d-lg-block" style={{minWidth:200, maxWidth:200, width:200}} />
+            <div  className="d-none  d-lg-block sideoffbarmain" style={{}} />
         </>
     );
 }
