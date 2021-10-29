@@ -7,14 +7,14 @@ import Avatar from "../../../../components/general/Avatar";
 function UserProfileDropdown(props) {
     const {data, error, isLoading} = useProfile();
     return (
-        <UncontrolledDropdown direction={"left"}>
+        <UncontrolledDropdown direction={"left"} className="userdropd">
             <DropdownToggle color={"transparent"}>
                 {
                     isLoading ? <Skeleton height={48} width={48}/> :
                         <Avatar size={48} identifier={data.email} src={data.profile_photo} alt={"Profile photo"} />
                 }
             </DropdownToggle>
-            <DropdownMenu className={"p-0"}>
+            <DropdownMenu className={"p-0 userprofiledown"}>
                 <Link href={"/dashboard/settings"}>
                     <button className={"btn text-left btn-light w-100 rounded-0"}>Settings</button>
                 </Link>

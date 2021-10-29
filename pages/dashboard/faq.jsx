@@ -51,8 +51,8 @@ const faqConfig = [
 function Faq(props) {
     return (
         <DashboardContainer title={"Frequently asked questions"}>
-            <>
-                <PageBanner bgSrc={'/faq_image.jpg'} height={300} title={"FAQ"} />
+            <div className="faqitempart">
+                <PageBanner bgSrc={'/faq_image.jpg'} height={500} title={"FAQ"} />
 
                 <div className="container my-4">
                     {
@@ -63,7 +63,7 @@ function Faq(props) {
                 </div>
 
                 <DashboardFooter />
-            </>
+            </div>
         </DashboardContainer>
     );
 }
@@ -71,16 +71,16 @@ function Faq(props) {
 function FAQItem({q, a}){
     const [isOpen, setOpen] = useState(false)
 
-    return <div className={"border mb-4"} style={{borderRadius:12, overflow:'hidden'}}>
-        <button onClick={() => setOpen(!isOpen)} className={"btn w-100 d-flex justify-content-between align-items-center p-3"}>
-            <div className="bg-dark text-light">{q}</div>
+    return <div className={"mb-4 faqpart"} style={{borderRadius:25, overflow:'hidden'}}>
+        <button onClick={() => setOpen(!isOpen)} className={"openfaqpage btn w-100 d-flex justify-content-between align-items-center"}>
+            <div className="text-light faqhead">{q}</div>
             {
                 isOpen ? <FaMinus/> : <FaPlus/>
             }
         </button>
 
-        <Collapse isOpen={isOpen}>
-            <div className="bg-light text-dark p-3">{a}</div>
+        <Collapse isOpen={isOpen} className="faqans">
+            <div className="bg-light text-dark faqopen">{a}</div>
         </Collapse>
     </div>
 }

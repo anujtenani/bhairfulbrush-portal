@@ -1,6 +1,6 @@
 const Feedback = () => {
     return (
-        <section className={"py-4"}>
+        <section className={"py-4 feedbackpart"}>
             <div className={"container px-4"}>
                 <h5 className={"text-center text-light"}>OUR PARTNERS <span><img src="/heart.svg" alt="heart icon" style={{width:36, height:36}}/></span> BEHAIRFUL</h5>
                 <div className="row">
@@ -14,7 +14,7 @@ const Feedback = () => {
 }
 
 function FeedbackItem({src, title, content}){
-    return <div className="col-md-4 my-4">
+    return <div className="feedithas col-md-4 my-4">
         <Cards src={src} title={title} content={content}/>
     </div>
 }
@@ -22,8 +22,8 @@ function FeedbackItem({src, title, content}){
 const Cards = ({ src, title, content }) => {
     return (
         <>
-            <div className="card bg-dark" style={{height:`calc(100% - 64px)`, marginTop:64}}>
-                <div className = {'text-center'}>
+            <div className="card bg-dark feedbackborder" style={{height:`calc(100% - 64px)`, marginTop:64}}>
+                <div className = {'text-center borderrad'}>
                     <img style = {{
                         marginTop:-64,
                         border: '2px solid white',
@@ -39,7 +39,7 @@ const Cards = ({ src, title, content }) => {
 
                 <div className = "card-body text-light element">
                     <h5 className = {"text-center card-title"}>{title}</h5>
-                    <p className = {"text-center text-muted"}>{content}</p>
+                    <p className = {"text-center text-white"}>{content}</p>
                 </div>
             </div>
 

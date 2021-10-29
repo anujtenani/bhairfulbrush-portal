@@ -15,46 +15,54 @@ const navItems = [
     {
         title:'Dashboard',
         Icon:FiHome,
+        navClass: 'dashboard-div',
         href:'/dashboard'
     },
     {
         title:'Sales',
         Icon: FiTrendingUp,
+        navClass: 'sales-div',
         href:'/dashboard/sales'
     },{
         title:'Crafting the Perfect Post',
         Icon:FiAward,
+        navClass: 'crafting-div',
         href:'/dashboard/perfect-post',
     },
     {
         title:'Inspiration',
         Icon: FiImage,
+        navClass: 'inspiration-div',
         href:'/dashboard/inspiration'
     },{
         title:'Product Presentation',
         Icon: FiArchive,
+        navClass: 'product-div',
         href:'/dashboard/product-presentation'
     },{
         title:"Pay Me",
         Icon: FiDollarSign,
+        navClass: 'pay-div',
         href:'/dashboard/pay-me'
     },
     {
         title:'Earnings Forecaster',
         Icon: FiActivity,
+        navClass: 'earnings-div',
         href:'/dashboard/forecaster'
     },
     {
         title:'FAQ',
         Icon:FiHelpCircle,
+        navClass: 'faq-div',
         href:'/dashboard/faq'
     }
 ]
 
-function NavItem({Icon, href, title}){
+function NavItem({Icon, navClass, href, title}){
     return  <li className="nav-item text-secondary active">
         <Link href={href} >
-            <a style={{color:'#ccc'}} className="nav-link d-flex align-items-center">
+            <a style={{color:'#ccc'}} className={`nav-link d-flex align-items-center ${navClass}`}>
                 <Icon style={{fontSize:18}} />
                 <span className={"ml-2"}>{title}</span>
             </a>
@@ -83,8 +91,8 @@ function NavMainItems(props) {
             </style>
         <ul className="navbar-nav">
             {
-                navItems.map(({title, Icon, href})=>{
-                    return <NavItem key={title} href={href} title={title} Icon={Icon} />
+                navItems.map(({title, Icon, navClass, href})=>{
+                    return <NavItem key={title} href={href} title={title} navClass={navClass} Icon={Icon}  />
                 })
             }
         </ul>
@@ -93,8 +101,8 @@ function NavMainItems(props) {
 }
 
 export function NavBottomItems(){
-    return <ul className="navbar-nav navbar-nav-bottom">
-        <NavItem title={"About Us"} Icon={FiInfo} href={"/dashboard/about"} />
+    return <ul className="navbar-nav navbar-nav-bottom ">
+        <NavItem title={"About Us"} Icon={FiInfo} href={"/dashboard/about"} navClass={"about-div"} />
     </ul>
 }
 

@@ -3,7 +3,7 @@ import React from 'react';
 function PageHeaderBanner({src, height}) {
     return (
         <>
-            <div style={{height, background: `url(${src}) no-repeat center center`, backgroundSize:'cover'}}/>
+            <div className="pagebannerhead" style={{height, background: `url(${src}) no-repeat center center`, backgroundSize:'cover'}}/>
         </>
     );
 }
