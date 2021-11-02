@@ -7,13 +7,14 @@ import {Image} from "react-bootstrap";
 function PerfectPost(props) {
     return (
         <DashboardContainer title={"Crafting the perfect post"}>
+        <div className="perfectpostpart">
          <PageBanner title={"CRAFTING THE PERFECT POST"} height={500}  bgSrc={"/dashboard/perfect_post.png"} />
             <div className="bg-dark text-white">
                 <section className="bg-white perfectpst">
                     <div className="container">
                         <div className="row">
-                            <Card title={"When should I post?"} description={"It's important to know when to capture your audience's attention. Instagram's users are most active between 12pm to 1pm Monday to Friday."} src={"/post.png"} />
-                            <Card title={"Set the Scene"} description={"Create an engaging photo. Authenticity is key!"} src={"/scene.png"} />
+                            <Card title={"When Should I Post?"} description={"It's important to know when to capture your audience's attention. Instagram's users are most active between 12pm to 1pm Monday to Friday."} src={"/post.png"} />
+                            <Card title={"Set The Scene"} description={"Create an engaging photo. Authenticity is key!"} src={"/scene.png"} />
                             <Card title={"Captions, Captions"} description={"Your words matter. Using #'s, trackable links and promo codes are important."} src={"/captions.png"} />
                             <Card title={"Check Your Work"} noBorder description={"Check over your work. Make sure you added all the necessary information, most importantly your promo code."} src={"/work.png"} />
                         </div>
@@ -185,6 +186,7 @@ function PerfectPost(props) {
                 </div>
             </div>
             <DashboardFooter />
+            </div>
         </DashboardContainer>
     );
 }

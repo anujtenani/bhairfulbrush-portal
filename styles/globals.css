@@ -12,7 +12,25 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 @font-face { font-family: 'futuramedium'; src: url('./fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('./fonts/futura_medium_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
+.promohead {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+}
+.paymenbanner .pagebannerto {
+    background-position: 0px 70% !important;
+}
+.indopromo.promocode {
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.tenpercent{
+     font-family:"futura-pt-bold" !important;
+}
 .forcastearning .form-group .input-group-append { display:none; }
 
 .faqitempart .pagebannerto{ position: relative; }
@@ -33,6 +51,9 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 .giftpart h3{font-family: 'futuramedium'; }
 #sidebar {background:#000; }
 #sidebar li {  }
+#sidebar .sidecontainer li.active a{
+color:#fff !important;
+}
 #sidebar li a {}
 .sideoffbar,.sideoffbarmain{min-width:300px; max-width:300px; width:300px; }
 .sidecontainer {padding: 0 15px; }
@@ -79,7 +100,16 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 .footerloogo { margin: 25px 0px; }
 .menulink { color:#000; }
 .salestype .pagebannerhead {
-    background-position: 100% 66% !important;
+    background-position: 100% 80%!important;
+}
+.perfectpostpart .footer.footerful .logofotmother{
+  display: none;
+}
+.perfectpostpart .footer.footerful .together{
+ display: none;
+}
+.together{
+    margin-bottom: 50px;
 }
 .dropdownnotification .dropdown-menu {overflow: auto; height: 300px; width: 250px;     border-radius: 0px; }
 /* width */
@@ -106,7 +136,7 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 img.main-footer-logo { width: 276px; margin-top: -20px; margin-left: -40px; }
 ul.footer-list{}
 ul.footer-list li { font-size: 14px; }
-.footer h5 {font-size: 20px; margin-bottom: 20px; }
+.footer h5 {font-size: 20px; margin-bottom: 20px; font-family:"FuturaLT"; }
 ul.footer-list li a{padding:5px 0px; }
 .copyrighttext {border-top: #8e8e8e 1px solid; padding-top: 37px; margin-top: 50px; }
 .footer-list-social{}
@@ -131,7 +161,7 @@ img{max-width:100%; }
 .dropdownnotification .btnnotification {width: 38px; height: 38px; background: url(/iconall.png) no-repeat; background-position: -7px -829px; border: none; display: block; outline: none !important; box-shadow: none; }
 .dropdownnotification .dropdown-menu{}
 .btn-primary {border-radius: 10px; text-align: center; font-size: 25px; padding: 10px 50px; line-height: normal; min-height: auto; background: #000 !important; }
-#topbar { background-color: #0c0c0c !important; display: -moz-box; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: justify; justify-content: space-between; padding: 35px 0px; }
+#topbar { background-color: #0c0c0c !important; display: -moz-box; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: justify; justify-content: space-between; padding: 15px 0px; }
 .footer {background-color: #0c0c0c; padding: 50px 30px 20px; }
 .registeryour{padding:50px 20px; }
 .tablepayme {overflow: hidden; border-radius: 30px; border: #3a3a3a 1px solid; margin-bottom: 15px; }
@@ -156,7 +186,7 @@ img{max-width:100%; }
 .iconindex{}
 .iconindo { margin-right: 15px; }
 .gitoff p {font-size: 20px; line-height: normal; }
-.gitoff p strong {font-weight: 800 !important; font-family: 'futura_xblk_btextra_black'; }
+.gitoff p strong { font-family: 'futura_xblk_btextra_black'; }
 .usepromo {display: block; padding: 10px; text-align: center; background: #cdcdcd; color: #000; font-weight: 600; font-size: 20px; font-family: 'futuralight'; }
 .iconindo svg{display:none; }
 .titleiconindex { font-family: "FuturaLT"; line-height: 24px; }
@@ -201,11 +231,23 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 #sidebar .sidecontainer li a.about-div:before{background-position: -7px -757px; }
 #sidebar .sidecontainer li a svg{display: none; }
 .promocodetable { margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; }
-.indopromo {padding: 0 0px; }
+.indopromo { padding: 0 0px; flex: 0 0 40%; max-width: 40%; }
 .indopromo span{ font-family: 'futuramedium'; font-size:26px; }
+.indopromo span.yqdgca {
+    display: none;
+}
+.indopromo.promocode {
+    flex: 0 0 100%;
+}
+.indopromo.promocode .styprocode {
+    background: #000;
+    color: #fff;
+    padding: 7px 15px;
+    margin: 0 10px;
+}
 .gitoff h1.earning {font-size: 40px; font-weight: 700; font-family:"FuturaLT"; letter-spacing: 1px; line-height:54px; }
 .leadpromo { font-size: 32px; font-family: 'futuralight'; min-width: 460px; display: table; margin: 0 auto; }
-.promotext { font-size: 25px; font-weight: 700; font-family: 'futuramedium'; }
+.promotext {font-size: 25px; font-weight: 700; font-family: 'futuramedium'; padding-right: 15px; text-transform: uppercase; }
 .mobilescreen .collapse{position: relative; background: #000;}
 .paymentzone {}
 .topmobdiv{width:100%; }
@@ -290,6 +332,8 @@ h2.alittle { margin-top: 20px; }
     .dropdownnotification {position: absolute; left: 60px; z-index: 100; }
 }
 @media (max-width: 650px){
+    .promocodetable { flex-direction: column; }
+    .indopromo { max-width:100%; flex:0 0 100%; }
     .paymedroppage.dropdown-menu{left: -40px !important; }
     .forcastedpart {text-align: center; }
     .faqpart {border-radius: 18px !important; }
@@ -355,7 +399,7 @@ h2.alittle { margin-top: 20px; }
     .weare {font-size: 20px; }
     .watchyour {font-size: 24px;}
     .tablestyle {border-radius: 15px !important; }
-    .screenopen {top: 70px; }
+    .screenopen {top: 74px; }
     .topmobdiv .col-auto {display: flex; align-items: center; }
     .topmobdiv .col-auto a.logotop {background: url(/behairful-logo-m.jpg) no-repeat center; height: 60px; width: 109px; margin: 0 auto; }
     .topmobdiv .col-auto a.logotop img{display:none; }
@@ -380,6 +424,7 @@ h2.alittle { margin-top: 20px; }
     .copyrighttext p {font-size: 16px; }
     .convertion {background: #ffffff; margin: 0px 26px 26px !important; border-radius: 10px; }
     .paymepart {padding: 30px 10px 0; }
+    .footer-block-inner { margin-top: 20px; }
 
 }
 @media (max-width: 480px){

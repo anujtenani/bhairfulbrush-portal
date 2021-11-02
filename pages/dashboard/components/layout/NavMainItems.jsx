@@ -59,8 +59,8 @@ const navItems = [
     }
 ]
 
-function NavItem({Icon, navClass, href, title}){
-    return  <li className="nav-item text-secondary active">
+function NavItem({Icon, navClass, href, title, currentUrl}){
+    return  <li className={`nav-item text-secondary  ${currentUrl==href?'active':''}`}>
         <Link href={href} >
             <a style={{color:'#404042'}} className={`nav-link d-flex align-items-center ${navClass}`}>
                 <Icon style={{fontSize:18}} />
@@ -69,7 +69,8 @@ function NavItem({Icon, navClass, href, title}){
         </Link>
     </li>
 }
-function NavMainItems(props) {
+function NavMainItems({props, currentUrl}) {
+
     return (
         <>
             <style global jsx>{`
@@ -92,7 +93,7 @@ function NavMainItems(props) {
         <ul className="navbar-nav">
             {
                 navItems.map(({title, Icon, navClass, href})=>{
-                    return <NavItem key={title} href={href} title={title} navClass={navClass} Icon={Icon}  />
+                    return <NavItem key={title} href={href} title={title} navClass={navClass} Icon={Icon} currentUrl={currentUrl} />
                 })
             }
         </ul>
@@ -100,9 +101,10 @@ function NavMainItems(props) {
     );
 }
 
-export function NavBottomItems(){
+export function NavBottomItems({currentUrl}){
+    console.log('foot', currentUrl)
     return <ul className="navbar-nav navbar-nav-bottom ">
-        <NavItem title={"About Us"} Icon={FiInfo} href={"/dashboard/about"} navClass={"about-div"} />
+        <NavItem title={"About Us"} Icon={FiInfo} href={"/dashboard/about"} navClass={"about-div"} currentUrl={currentUrl} />
     </ul>
 }
 
