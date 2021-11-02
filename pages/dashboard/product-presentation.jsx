@@ -21,7 +21,7 @@ const HairFactsContainer = () => {
             <div className={"container text-center text-dark"}>
                 <div className="row">
                     <div className="col-md-12">
-                        <h2 className={"mt-2 hairfacts"}>Hair Facts</h2>
+                        <h2 className={"mt-2 hairfacts"}>Supplement Facts</h2>
                      </div>               
                 </div> 
                 <div className="row">

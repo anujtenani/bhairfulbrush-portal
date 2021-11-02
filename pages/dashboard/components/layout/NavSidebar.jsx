@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import NavMainItems, {NavBottomItems} from "./NavMainItems";
 import Link from 'next/link'
-function NavSidebar(props) {
+function NavSidebar({props, currentUrl}) {
     return (
         <>
             <nav id="sidebar"
@@ -12,15 +12,14 @@ function NavSidebar(props) {
                      className="d-none sideoffbar  d-lg-block min-vh-100">
                 <div className="sidecontainer">
                     <Link className="" href="/" passHref>
-                       <a href="/dashboard/" className="navbar-brand"> <img src="/behairful-logo.png"
-                             className={"logohome p-2"}
+                       <a href="/dashboard" className={`navbar-brand ${currentUrl=='/dashboard'?'active':''}`}> <img src="/behairful-logo.png"
                              style={{maxWidth:'100%', maxHeight:80}}
-                             alt="Behairful logo" />
+                             alt="Behairful logo" className="logohome" />
                              </a>
                     </Link>
                     <div className="d-flex flex-column h-100">
-                        <NavMainItems />
-                        <NavBottomItems />
+                        <NavMainItems currentUrl={currentUrl}/>
+                        <NavBottomItems currentUrl={currentUrl}/>
                     </div>
                 </div>
             </nav>

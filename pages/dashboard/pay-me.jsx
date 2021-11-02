@@ -11,7 +11,7 @@ import PageBanner from "./components/general/PageBanner";
 function PayMe(props) {
     return (
         <DashboardContainer title={"Pay Me"}>
-            <PageBanner bgSrc={"/dashboard/pay_me.png"} height={400} title={"PAY ME"} />
+           <div className="paymenbanner"> <PageBanner bgSrc={"/dashboard/pay_me.png"} height={500} title={"PAY ME"} /></div>
             <PaypalEmailAddressUpdater />
                 <section className="paymepart">
                     <div className="container">
