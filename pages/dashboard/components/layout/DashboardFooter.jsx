@@ -57,7 +57,7 @@ function DashboardFooter(props) {
                                 <li><a href="https://www.facebook.com/behairfulbrush/" className="facebook"> <FaFacebook/></a></li>
                                 <li className={"d-none"}><a href="https://www.youtube.com/mykitsch" className="youtube"><FaYoutube/></a></li>
                                 <li><a href="https://www.instagram.com/behairfulbrush/" className="instagram"><FaInstagram/></a></li>
-                                <li className={"d-none"}><a href="https://www.pinterest.com/MyKitsch/" className="pinterest"><FaPinterest/></a></li>
+                                <li className={""}><a href="https://www.pinterest.com/MyKitsch/" className="pinterest"><FaPinterest/></a></li>
                             </ul>
                         </div>
                     </div>

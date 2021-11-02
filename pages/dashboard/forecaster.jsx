@@ -19,7 +19,7 @@ function Forecaster(props) {
                 <div className="forcastersection">
                     <div className="container-fluid pr-0 pl-0">
                         <div className="row no-gutters forcasterplz">
-                            <div className="col-md-4 col-xl-5 text-dark bg-white ">
+                            <div className="col-md-4 col-xl-5 text-dark bg-white">
                                 <div className="forcastearning">
                                     <div className="text-center">
                                         <h2 className={"font-weight-bold earningfore"}>Earning Forecaster</h2>
@@ -47,14 +47,14 @@ function Forecaster(props) {
                             <div className="col-md-8 col-xl-7 mt-auto">
                                 <div className={"forcasterdiv"}>
                                     <div className={" mb-2 text-white p-4 forcastedpart"}>
-                                        Forecasted conversions Calculate at 4% conversion on engagements. Earnings per month (Take Home commissions)
-                                        Earnings are calculated based on a baseline conversion rate and average lifetime value of our customers at 10% commission on each sale.
+                                       <p> Forecasted conversions Calculate at 4% conversion on engagements. Earnings per month (Take Home commissions)</p>
+                                        <p>Earnings are calculated based on a baseline conversion rate and average lifetime value of our customers at 10% commission on each sale.</p>
                                     </div>
                                     <div className="p-4  mb-2 text-dark convertion">
                                         <h5>FORECASTED CONVERSIONS <span></span></h5>
                                         <h4>{conversion || '-'}</h4>
                                     </div>
-                                    <div className="p-4 text-dark  commisions">
+                                    <div className="p-4 text-dark commisions">
                                         <h5>EARNINGS PER MONTH <span>(TAKE HOME COMMISSIONS)</span></h5>
                                         <h4>
                                             {

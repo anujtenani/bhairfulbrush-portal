@@ -1,35 +1,36 @@
-body{ font-family: 'futurabook';  font-weight: 100; line-height: 1.5; text-align: left; min-height: 100vh; overflow-x: hidden; background:#0c0c0c; font-size:14px;  }
+body{ font-family:"FuturaLT"; font-weight: 100; line-height: 1.5; text-align: left; min-height: 100vh; overflow-x: hidden; background:#0c0c0c;     font-size: 16px;  }
 
-h1,h2,h3,h4,h5,h6{font-family: 'futura_bkbook'; }
+h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 
-@font-face {font-family: 'futura_bkbook'; src: url('./fonts/futura_book-webfont.woff2') format('woff2'), url('./fonts/futura_book-webfont.woff') format('woff'); font-weight: normal; font-style: normal;
-}
+@font-face { font-family: 'futura_bkbook'; src: url('./fonts/futura_book-webfont.woff2') format('woff2'), url('./fonts/futura_book-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'a_futuraroundregular'; src: url('./fonts/futura_round-webfont.woff2') format('woff2'), url('./fonts/futura_round-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family:"FuturaLT"; src: url('./fonts/FuturaLT.woff2') format('woff2'), url('./fonts/FuturaLT.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'futura_thinnormal'; src: url('./fonts/futura_thin-webfont.woff2') format('woff2'), url('./fonts/futura_thin-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'futurabook'; src: url('./fonts/futura_book_font-webfont.woff2') format('woff2'), url('./fonts/futura_book_font-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'futuraheavy'; src: url('./fonts/futura_heavy_font-webfont.woff2') format('woff2'), url('./fonts/futura_heavy_font-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'futuralight'; src: url('./fonts/futura_light_bt-webfont.woff2') format('woff2'), url('./fonts/futura_light_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'futuramedium'; src: url('./fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('./fonts/futura_medium_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
 
-@font-face {font-family: 'a_futuraroundregular'; src: url('./fonts/futura_round-webfont.woff2') format('woff2'), url('./fonts/futura_round-webfont.woff') format('woff'); font-weight: normal; font-style: normal;
-}
+.forcastearning .form-group .input-group-append { display:none; }
 
-@font-face {font-family: 'futura_thinnormal'; src: url('./fonts/futura_thin-webfont.woff2') format('woff2'), url('./fonts/futura_thin-webfont.woff') format('woff'); font-weight: normal; font-style: normal;
-}
-
-@font-face {font-family: 'futurabook'; src: url('./fonts/futura_book_font-webfont.woff2') format('woff2'), url('./fonts/futura_book_font-webfont.woff') format('woff'); font-weight: normal; font-style: normal;
-}
-
-@font-face {font-family: 'futuraheavy'; src: url('./fonts/futura_heavy_font-webfont.woff2') format('woff2'), url('./fonts/futura_heavy_font-webfont.woff') format('woff'); font-weight: normal; font-style: normal;
-}
-
-@font-face {font-family: 'futuralight'; src: url('./fonts/futura_light_bt-webfont.woff2') format('woff2'), url('./fonts/futura_light_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;
-}
-
-@font-face {font-family: 'futuramedium'; src: url('./fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('./fonts/futura_medium_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;
-}
-
-@font-face {font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;
-}
-
-.hairfacts {font-weight: 700; font-size: 36px; }
+.faqitempart .pagebannerto{ position: relative; }
+.faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center {}
+.faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center:before { content: ""; background: rgb(0 0 0 / 50%); position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }
+.faqitempart .pagebannerto .titleclspage {position: relative; z-index: 0; }
+.registeryour h5 {font-size: 18px; font-family: 'futuramedium'; font-weight:300; }
+.parapostperfect { padding: 0px 15px; font-size: 16px; }
+.parapostperfect ul li::marker { content: "\2022"; color: red; margin-left: -1em; font-size: 18px; }
+.parapostperfect ul{ margin:0px;  padding:0px;}
+.parapostperfect li{padding-left:15px; }
+.hairfacts { font-weight: 700; font-size: 36px; }
 .inspirationpart .card-columns .card { height: 300px; margin-bottom: 15px; border-radius: 5px; overflow: hidden; }
 .inspirationpart .card-columns .card img{border-radius:0px; width:100%; height:100%; object-fit: cover; object-position: center; }
+.inspirationpart .pagebannerto {background-position: 100% 66% !important; }
+.prdpart p {font-size: 20px; }
 .giftpart div{width:100%; }
+.giftpart h3{font-family: 'futuramedium'; }
 #sidebar {background:#000; }
 #sidebar li {  }
 #sidebar li a {}
@@ -43,16 +44,17 @@ h1,h2,h3,h4,h5,h6{font-family: 'futura_bkbook'; }
 .imginspiration{height:637px; }
 
 .feedbackborder {border: none; background: #0d0d0d !important; }
+.feedbackborder .card-body{ padding:0px; }
 .feedbackbg {background: #0d0d0d; }
 .borderrad {}
 .borderrad img{border:#fff 5px solid !important; }
 .iconimgperfect {min-height: 152px; }
-.feedbackborder .card-title {font-size: 20px; margin-bottom: 20px; font-weight: 700; letter-spacing: 1px; }
-.copyrighttext p {font-size: 24px; }
+.feedbackborder .card-title { font-size: 20px; margin-bottom: 20px; font-weight: 700; letter-spacing: 1px; margin-top: 18px; }
+.copyrighttext p {font-size: 28px; font-family: 'futuralight'; }
 .titleclspage {font-family: 'futuralight'; text-transform: uppercase; font-weight: 100; }
 .feedbackborder p{font-size:15px; }
 .maintable{ background:#fff; margin-bottom: 0px; }
-.maintable th {background: #000; padding: 30px; border-top: none; font-family: 'futurabook'; }
+.maintable th { background: #0c0c0c; padding: 30px; border-top: none; font-family: 'futuramedium'; font-weight: 300; text-transform: uppercase; font-size: 13px; }
 .maintable td{ color:#000; }
 
 .imginspiration img {object-fit: cover; object-position: top center; width: 100%; height: 100%; }
@@ -74,9 +76,11 @@ h1,h2,h3,h4,h5,h6{font-family: 'futura_bkbook'; }
 /* Handle on hover */
 .tablemore::-webkit-scrollbar-thumb:hover {background: #060709; }
 
-.footerloogo{margin:50px 0px; }
+.footerloogo { margin: 25px 0px; }
 .menulink { color:#000; }
-
+.salestype .pagebannerhead {
+    background-position: 100% 66% !important;
+}
 .dropdownnotification .dropdown-menu {overflow: auto; height: 300px; width: 250px;     border-radius: 0px; }
 /* width */
 .dropdownnotification .dropdown-menu::-webkit-scrollbar {width: 5px; }
@@ -98,10 +102,10 @@ h1,h2,h3,h4,h5,h6{font-family: 'futura_bkbook'; }
 .notificationpart a.dropdowntype {font-style: italic; font-size: 12px; color: #818181; }
 
 .imginspiration{}
-.imginspiration.last{   }
-img.main-footer-logo{ width:276px;}
+.imginspiration.last{ }
+img.main-footer-logo { width: 276px; margin-top: -20px; margin-left: -40px; }
 ul.footer-list{}
-ul.footer-list li {font-size: 14px; }
+ul.footer-list li { font-size: 14px; }
 .footer h5 {font-size: 20px; margin-bottom: 20px; }
 ul.footer-list li a{padding:5px 0px; }
 .copyrighttext {border-top: #8e8e8e 1px solid; padding-top: 37px; margin-top: 50px; }
@@ -111,7 +115,8 @@ ul.footer-list li a{padding:5px 0px; }
 .footer-list-social li a:hover{opacity:0.5; }
 .footer-list-social li a.facebook{background-position:-8px -10px; }
 .footer-list-social li a.instagram{background-position:-9px -75px; }
-.footer-list-social li a.pinterest{background-position:-9px -75px; }
+.footer-list-social li a.pinterest{background-position:-11px -138px; }
+
 .footer-list-social li svg{display: none; }
 img{max-width:100%; }
 .dropleft.dropdown{}
@@ -120,54 +125,70 @@ img{max-width:100%; }
 .dropleft.dropdown .btn.btn-transparent .shadow-sm {width: 86px !important; height: 86px !important; background: url(/behairful-side-logo.png) no-repeat; border-radius: 100px !important; overflow: hidden; }
 .dropleft.dropdown .btn.btn-transparent svg {width: 100% !important; height: 100% !important; background-size: cover; background-position: center; outline: none; }
 .dropleft.dropdown .btn.btn-transparent img {width: 100% !important; height: 100% !important; background-size: cover; background-position: center; outline: none; }
-.weare {text-align: center; margin-bottom: 20px; font-weight: 600; }
+.weare { text-align: center; margin-bottom: 20px; font-weight: 300; margin-bottom: 25px;  font-family:"FuturaLT"; }
 .dropdownnotification {display: inline-flex; float: left; margin: 11px 13px; }
 .dropdownnotification .dropdown{}
 .dropdownnotification .btnnotification {width: 38px; height: 38px; background: url(/iconall.png) no-repeat; background-position: -7px -829px; border: none; display: block; outline: none !important; box-shadow: none; }
 .dropdownnotification .dropdown-menu{}
 .btn-primary {border-radius: 10px; text-align: center; font-size: 25px; padding: 10px 50px; line-height: normal; min-height: auto; background: #000 !important; }
-#topbar {background-color: #0c0c0c !important; display: flex; align-items: center; justify-content: space-between; padding: 15px 0px; }
+#topbar { background-color: #0c0c0c !important; display: -moz-box; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: justify; justify-content: space-between; padding: 35px 0px; }
 .footer {background-color: #0c0c0c; padding: 50px 30px 20px; }
 .registeryour{padding:50px 20px; }
 .tablepayme {overflow: hidden; border-radius: 30px; border: #3a3a3a 1px solid; margin-bottom: 15px; }
-.faqopen{padding:30px; font-size:24px; }
+.faqopen {padding: 30px; font-size: 20px; font-family: "FuturaLT"; }
 .openfaqpage {}
 .faqitempart .together{display:none; }
 .faqitempart .logofotmother{display:none; }
 .gitoff{}
-.givepayout {font-size: 18px; font-family: 'futura_xblk_btextra_black'; }
+.loginformmember { margin-bottom: 30px; }
+.feedbackpart h5{ margin-bottom:30px; }
+.loginscreen .card {border-radius: 18px; margin-top: 55px; }
+.loginscreen .card h2 {font-family: 'futuramedium'; font-weight: 300; }
+.loginscreen h6 {font-family: 'futuramedium'; font-size: 15px; }
+.loginscreen .finally {font-size: 24px; font-family: 'futuramedium'; }
+.loginscreen .card .form-control {border: #000 1px solid; border-radius: 10px; padding: 20px; min-height: 60px; background-color: #fff !important; }
+.loginscreen .card-body {padding: 50px; }
+.loginscreen .card-body .form-group label{font-family:"futura-pt-bold"; }
+.loginscreen .btn-primary {border-radius: 100px; margin-top: 15px; }
+.forgotgroup { margin-bottom: -25px; }
+/*.givepayout {font-size: 18px; font-family: 'futura_xblk_btextra_black'; }*/
+.givepayout { font-size: 22px; font-family: "futura-pt-bold"; font-weight: 600; border-radius: 10px !important; }
 .iconindex{}
-.iconindo{}
+.iconindo { margin-right: 15px; }
+.gitoff p {font-size: 20px; line-height: normal; }
 .gitoff p strong {font-weight: 800 !important; font-family: 'futura_xblk_btextra_black'; }
-.usepromo {display: block; padding: 10px; text-align: center; background: #cdcdcd; color: #000; font-weight: 600; }
+.usepromo {display: block; padding: 10px; text-align: center; background: #cdcdcd; color: #000; font-weight: 600; font-size: 20px; font-family: 'futuralight'; }
 .iconindo svg{display:none; }
-.titleiconindex {}
+.titleiconindex { font-family: "FuturaLT"; line-height: 24px; }
 .paymentzone {  }
 .paymetotal{  }
 .paymetotal strong {font-size: 12px !important; }
 .paymesmall small {display: block; text-align: left; }
-.faqpart {border: #fff 1px solid; }
+.faqpart { border: #fff 1px solid; margin: 0 15px; }
 .openfaqpage {padding: 30px; }
-.faqhead {font-size: 25px; font-weight: 600; }
+.faqhead {font-size: 25px; font-weight: 300; font-family:"FuturaLT"; }
 .forcasterdiv h5 {font-weight: 700; font-size: 21px;  font-family: 'futuraheavy'; margin-bottom:0px; }
-.forcasterdiv h5 span {font-weight: 300; font-family: 'futuralight';}
+.forcasterdiv h5 span {font-weight: 300; font-family:"FuturaLT"; }
 .forcasterdiv h4 {font-size: 60px; font-weight: 700; font-family: 'futuraheavy'; line-height: 54px; }
 .convertion{background:#c5c7c5; }
 .commisions{background:#c5c7c5; }
 
 .forcastedpart{color:#fff; font-size: 18px; }
 .forcastedpart p{color:#fff; }
+.forcastedpart p:last-child{ margin-bottom:0px; }
 .forcastearning .btn-primary {border-radius: 100px; font-size: 18px; margin-top: 10px; }
-.forcastearning {display: -moz-box; display: flex; -moz-box-align: center; flex-direction: column; padding: 30px 40px; }
-.forcastearning .form-control {border-radius: 18px; border: #000 1px solid; }
+.forcastearning {display: -moz-box; display: flex; -moz-box-align: center; flex-direction: column; padding: 15px 40px; }
+.forcastearning .form-control { border-radius: 18px; border: #000 1px solid; border-radius: 20px !important; }
+
 .forcastearning label {text-transform: uppercase; font-weight: 700; }
 .forcastearning .input-group-append .input-group-text {border-radius: 0px 17px 17px 0px; border: #000 1px solid; }
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {opacity: 1; }
 .earningfore {padding-right: 67px; text-align: left; line-height: 36px; font-size: 36px; margin-bottom: 15px; font-family: 'futuramedium'; }
 .registeryour .form-control {border: #000 1px solid; border-radius: 10px; height: 60px; }
 .registeryour .btn-primary {border-radius: 100px; height: 60px; font-size: 20px; }
-#sidebar .sidecontainer li a{position: relative; font-family: 'futuramedium';}
-#sidebar .sidecontainer li a:hover{opacity:0.6; }
+#sidebar .sidecontainer li a{position: relative; font-family:"FuturaLT"; color:#404042;}
+#sidebar .sidecontainer li a:hover{ color:#fff;  }
+#sidebar .sidecontainer li a:hover span{ color:#fff; }
 #sidebar .sidecontainer li a:before{content:""; width:38px; height:38px; background:url('/iconall.png') no-repeat; background-position:-7px -8px; }
 #sidebar .sidecontainer li a.dashboard-div:before{background-position: -7px -198px; }
 #sidebar .sidecontainer li a.sales-div:before{background-position: -7px -264px; }
@@ -179,9 +200,12 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 #sidebar .sidecontainer li a.faq-div:before{background-position: -7px -683px; }
 #sidebar .sidecontainer li a.about-div:before{background-position: -7px -757px; }
 #sidebar .sidecontainer li a svg{display: none; }
-.gitoff h1.earning {font-size: 40px; font-weight: 700; font-family: 'futurabook'; letter-spacing: 1px; }
-.leadpromo {font-size: 30px; }
-.promotext {font-size: 25px; font-weight: 700; font-family: 'futuramedium'; }
+.promocodetable { margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; }
+.indopromo {padding: 0 0px; }
+.indopromo span{ font-family: 'futuramedium'; font-size:26px; }
+.gitoff h1.earning {font-size: 40px; font-weight: 700; font-family:"FuturaLT"; letter-spacing: 1px; line-height:54px; }
+.leadpromo { font-size: 32px; font-family: 'futuralight'; min-width: 460px; display: table; margin: 0 auto; }
+.promotext { font-size: 25px; font-weight: 700; font-family: 'futuramedium'; }
 .mobilescreen .collapse{position: relative; background: #000;}
 .paymentzone {}
 .topmobdiv{width:100%; }
@@ -192,8 +216,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .prdpart {margin-right:25px; }
 .productionpresent {justify-content: space-around; flex-wrap: wrap; }
 .paymepart {padding: 30px 30px 0; }
-.paypalemail h4{ text-transform:uppercase; }
-.theperfect{  display: flex;   }
+.paypalemail h4{ text-transform:uppercase; font-family:"FuturaLT"; }
+.theperfect { display: -moz-box; display: flex; margin-top: 30px; margin-bottom: 30px; }
 .homesidebanner{padding:30px 0px; }
 .globehome{display: flex; flex-wrap: wrap; padding: 0 0px;}
 .globeimgdown{flex: 20%; max-width: 20%; padding: 0 0px; height:200px; background-color:#000; -webkit-transition: background-color 2s ease-out; -moz-transition: background-color 2s ease-out; -o-transition: background-color 2s ease-out; transition: background-color 2s ease-out; overflow: hidden; }
@@ -201,25 +225,35 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .globeimgdown a:hover{opacity:0.8; background-color:red; }
 .globeimgdown img{width:100%; height:100%; object-fit: cover; object-position: center; }
  .perfectpst{padding:30px 0px; }
+.perfectpst h5 {font-family: 'futuramedium'; font-weight: 300; font-size: 20px; }
 .perfectpartdiv {background-color: #0c0c0c; padding: 50px 0px; }
-.numberlist {margin: 10px 0px; }
+.numberlist { margin: 10px 0px; font-family: 'futuramedium'; font-size: 18px; font-weight: 300; }
 .perfectpartdiv h2 {margin-bottom: 20px; }
 .alittlepart {padding: 30px; }
 .whenperfect {padding: 50px 30px; }
-.parapostperfect {margin-bottom: 30px; }
-.promodcode{margin-bottom:20px; }
+.parapostperfect {margin-bottom: 30px; padding: 0px 0px; font-size: 16px; }
+.parapostperfect p { font-size: 16px; }
+.stepbox span {  font-family: 'futuramedium';  font-size: 20px; }
+.stepbox h3{}
+.promodcode { margin-bottom: 15px; }
+.promodcode h3 { font-family: "futura-pt-bold"; font-size: 36px; }
+.promodcode p {  }
 .promodcode:last-child{margin-bottom:0px; }
-.blueperefect {
-    padding: 20px 20px 0px;
-}
-.blueperefect.last {padding: 20px 20px 20px; }
-.postingavid h2{margin-bottom:30px; }
-.avideostory{padding:30px 30px; }
-.avideostory h3{font-size:25px; }
-.oncepartbg{padding:30px 30px; }
+.blueperefect { padding: 20px 20px 0px; }
+.blueperefect.last { padding: 20px 20px 20px; }
+.postingavid h2{ margin-bottom:30px; }
+.avideostory{ padding:30px 30px; }
+.avideostory h3{ font-size:25px; }
+.oncepartbg{ padding:30px 30px; }
 .oncethat h2{}
+.oncethat h4{
+font-family:"FuturaLT";    
+}
 .loadmorebtn{font-family: 'futuralight'; }
-.gitoff p{}
+.feedbackpart h5{ font-family:"FuturaLT"; }
+.parapostperfect ul { margin: 0 0 0px 15px; display: inline-block; }
+.parapostperfect li{}
+h2.alittle { margin-top: 20px; }
 /*media css*/
 @media (min-width: 1400px){
   .sideoffbar,.sideoffbarmain{ min-width:300px; max-width:300px; width:300px; }
@@ -306,10 +340,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     .imgboxpostperfect {padding: 0px !important; margin: 0px !important; }
     .perfecticonpost{padding: 15px; }
     .stepbox h3 {font-size: 18px; }
-    .parapostperfect { padding: 0px 15px; font-size: 16px; }
-    .parapostperfect ul li::marker {content: "\2022"; color: red; width: 1em; margin-left: -1em; font-size:25px; }
-    .parapostperfect ul{ margin:0px;  padding:0px;}
-    .parapostperfect li{padding-left:15px; }
+    
     .alittle {font-size: 24px; }
     .imgperfectbox{width:100px;}
     .imgperfectbox img {width: auto !important; height: 60px !important; }

@@ -32,6 +32,7 @@ const HairFactsContainer = () => {
                             <HairFacts title={"Boar Bristle"} />
                             <HairFacts title={"Boar Bristle"} />
                             <HairFacts title={"Boar Bristle"} />
+                            <HairFacts title={"Boar Bristle"} />
                         </div>
                     </div> 
                 </div>     

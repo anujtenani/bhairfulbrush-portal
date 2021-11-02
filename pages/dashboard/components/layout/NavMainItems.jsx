@@ -62,7 +62,7 @@ const navItems = [
 function NavItem({Icon, navClass, href, title}){
     return  <li className="nav-item text-secondary active">
         <Link href={href} >
-            <a style={{color:'#ccc'}} className={`nav-link d-flex align-items-center ${navClass}`}>
+            <a style={{color:'#404042'}} className={`nav-link d-flex align-items-center ${navClass}`}>
                 <Icon style={{fontSize:18}} />
                 <span className={"ml-2"}>{title}</span>
             </a>
