@@ -10,10 +10,10 @@ function Inspiration(props) {
 
     return (
         <DashboardContainer title={"Inspiration"}>           
-               <PageBanner title={"Inspiration"} desc={"Here is content we thought could help you! Keep an eye out for monthly promotions"}
+             <div className="inspirationpart idot">   <PageBanner title={"Inspiration"} desc={"Here is content we thought could help you! Keep an eye out for monthly promotions"}
                             bgSrc={"/dashboard/grab_n_go.png"} height={500}
                 />         
-               
+                </div>
 
             {
                 isLoading ? <Skeleton count={50} /> : <div className="inspirationpart">
