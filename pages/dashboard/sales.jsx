@@ -11,7 +11,9 @@ function Sales(props) {
     const {data, isLoading, error, setPageIndex, setLimit, limit, pageIndex, hasNext, hasPrevious} = useSales()
     return (
         <DashboardContainer title={"Sales"}>
-            <PageHeaderBanner title={"Watch your sales grow"} src={"/dashboard/sales_banner.png"} height={500} />
+           <div className="salestype"> 
+                <PageHeaderBanner title={"Watch your sales grow"} src={"/dashboard/sales_banner.png"} height={500} />
+            </div>
                 <div className="py-4">
                     <div className="container mt-4">
                         <div className="row">
@@ -34,16 +36,17 @@ function Sales(props) {
                                     <option value="50">50</option>
                                     <option value="100">100</option>
                                 </select>
-                            entries
+                            Entries
                         </div> 
                         <div className="tablestyle" style={{overflow:'hidden', borderRadius:30}}>
                             <div className="tablemore">                       
                             <table className={"table maintable"}>
                                 <thead>
                                     <tr>
-                                        <th>Date</th>
-                                        <th>Order number</th>
-                                        <th className={"text-right"}>Order Amount</th>
+                                        <th>Product</th>
+                                        <th>State</th>
+                                        <th>Country</th>
+                                        <th className={"text-right"}>Date</th>
                                         <th className={"text-right"}>Commission</th>
                                     </tr>
                                 </thead>
@@ -51,7 +54,7 @@ function Sales(props) {
                                 <tbody>
                                 {
                                     isLoading ? <tr>
-                                        <td colSpan={4}>
+                                        <td colSpan={5}>
                                         <Skeleton count={3 * limit} />
                                         </td>
                                     </tr> : <RenderTableData data={data.data} />

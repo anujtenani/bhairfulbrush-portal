@@ -37,19 +37,12 @@ const LoginForm = () => {
     return (
              <form onSubmit={onFormSubmit} className={"text-dark"}>
                  <h2 className={"text-dark text-center"}><strong>Sign In</strong></h2>
-                 <p className={"text-dark text-center"}><strong>Members please login</strong></p>
+                 <p className={"text-dark text-center loginformmember"}><strong>Members please login</strong></p>
                  <FormGroup label={"Email address"}>
                      <input type = "email" className = "form-control" onChange={(e) => setEmail(e.target.value)}/>
                  </FormGroup>
-                 <FormGroup label={"Password"}>
-                     <input
-                         type={"password"}
-                         className = "form-control"
-                         onChange={(e) => setPassword(e.target.value)}
-                     />
-                 </FormGroup>
 
-                 <div className={"form-group text-right"}>
+                 <div className={"form-group text-right forgotgroup"}>
                      <Link href={'/forgot-password'} tabIndex={'-1'}>
                          <a className={"text-dark"}>Forgot Password?</a>
                      </Link>
@@ -57,6 +50,15 @@ const LoginForm = () => {
                  {
                      error ?    <AuthErrorRenderer code={error}/> : null
                  }
+
+                <FormGroup label={"Password"}>
+                     <input
+                         type={"password"}
+                         className = "form-control"
+                         onChange={(e) => setPassword(e.target.value)}
+                     />
+                 </FormGroup>
+
                  <Button loading={loading} type = "submit" className="btn btn-primary w-100">SIGN IN</Button>
 
                  <h6 className={"text-center mt-4 text-dark"}>

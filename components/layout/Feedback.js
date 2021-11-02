@@ -2,7 +2,7 @@ const Feedback = () => {
     return (
         <section className={"py-4 feedbackpart"}>
             <div className={"container px-4"}>
-                <h5 className={"text-center text-light"}>OUR PARTNERS <span><img src="/heart.svg" alt="heart icon" style={{width:36, height:36}}/></span> BEHAIRFUL</h5>
+                <h5 className={"text-center text-light"}>OUR PARTNERS BEHAIRFUL</h5>
                 <div className="row">
                     <FeedbackItem  src={'Review-1.png'} title={'Maegan Blinka'} content={"It’s been such a gift to have the opportunity to be a part of the Behairful ambassador program. I love talking to friends - new and old - about how this brush has benefited my hair care journey. But the best part is that I get to involve my kids in using, sharing, and promoting the products! They love to be included and are my little spokespeople themselves! Thank you for opening up and including me and my family! We are Behairful brand partners for life!"}/>
                     <FeedbackItem  src={'Review-2.jpg'} title={'Kim'} content={"I love working with the Behairful brand. They treat their ambassadors with the utmost respect and integrity, knowing that this is how we help provide for families. They take care of us financially and are prompt with answering questions and guide us towards success as we all learn how to help customers better day after day!"}/>
@@ -14,7 +14,7 @@ const Feedback = () => {
 }
 
 function FeedbackItem({src, title, content}){
-    return <div className="feedithas col-md-4 my-4">
+    return <div className="feedithas col-md-3 my-4">
         <Cards src={src} title={title} content={content}/>
     </div>
 }

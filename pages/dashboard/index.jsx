@@ -22,7 +22,7 @@ function Dashboard(props) {
                         <div className="col-md-5">
                             <div className="p-4 gitoff">
                                 <h1 className={"text-left earning"}>Earning With Behairful Is Easy</h1>
-                                <div className={"my-2 rounded text-center bg-dark text-white p-2 givepayout"}><strong>GIVE 10% OFF get 10% PAYOUT</strong></div>
+                                <div className={"my-2 rounded text-center bg-dark text-white p-2 givepayout"}><strong>GIVE 10% OFF, GET 10% PAYOUT</strong></div>
                                 <p>Use your dedicated promo code and link below to share Behairful with the world, they will receive <strong>10% OFF</strong> their order and you will a receive <strong>10% PAYOUT</strong> for each completed sale.</p>
                             </div>
 
@@ -41,9 +41,9 @@ function Dashboard(props) {
                                 {
                                     isLoading
                                         ? <Skeleton count={5}/>
-                                        : <div className={"py-4"}>
-                                            <RenderItem color={'#000'} value={data.coupon} text={"Promo Code"}/>
-                                            <RenderItem color={'#000'} value={data.referral_link} text={"Promo Link"}/>
+                                        : <div className={"promocodetable"}>
+                                            <div className="indopromo"> <RenderItem color={'#000'} value={data.coupon} text={"Promo Code"}/> </div>
+                                            <div className="indopromo"> <RenderItem color={'#000'} value={data.referral_link} text={"Promo Link"}/> </div>
                                         </div>
                                 }
                             </div>
@@ -66,7 +66,7 @@ function Dashboard(props) {
 function RowItem({Icon, title, src}){
     return <div className="col-6 mb-4">
         <div className={"d-flex align-items-center iconindex"}>
-            <div style={{minWidth:80, minHeight:80, borderRadius:50}} className={"iconindo mr-2 d-flex align-items-center justify-content-center bg-dark text-light"}>
+            <div style={{minWidth:80, minHeight:80, borderRadius:50}} className={"iconindo d-flex align-items-center justify-content-center bg-dark text-light"}>
                 <Icon style={{width:40, height:40}}  />
                 <img src={src} />
             </div>
@@ -81,7 +81,7 @@ function RenderItem({color, text, value}){
 
     return <div className={"text-center mb-4"} style={{color}}>
         <strong className={"lead d-block text-center promotext"}>{text}</strong>
-        <span style={{fontSize:17}}>
+        <span>
             <span className={"mr-2"}>{value}</span><CopyButton value={value} style={{color}}/> </span>
     </div>
 }
