@@ -23,7 +23,7 @@ function Dashboard(props) {
                             <div className="p-4 gitoff">
                                 <h1 className={"text-left earning"}>Earning With Behairful Is Easy</h1>
                                 <div className={"my-2 rounded text-center bg-dark text-white p-2 givepayout"}><strong>GIVE 10% OFF, GET 10% PAYOUT</strong></div>
-                                <p>Use your dedicated promo code and link below to share Behairful with the world, they will receive <strong>10% OFF</strong> their order and you will a receive <strong>10% PAYOUT</strong> for each completed sale.</p>
+                                <p>Use your dedicated promo code and link below to share Behairful with the world, they will receive <strong>10% OFF</strong> their order and you will a receive <strong className="tenpercent">10% PAYOUT</strong> for each completed sale.</p>
                             </div>
 
                             <div className="flex-wrap theperfect">
