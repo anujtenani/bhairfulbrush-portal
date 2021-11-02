@@ -12,6 +12,29 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 @font-face { font-family: 'futuramedium'; src: url('./fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('./fonts/futura_medium_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
+
+.indopromo.promolink {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+}
+.indopromo.promolink .promotext {
+    font-size: 18px;
+}
+.indopromo.promolink .promohead{
+    flex-direction: column;
+    font-size:18px;
+}
+.indopromo.promolink .promohead span{
+    flex-direction: column;
+    font-size:18px;
+}
+.indopromo.promolink span {
+    font-family: futuramedium;
+    font-size: 20px;
+}
 .promohead {
       display: flex;
     flex-wrap: wrap;
@@ -54,6 +77,7 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 #sidebar .sidecontainer li.active a{
 color:#fff !important;
 }
+
 #sidebar li a {}
 .sideoffbar,.sideoffbarmain{min-width:300px; max-width:300px; width:300px; }
 .sidecontainer {padding: 0 15px; }
@@ -296,6 +320,9 @@ font-family:"FuturaLT";
 .parapostperfect ul { margin: 0 0 0px 15px; display: inline-block; }
 .parapostperfect li{}
 h2.alittle { margin-top: 20px; }
+.displayhidecontent{
+    display: none;
+}
 /*media css*/
 @media (min-width: 1400px){
   .sideoffbar,.sideoffbarmain{ min-width:300px; max-width:300px; width:300px; }
@@ -332,6 +359,22 @@ h2.alittle { margin-top: 20px; }
     .dropdownnotification {position: absolute; left: 60px; z-index: 100; }
 }
 @media (max-width: 650px){
+.theperfect.displayhidecontent {
+    display: flex;
+}
+.footer-list-social {
+    display: flex;
+}
+.footer-list-social li a{
+    margin-right: 10px;
+}
+.footer-block-inner {
+    
+    display: block !important;
+}
+    .theperfect{
+        display: none;
+    }
     .promocodetable { flex-direction: column; }
     .indopromo { max-width:100%; flex:0 0 100%; }
     .paymedroppage.dropdown-menu{left: -40px !important; }
@@ -392,7 +435,7 @@ h2.alittle { margin-top: 20px; }
     .numberlist {padding: 0px 0px; margin-bottom: 10px !important; margin-top: 10px !important; }
     .iconimgperfect img {height: 60px; }
     ul.footer-list li {font-size: 14px; }
-    .footer {padding-right: 0px; padding-left: 0px; }
+    .footer { padding-right: 0px; padding-left: 0px; padding-top: 10px; }
     .maintable th {padding: 18px 10px; font-size: 12px; font-weight: 400; text-transform: uppercase; }
     .nosaleyet{padding:0px !important; }  
     .pagebannerto {height: 300px !important; font-size: 24px; display: flex; align-items: center; justify-content: center; width: 100%;     flex-direction: column; }
@@ -407,7 +450,9 @@ h2.alittle { margin-top: 20px; }
     .gitoff h1.earning {font-size: 24px; text-align: center !important; display: block; }
     .inspiration {padding: 40px 0px; }
     .feedbackborder{border-bottom:#fff 1px solid; border-radius:0px !important; }
-    .usepromo {font-size: 14px; }
+.usepromo {
+    font-size: 12px;
+}
     .imgdivlast {padding: 0; }
     .mobilescreen .collapse{top: 90px !important; }
     .leadpromo {font-size: 20px; }
@@ -425,7 +470,30 @@ h2.alittle { margin-top: 20px; }
     .convertion {background: #ffffff; margin: 0px 26px 26px !important; border-radius: 10px; }
     .paymepart {padding: 30px 10px 0; }
     .footer-block-inner { margin-top: 20px; }
+    .gitoff {
+    padding: 0px !important;
+}
 
+    .givepayout{
+        display:none;
+    }
+    .gitoff p{
+        display:none;
+    }
+    .leadpromo {
+  
+    min-width: 80%;
+}
+.iconindex {
+    margin-left: -15px;
+}
+.alittlepart {
+    padding: 10px;
+}
+.perfecticonpost {
+
+    margin-bottom: 0px;
+}
 }
 @media (max-width: 480px){
   .topmobdiv {padding-left: 15px !important; padding-right: 15px !important; }

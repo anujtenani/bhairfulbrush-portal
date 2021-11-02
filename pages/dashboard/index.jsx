@@ -47,6 +47,13 @@ function Dashboard(props) {
                                         </div>
                                 }
                             </div>
+
+                             <div className="flex-wrap theperfect displayhidecontent">
+                                <RowItem title={"Craft The Perfect Post"} Icon={FiMonitor} src={"/imghome-icon-1.png"} />
+                                <RowItem title={"Make commissions"} Icon={FiDollarSign} src={"/imghome-icon-2.png"} />
+                                <RowItem title={"Track Commissions"} Icon={FiBarChart2} src={"/imghome-icon-3.png"} />
+                                <RowItem title={"Get Instant Payouts"} Icon={FiCreditCard} src={"/imghome-icon-4.png"} />
+                            </div>
                         </div>
                     </div>
                 </div>
