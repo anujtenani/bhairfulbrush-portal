@@ -7,7 +7,7 @@ import DashboardFooter from "./components/layout/DashboardFooter";
 
 function InspirationGallery(props) {
     const {data, error, isLoading} = useCreatives();
-    const [count, setCount] = useState(5);
+    const [count, setCount] = useState(15);
 
     const imgUrls = [
         'img-ins-b-1.jpg',
