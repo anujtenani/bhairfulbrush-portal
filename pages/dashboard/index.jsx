@@ -42,8 +42,8 @@ function Dashboard(props) {
                                     isLoading
                                         ? <Skeleton count={5}/>
                                         : <div className={"promocodetable"}>
-                                            <div className="indopromo"> <RenderItem color={'#000'} value={data.coupon} text={"Promo Code"}/> </div>
-                                            <div className="indopromo"> <RenderItem color={'#000'} value={data.referral_link} text={"Promo Link"}/> </div>
+                                            <div className="indopromo promocode"> <RenderItem color={'#000'} value={data.coupon} text={"Promo Code"}/> </div>
+                                            <div className="indopromo promolink"> <RenderItem color={'#000'} value={data.referral_link} text={"Promo Link"}/> </div>
                                         </div>
                                 }
                             </div>
@@ -77,12 +77,12 @@ function RowItem({Icon, title, src}){
 }
 
 function RenderItem({color, text, value}){
-    if(!value) return null;
+    if(!value) return null; 
 
-    return <div className={"text-center mb-4"} style={{color}}>
+    return <div className={"text-center mb-4 promohead"} style={{color}}>
         <strong className={"lead d-block text-center promotext"}>{text}</strong>
-        <span>
-            <span className={"mr-2"}>{value}</span><CopyButton value={value} style={{color}}/> </span>
+        <span>  
+            <span className={"mr-2 styprocode"}>{value}</span><CopyButton value={value} style={{color}}/> </span>
     </div>
 }
 
