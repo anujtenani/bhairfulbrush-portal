@@ -15,7 +15,7 @@ function Forecaster(props) {
         .times(2).times(2).div(100).round().toNumber() : 0
     return (
         <DashboardContainer title={"Earning Forecaster"}>
-            <PageHeaderBanner height={400} src={"/dashboard/forecaster_banner.png"} />
+           <div className="forecasterpart"> <PageHeaderBanner height={500} src={"/dashboard/forecaster_banner.png"} /> </div>
                 <div className="forcastersection">
                     <div className="container-fluid pr-0 pl-0">
                         <div className="row no-gutters forcasterplz">

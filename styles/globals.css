@@ -1,4 +1,4 @@
-body{ font-family:"FuturaLT"; font-weight: 100; line-height: 1.5; text-align: left; min-height: 100vh; overflow-x: hidden; background:#0c0c0c;     font-size: 16px;  }
+body { font-family:"FuturaLT"; font-weight: 100; line-height: 1.5; text-align: left; min-height: 100vh; overflow-x: hidden; background:#0c0c0c;     font-size: 16px;  }
 
 h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 
@@ -12,16 +12,30 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 @font-face { font-family: 'futuramedium'; src: url('./fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('./fonts/futura_medium_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
+.loginscreen .alert.alert-danger a{
+    color:#000;
+}
+.indopromo.promolink { flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }
+.indopromo.promolink .promotext { font-size: 18px; }
+.indopromo.promolink .promohead { flex-direction: column; font-size:18px; }
+.indopromo.promolink .promohead span{ flex-direction: column; font-size:18px; }
+.indopromo.promolink span { font-family: futuramedium; font-size: 20px; }
+.abouton { padding-top: 15px; }
 
-.indopromo.promolink {flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }
-.indopromo.promolink .promotext {font-size: 18px; }
-.indopromo.promolink .promohead{flex-direction: column; font-size:18px; }
-.indopromo.promolink .promohead span{flex-direction: column; font-size:18px; }
-.indopromo.promolink span {font-family: futuramedium; font-size: 20px; }
+.abrotate{
+
+}
+.aboutme p{
+
+}
+.alettertext{
+
+}
 .promohead { display: flex; flex-wrap: wrap; justify-content: center; }
-.paymenbanner .pagebannerto {background-position: 0px 70% !important; }
-.indopromo.promocode {flex: 0 0 100%; max-width: 100%; align-items: center; display: flex; justify-content: center; }
+.paymenbanner .pagebannerto { background-position: 0px 70% !important; }
+.indopromo.promocode { flex: 0 0 100%; max-width: 100%; align-items: center; display: flex; justify-content: center; }
 .tenpercent{ font-family:"futura-pt-bold" !important; }
+.aboutme { padding:20px 0px; }
 .forcastearning .form-group .input-group-append { display:none; }
 
 .faqitempart .pagebannerto {position: relative; background-position: 0 69% !important; }
@@ -43,6 +57,9 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 .prdpart p {font-size: 20px; }
 .giftpart div{width:100%; }
 .giftpart h3{font-family: 'futuramedium'; }
+.forecasterpart .pagebannerhead {
+    background-position: 100% 93% !important;
+}
 #sidebar {background:#000; }
 #sidebar li {  }
 #sidebar .sidecontainer li.active a { color:#fff !important; }
@@ -296,6 +313,9 @@ h2.alittle { margin-top: 20px; }
 .displayhidecontent{
     display: none;
 }
+.abrotate {
+    margin: 20px 0px 10px;
+}
 /*media css*/
 @media (min-width: 1400px){
   .sideoffbar,.sideoffbarmain{ min-width:300px; max-width:300px; width:300px; }
@@ -331,11 +351,26 @@ h2.alittle { margin-top: 20px; }
     .pagebannerto {font-size: 36px; }
     .dropdownnotification {position: absolute; left: 60px; z-index: 100; }
 }
-@media (max-width: 650px){
-    .registeryour {
-    padding: 40px 20px;
-}
 
+@media (max-width: 650px){
+    .loginscreen .card {
+    margin-top: 0;
+}
+ .loginscreen .alert.alert-danger{
+
+}
+    .loginscreen .btn-primary {
+    font-size: 18px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: 'futuralight';
+}
+    .loginscreen .row.flex-md-row-reverse {padding-left: 0px !important; padding-right: 0px !important; }
+    .loginscreen .card-body {  padding: 20px; }
+    .aboutme {padding: 10px 0px 20px; }
+    .alettertext {font-size: 20px !important; }
+    .earningfore { font-size: 22px; }
+    .registeryour { padding: 40px 20px; }
     .prdpart p { font-size: 16px; }
     .giftpart{ margin-bottom:20px; }
     .giftpart:last-child{ margin-bottom:0px; }
@@ -371,8 +406,8 @@ h2.alittle { margin-top: 20px; }
     .forcasterdiv h4 {margin-bottom: 0px; font-size: 40px; font-weight: 700; font-family: 'futuraheavy'; line-height: 40px; margin-top: 5px; }
     .forcasterdiv h5 { margin-bottom: 0px;     font-size: 13px; }
     .convertion { text-align: center; }
-    .commisions { text-align: center; }
-    .forcastearning {  }
+    .commisions {text-align: center; margin:0px 26px 0px !important; }
+    .forcastearning {padding-left: 20px; padding-right: 20px; padding-bottom: 25px; }
     .earningfore { padding-right: 0; text-align: center; }
     .copyrighttext {margin-top: 30px; }
     .footerloogo {margin: 30px 0px; padding: 0px 50px; }
@@ -432,7 +467,7 @@ h2.alittle { margin-top: 20px; }
     .paymentzone strong.d-block {font-size: 11px !important; }    
     .paymentzone small{font-size:12px; }
     .paymentzone .btn.btn-transparent{  }
-    .topmobdiv .col-auto img {height: 50px !important; }
+    .topmobdiv .col-auto img { height: 50px !important; }
     .registeryour h5 { font-size: 15px; }
     .registeryour .btn-primary { border-radius: 100px; height: 50px; font-size: 18px; min-width: 100%; margin-top: 15px; }
     .tablepayme {border-radius: 10px;}
@@ -442,7 +477,7 @@ h2.alittle { margin-top: 20px; }
     .copyrighttext p {font-size: 16px; }
     .convertion {background: #ffffff; margin: 0px 26px 26px !important; border-radius: 10px; }
     .paymepart {padding: 30px 10px 0; }
-    .footer-block-inner { margin-top: 20px; }
+    .footer-block-inner {margin-top: 20px; padding-left: 10px; }
     .gitoff {padding: 0px !important; }
     .givepayout{display:none; }
     .gitoff p{display:none; }
@@ -457,6 +492,10 @@ h2.alittle { margin-top: 20px; }
     .numberlist span { flex: 0 0 36px;  max-width: 36px; }
     .postremaining {margin-left: 50px !important; }
     .text-center.text-light.green {  margin-top: 15px; }
+    .aboutsec {padding:0px 20px 15px; }
+    .abouton {    }
+    .abrotate {margin-top: 10px; }
+    .abouton .card-body {padding-bottom: 15px; }
 }
 @media (max-width: 480px){
  .titleiconindex {line-height: 20px; font-size: 13px !important; }

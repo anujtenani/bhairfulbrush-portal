@@ -38,32 +38,31 @@ function PayoutsTable(){
             </tr>
         </thead>
         <tbody>
-        {
-            items.length === 0 ? <tr><td colSpan={4} className={"text-center"}>No payouts</td></tr> :
-                <>
-                    {
-                        items.map((item)=>{
-                            return <tr key={String(item.payout_id)}>
-                                <td>
-                                    <RenderDateAndTime value={item.payout_date} />
-                                </td>
-                                <td className={"text-center"}>
-                                    <DefaultCurrencyRender value={item.amount} />
-                                </td>
-                                <td className={"text-right"}>
-                                    <a href={`https://api-server-1.goaffpro.com/partner/payments/download/${item.downloadToken}`}>
-                                        <FiArrowDownCircle style={{fontSize:20}}/>
-                                    </a>
-                                </td>
-                            </tr>
-                        })
-                    }
-                </>
-        }
+            {
+                items.length === 0 ? <tr><td colSpan={4} className={"text-center"}>No payouts</td></tr> :
+                    <>
+                        {
+                            items.map((item)=>{
+                                return <tr key={String(item.payout_id)}>
+                                    <td>
+                                        <RenderDateAndTime value={item.payout_date} />
+                                    </td>
+                                    <td className={"text-center"}>
+                                        <DefaultCurrencyRender value={item.amount} />
+                                    </td>
+                                    <td className={"text-right"}>
+                                        <a href={`https://api-server-1.goaffpro.com/partner/payments/download/${item.downloadToken}`}>
+                                            <FiArrowDownCircle style={{fontSize:20}}/>
+                                        </a>
+                                    </td>
+                                </tr>
+                            })
+                        }
+                    </>
+            }
         </tbody>
     </table></div></div>
-
-        <p>Showing {items.length} of {items.length} entries</p>
+        <p> Showing {items.length} of {items.length} entries </p>
     </>
 }
 function PaypalEmailAddressUpdater(){

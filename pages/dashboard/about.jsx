@@ -7,16 +7,16 @@ function About(props) {
         <DashboardContainer title={"About us"}>
             <div>
                 <div className="container p-4">
-                    <div className="card bg-dark">
+                    <div className="card bg-dark abouton">
                         <div className="text-center card-body">
                             <img src={"/behairful-logo.png"} style={{width:200, marginBottom:24}} />
-                            <div style={{ transform:'rotate(-3deg)', marginBottom:24}}>
-                                <span className={"bg-light text-dark px-2 py-1"} style={{
+                            <div className="abrotate" style={{ transform:'rotate(-3deg)'}}>
+                                <span className={"bg-light text-dark px-2 py-1 alettertext"} style={{
                                         fontSize:28}}>A Letter from us to you.</span>
                             </div>
                         </div>
-                            <div style={{marginTop:24}}>
-                                <div className="row p-4 justify-content-center">
+                            <div className="aboutsec">
+                                <div className="row justify-content-center aboutme">
                                     <div className="col-12 col-sm-11 col-lg-10">
                                         <p className="mb-4">
                                             The concept of Behairful was thought of one day when I was caregiving for my mother. She had asked me to brush her hair for her while brushing her hair, I noticed I was having a difficult time untangling her coarse hair. I could never brush her hair without her complaining about the brush pulling her hair. On top of it pulling her hair, it caused a significant amount of breakage. This was NOT okay! From then on, I was determined to find a hairbrush that would actually work for my mother’s thick hair.
