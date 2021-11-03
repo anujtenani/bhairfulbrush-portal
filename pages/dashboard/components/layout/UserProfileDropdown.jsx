@@ -7,7 +7,7 @@ import Avatar from "../../../../components/general/Avatar";
 function UserProfileDropdown(props) {
     const {data, error, isLoading} = useProfile();
     return (
-        <UncontrolledDropdown direction={"left"} className="userdropd">
+        <UncontrolledDropdown direction={"bottom"} className="userdropd">
             <DropdownToggle color={"transparent"}>
                 {
                     isLoading ? <Skeleton height={48} width={48}/> :

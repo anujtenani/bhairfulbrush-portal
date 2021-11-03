@@ -87,7 +87,7 @@ function Sales(props) {
 }
 function RenderTableData({data}){
     if(data.length === 0) return <tr>
-        <td colSpan={4} className="noyetpart">
+        <td colSpan={5} className="noyetpart">
             <div className={"mt-2 text-center nosaleyet"}>
                 No Sales yet
             </div>

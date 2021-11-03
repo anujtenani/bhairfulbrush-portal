@@ -102,7 +102,7 @@ function NavMainItems({props, currentUrl}) {
 }
 
 export function NavBottomItems({currentUrl}){
-    console.log('foot', currentUrl)
+ 
     return <ul className="navbar-nav navbar-nav-bottom ">
         <NavItem title={"About Us"} Icon={FiInfo} href={"/dashboard/about"} navClass={"about-div"} currentUrl={currentUrl} />
     </ul>

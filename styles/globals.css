@@ -13,54 +13,32 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 @font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
 
-.indopromo.promolink {
-    flex: 0 0 100%;
-    max-width: 100%;
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-}
-.indopromo.promolink .promotext {
-    font-size: 18px;
-}
-.indopromo.promolink .promohead{
-    flex-direction: column;
-    font-size:18px;
-}
-.indopromo.promolink .promohead span{
-    flex-direction: column;
-    font-size:18px;
-}
-.indopromo.promolink span {
-    font-family: futuramedium;
-    font-size: 20px;
-}
-.promohead {
-      display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-.paymenbanner .pagebannerto {
-    background-position: 0px 70% !important;
-}
-.indopromo.promocode {
-    flex: 0 0 100%;
-    max-width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.tenpercent{
-     font-family:"futura-pt-bold" !important;
-}
+.indopromo.promolink {flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }
+.indopromo.promolink .promotext {font-size: 18px; }
+.indopromo.promolink .promohead{flex-direction: column; font-size:18px; }
+.indopromo.promolink .promohead span{flex-direction: column; font-size:18px; }
+.indopromo.promolink span {font-family: futuramedium; font-size: 20px; }
+.promohead { display: flex; flex-wrap: wrap; justify-content: center; }
+.paymenbanner .pagebannerto {background-position: 0px 70% !important; }
+.indopromo.promocode {flex: 0 0 100%; max-width: 100%; align-items: center; display: flex; justify-content: center; }
+.tenpercent{ font-family:"futura-pt-bold" !important; }
 .forcastearning .form-group .input-group-append { display:none; }
 
 .faqitempart .pagebannerto{ position: relative; }
 .faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center {}
 .faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center:before { content: ""; background: rgb(0 0 0 / 50%); position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }
 .faqitempart .pagebannerto .titleclspage {position: relative; z-index: 0; }
-.registeryour h5 {font-size: 18px; font-family: 'futuramedium'; font-weight:300; }
+.red{
+color:red !important;
+}
+.green{
+color:green !important;
+}
+.registeryour h5 {
+    font-size: 15px;
+    font-family: 'futuramedium';
+    font-weight: 100;
+}
 .parapostperfect { padding: 0px 15px; font-size: 16px; }
 .parapostperfect ul li::marker { content: "\2022"; color: red; margin-left: -1em; font-size: 18px; }
 .parapostperfect ul{ margin:0px;  padding:0px;}
@@ -202,7 +180,7 @@ img{max-width:100%; }
 .loginscreen .finally {font-size: 24px; font-family: 'futuramedium'; }
 .loginscreen .card .form-control {border: #000 1px solid; border-radius: 10px; padding: 20px; min-height: 60px; background-color: #fff !important; }
 .loginscreen .card-body {padding: 50px; }
-.loginscreen .card-body .form-group label{font-family:"futura-pt-bold"; }
+.loginscreen .card-body .form-group label { font-family: "futura-pt-bold"; text-transform: capitalize; }
 .loginscreen .btn-primary {border-radius: 100px; margin-top: 15px; }
 .forgotgroup { margin-bottom: -25px; }
 /*.givepayout {font-size: 18px; font-family: 'futura_xblk_btextra_black'; }*/
@@ -302,7 +280,14 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .stepbox span {  font-family: 'futuramedium';  font-size: 20px; }
 .stepbox h3{}
 .promodcode { margin-bottom: 15px; }
-.promodcode h3 { font-family: "futura-pt-bold"; font-size: 36px; }
+.promodcode h3 {
+    font-family: "futura-pt-bold";
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.userdropd .dropdown-menu {
+    left:-40px !important;
+}
 .promodcode p {  }
 .promodcode:last-child{margin-bottom:0px; }
 .blueperefect { padding: 20px 20px 0px; }
@@ -359,22 +344,11 @@ h2.alittle { margin-top: 20px; }
     .dropdownnotification {position: absolute; left: 60px; z-index: 100; }
 }
 @media (max-width: 650px){
-.theperfect.displayhidecontent {
-    display: flex;
-}
-.footer-list-social {
-    display: flex;
-}
-.footer-list-social li a{
-    margin-right: 10px;
-}
-.footer-block-inner {
-    
-    display: block !important;
-}
-    .theperfect{
-        display: none;
-    }
+    .theperfect.displayhidecontent {display: flex; }
+    .footer-list-social {display: flex; }
+    .footer-list-social li a{margin-right: 10px; }
+    .footer-block-inner {display: block !important; }
+    .theperfect{display: none; }
     .promocodetable { flex-direction: column; }
     .indopromo { max-width:100%; flex:0 0 100%; }
     .paymedroppage.dropdown-menu{left: -40px !important; }
@@ -450,9 +424,7 @@ h2.alittle { margin-top: 20px; }
     .gitoff h1.earning {font-size: 24px; text-align: center !important; display: block; }
     .inspiration {padding: 40px 0px; }
     .feedbackborder{border-bottom:#fff 1px solid; border-radius:0px !important; }
-.usepromo {
-    font-size: 12px;
-}
+    .usepromo {font-size: 12px; }
     .imgdivlast {padding: 0; }
     .mobilescreen .collapse{top: 90px !important; }
     .leadpromo {font-size: 20px; }
@@ -470,38 +442,22 @@ h2.alittle { margin-top: 20px; }
     .convertion {background: #ffffff; margin: 0px 26px 26px !important; border-radius: 10px; }
     .paymepart {padding: 30px 10px 0; }
     .footer-block-inner { margin-top: 20px; }
-    .gitoff {
-    padding: 0px !important;
-}
-
-    .givepayout{
-        display:none;
-    }
-    .gitoff p{
-        display:none;
-    }
-    .leadpromo {
-  
-    min-width: 80%;
-}
-.iconindex {
-    margin-left: -15px;
-}
-.alittlepart {
-    padding: 10px;
-}
-.perfecticonpost {
-
-    margin-bottom: 0px;
-}
+    .gitoff {padding: 0px !important; }
+    .givepayout{display:none; }
+    .gitoff p{display:none; }
+    .leadpromo {min-width: 80%; }
+    .iconindex {margin-left: -15px; }
+    .alittlepart {padding: 10px; }
+    .perfecticonpost {margin-bottom: 0px; }
 }
 @media (max-width: 480px){
-  .topmobdiv {padding-left: 15px !important; padding-right: 15px !important; }
-  .dropdownnotification {left: 35px;}
-  .dropdownnotification .btnnotification {transform: scale(0.8); }
-  .topmobdiv .col-auto a.logotop {background: url(/behairful-logo-m.jpg) no-repeat center; height: 45px; width: 88px; background-size: contain; }
-  .paymentzone small {font-size: 10px; }
-  .paymentzone strong.d-block {font-size: 10px !important; }
-  .paymentzone svg {font-size: 12px !important; }
-  .dropleft.dropdown .btn.btn-transparent .shadow-sm {width: 33px !important; height: 33px !important; background-size: 100%; }
+ .titleiconindex {line-height: 20px; font-size: 13px !important; }
+   .topmobdiv {padding-left: 15px !important; padding-right: 15px !important; }
+   .dropdownnotification {left: 35px;}
+   .dropdownnotification .btnnotification {transform: scale(0.8); }
+   .topmobdiv .col-auto a.logotop {background: url(/behairful-logo-m.jpg) no-repeat center; height: 45px; width: 88px; background-size: contain; }
+   .paymentzone small {font-size: 10px; }
+   .paymentzone strong.d-block {font-size: 10px !important; }
+   .paymentzone svg {font-size: 12px !important; }
+   .dropleft.dropdown .btn.btn-transparent .shadow-sm {width: 33px !important; height: 33px !important; background-size: 100%; }
 }
