@@ -212,34 +212,34 @@ function Card({src, title, Icon, description, noBorder}){
 
 function Item({number, title, description}){
     return <div>
-        <div className={"d-flex promodcode"}>
+        <div className={"d-flex promodcode perfectpostdemo"}>
             <div style={{borderRadius:24, width:32, height:32}}
                  className={"circlei d-flex mr-2 align-items-center justify-content-center bg-white text-dark text-center"}><strong>{number}</strong>
             </div>
             <h4 className={"ml-4"}><strong>{title}</strong></h4>
         </div>
-        <p style={{marginLeft:64}}>{description}</p>
+        <p className="postremaining" style={{marginLeft:64}}>{description}</p>
     </div>
 }
 
 function Step({reverse, image, step, title, text, Icon}){
     return  <div className={`row imgboxpostperfect`}>
-            <div className="col-lg-12">
-                <div className="d-flex perfecticonpost">
-                  <div className="imgperfectbox">
-                     <Image src={image} alt={title} style={{height:150}} />
-                  </div>
-                  <div className={"stepbox"}>
-                     <Badge text={step} />
-                     <h3 className={"mt-1"}><strong>{title}</strong></h3>
-                  </div>
+                <div className="col-lg-12">
+                    <div className="d-flex perfecticonpost">
+                      <div className="imgperfectbox">
+                         <Image src={image} alt={title} style={{height:150}} />
+                      </div>
+                      <div className={"stepbox"}>
+                         <Badge text={step} />
+                         <h3 className={"mt-1"}><strong>{title}</strong></h3>
+                      </div>
+                    </div>
                 </div>
-            </div>
-            <div className="col-lg-12">
-                <div className="parapostperfect">
-                  <p>{text}</p>
+                <div className="col-lg-12">
+                    <div className="parapostperfect">
+                      <p>{text}</p>
+                    </div>
                 </div>
-            </div>
     </div>
 }
 

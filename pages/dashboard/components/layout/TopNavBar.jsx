@@ -46,10 +46,10 @@ return (
    <div className="mobilescreen">
         <div className="mobscreenind">
             <Collapse isOpen={open}>
-            <div className={"shadow screenopen"} style={{backgroundColor:'rgba(0, 0, 0, 0.96)', position:'fixed', right:0, bottom:0 }} >
-                <NavMainItems />
-                <NavBottomItems />
-            </div>
+               <div className={"shadow screenopen"} style={{backgroundColor:'rgba(0, 0, 0, 0.96)', position:'fixed', right:0, bottom:0 }} >
+                   <NavMainItems />
+                   <NavBottomItems />
+               </div>
             </Collapse>
         </div>
    </div>

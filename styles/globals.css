@@ -24,21 +24,14 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 .tenpercent{ font-family:"futura-pt-bold" !important; }
 .forcastearning .form-group .input-group-append { display:none; }
 
-.faqitempart .pagebannerto{ position: relative; }
+.faqitempart .pagebannerto {position: relative; background-position: 0 69% !important; }
 .faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center {}
 .faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center:before { content: ""; background: rgb(0 0 0 / 50%); position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }
 .faqitempart .pagebannerto .titleclspage {position: relative; z-index: 0; }
-.red{
-color:red !important;
-}
-.green{
-color:green !important;
-}
-.registeryour h5 {
-    font-size: 15px;
-    font-family: 'futuramedium';
-    font-weight: 100;
-}
+
+.red{ color:red !important; }
+.green{ color:green !important; }
+.registeryour h5 { font-size: 15px; font-family: 'futuramedium'; font-weight: 100; }
 .parapostperfect { padding: 0px 15px; font-size: 16px; }
 .parapostperfect ul li::marker { content: "\2022"; color: red; margin-left: -1em; font-size: 18px; }
 .parapostperfect ul{ margin:0px;  padding:0px;}
@@ -46,15 +39,13 @@ color:green !important;
 .hairfacts { font-weight: 700; font-size: 36px; }
 .inspirationpart .card-columns .card { height: 300px; margin-bottom: 15px; border-radius: 5px; overflow: hidden; }
 .inspirationpart .card-columns .card img{border-radius:0px; width:100%; height:100%; object-fit: cover; object-position: center; }
-.inspirationpart .pagebannerto {background-position: 100% 66% !important; }
+.inspirationpartmake .pagebannerto {background-position: 100% 66% !important; }
 .prdpart p {font-size: 20px; }
 .giftpart div{width:100%; }
 .giftpart h3{font-family: 'futuramedium'; }
 #sidebar {background:#000; }
 #sidebar li {  }
-#sidebar .sidecontainer li.active a{
-color:#fff !important;
-}
+#sidebar .sidecontainer li.active a { color:#fff !important; }
 
 #sidebar li a {}
 .sideoffbar,.sideoffbarmain{min-width:300px; max-width:300px; width:300px; }
@@ -83,7 +74,10 @@ color:#fff !important;
 .imginspiration img {object-fit: cover; object-position: top center; width: 100%; height: 100%; }
 .watchyour {font-weight: bold; font-size: 35px; margin-bottom: 30px; }
 .salesfor {}
-.salesfor select.form-control { background: transparent; border-radius: 20px !important; padding: 0px 14px; color: #fff; font-size: 20px; margin: 0 30px !important; background: url(../public/arrowselect.png) no-repeat 86% 50%; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.salesbgpart{
+    padding:30px 0px 0px;
+}
+.salesfor select.form-control { background: transparent; border-radius: 20px !important; padding: 0px 14px; color: #fff; font-size: 16px; margin: 0 30px !important; background: url(../public/arrowselect.png) no-repeat 86% 50%; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .salesfor select.form-control option{color: #fff; background:#000; }
 .maintable td.noyetpart{}
 
@@ -160,9 +154,9 @@ img{max-width:100%; }
 .weare { text-align: center; margin-bottom: 20px; font-weight: 300; margin-bottom: 25px;  font-family:"FuturaLT"; }
 .dropdownnotification {display: inline-flex; float: left; margin: 11px 13px; }
 .dropdownnotification .dropdown{}
-.dropdownnotification .btnnotification {width: 38px; height: 38px; background: url(/iconall.png) no-repeat; background-position: -7px -829px; border: none; display: block; outline: none !important; box-shadow: none; }
+.dropdownnotification .btnnotification { width: 38px; height: 38px; background: url(/iconall.png) no-repeat; background-position: -7px -829px; border: none; display: block; outline: none !important; box-shadow: none; }
 .dropdownnotification .dropdown-menu{}
-.btn-primary {border-radius: 10px; text-align: center; font-size: 25px; padding: 10px 50px; line-height: normal; min-height: auto; background: #000 !important; }
+.btn-primary { border-radius: 10px; text-align: center; font-size: 25px; padding: 10px 50px; line-height: normal; min-height: auto; background: #000 !important; }
 #topbar { background-color: #0c0c0c !important; display: -moz-box; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: justify; justify-content: space-between; padding: 15px 0px; }
 .footer {background-color: #0c0c0c; padding: 50px 30px 20px; }
 .registeryour{padding:50px 20px; }
@@ -211,13 +205,14 @@ img{max-width:100%; }
 .forcastearning .btn-primary {border-radius: 100px; font-size: 18px; margin-top: 10px; }
 .forcastearning {display: -moz-box; display: flex; -moz-box-align: center; flex-direction: column; padding: 15px 40px; }
 .forcastearning .form-control { border-radius: 18px; border: #000 1px solid; border-radius: 20px !important; }
+.perfectpst p { color:#515151; }
 
 .forcastearning label {text-transform: uppercase; font-weight: 700; }
 .forcastearning .input-group-append .input-group-text {border-radius: 0px 17px 17px 0px; border: #000 1px solid; }
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {opacity: 1; }
 .earningfore {padding-right: 67px; text-align: left; line-height: 36px; font-size: 36px; margin-bottom: 15px; font-family: 'futuramedium'; }
 .registeryour .form-control {border: #000 1px solid; border-radius: 10px; height: 60px; }
-.registeryour .btn-primary {border-radius: 100px; height: 60px; font-size: 20px; }
+.registeryour .btn-primary {border-radius: 100px; height: 60px; font-size: 20px; font-family: 'futuralight'; }
 #sidebar .sidecontainer li a{position: relative; font-family:"FuturaLT"; color:#404042;}
 #sidebar .sidecontainer li a:hover{ color:#fff;  }
 #sidebar .sidecontainer li a:hover span{ color:#fff; }
@@ -235,31 +230,24 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .promocodetable { margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; }
 .indopromo { padding: 0 0px; flex: 0 0 40%; max-width: 40%; }
 .indopromo span{ font-family: 'futuramedium'; font-size:26px; }
-.indopromo span.yqdgca {
-    display: none;
-}
-.indopromo.promocode {
-    flex: 0 0 100%;
-}
-.indopromo.promocode .styprocode {
-    background: #000;
-    color: #fff;
-    padding: 7px 15px;
-    margin: 0 10px;
-}
+.indopromo span.yqdgca {display: none; }
+.indopromo.promocode {flex: 0 0 100%; }
+.indopromo.promocode .styprocode {background: #000; color: #fff; padding: 7px 15px; margin: 0 10px; }
+.postremaining{}
+.indopromo.promocode .promohead .promotext{ font-weight:300; }
 .gitoff h1.earning {font-size: 40px; font-weight: 700; font-family:"FuturaLT"; letter-spacing: 1px; line-height:54px; }
 .leadpromo { font-size: 32px; font-family: 'futuralight'; min-width: 460px; display: table; margin: 0 auto; }
-.promotext {font-size: 25px; font-weight: 700; font-family: 'futuramedium'; padding-right: 15px; text-transform: uppercase; }
+.promotext { font-size: 25px; font-weight: 700; font-family: 'futuramedium'; padding-right: 15px; text-transform: uppercase; }
 .mobilescreen .collapse{position: relative; background: #000;}
 .paymentzone {}
-.topmobdiv{width:100%; }
-.stepbox {padding: 30px 30px; }
-.perfecticonpost{margin-bottom:30px; }
+.topmobdiv{ width:100%; }
+.stepbox { padding: 30px 30px; }
+.perfecticonpost{ margin-bottom:30px; }
 .imgperfectbox { width: 30%; }
-.circlei{flex:0 0 32px; }
-.prdpart {margin-right:25px; }
-.productionpresent {justify-content: space-around; flex-wrap: wrap; }
-.paymepart {padding: 30px 30px 0; }
+.circlei{ flex:0 0 32px; }
+.prdpart { margin-right:25px; }
+.productionpresent { justify-content: space-around; flex-wrap: wrap; }
+.paymepart { padding: 30px 30px 0; }
 .paypalemail h4{ text-transform:uppercase; font-family:"FuturaLT"; }
 .theperfect { display: -moz-box; display: flex; margin-top: 30px; margin-bottom: 30px; }
 .homesidebanner{padding:30px 0px; }
@@ -344,6 +332,19 @@ h2.alittle { margin-top: 20px; }
     .dropdownnotification {position: absolute; left: 60px; z-index: 100; }
 }
 @media (max-width: 650px){
+    .registeryour {
+    padding: 40px 20px;
+}
+
+    .prdpart p { font-size: 16px; }
+    .giftpart{ margin-bottom:20px; }
+    .giftpart:last-child{ margin-bottom:0px; }
+    .footerloogo { margin: 0px 0px 30px; padding: 0px 50px; max-width: 286px; }
+    img.main-footer-logo { width: 190px; margin-left: auto; margin-right: auto; }
+    .forcasterdiv {padding-top: 30px; }
+    .oncepartbg {padding: 30px 10px; }
+    .parapostperfect{ margin-left: -5px;  margin-right: -5px; }
+    .salesbgpart { padding:0px 0px; }
     .theperfect.displayhidecontent {display: flex; }
     .footer-list-social {display: flex; }
     .footer-list-social li a{margin-right: 10px; }
@@ -352,15 +353,15 @@ h2.alittle { margin-top: 20px; }
     .promocodetable { flex-direction: column; }
     .indopromo { max-width:100%; flex:0 0 100%; }
     .paymedroppage.dropdown-menu{left: -40px !important; }
-    .forcastedpart {text-align: center; }
+    .forcastedpart {text-align: center; display:none; } 
     .faqpart {border-radius: 18px !important; }
     .openfaqpage {padding: 20px; }
     .commisions {margin: 30px 30px 0px !important; border-radius: 10px; padding-left: 0px !important; padding-right: 0px !important; background: #fff; }
-    .perfectpartdiv {padding: 40px 0px; }
+    .perfectpartdiv {  padding: 40px 13px; }
     .whenperfect {padding: 40px 0px; }
     .iconimgperfect {min-height: 110px; }
     .blueperefect.last .promodcode{}
-    .alittlepart p {font-size: 18px; }
+    .alittlepart p { font-size: 15px; }
     .feedbackbg {padding-bottom: 0px !important; }
     .feedbackpart{padding-bottom:0px !important; }
     .feedithas:last-child{  padding-bottom:0px !important; }
@@ -385,7 +386,7 @@ h2.alittle { margin-top: 20px; }
     .titleclspage {font-size: 24px; }
     .promodcode{margin-bottom:0px; }
     .paratextbanner {margin-top: 10px !important; padding: 0 15px; }
-    .perfectpst h5 {font-size: 16px; }
+    .perfectpst h5 {font-size: 16px;     font-weight: 400; }
     .perfectpst{padding:30px 0px; }
     .iconimgperfect{}
     .promodcode h4 { margin-left: 10px !important; }
@@ -395,7 +396,7 @@ h2.alittle { margin-top: 20px; }
     .oncethat h2 {font-size: 24px; }
     .oncethat h3{font-size: 18px; }
     .oncethat h4{font-size: 18px; }
-    .promodcode {padding: 15px 15px 0px; }
+    .promodcode {padding: 15px 8px 0px; }
     .promodcode h3{font-size:24px; }
     .promodcode h4{font-size:18px;}
     .imgboxpostperfect {padding: 0px !important; margin: 0px !important; }
@@ -406,11 +407,11 @@ h2.alittle { margin-top: 20px; }
     .imgperfectbox{width:100px;}
     .imgperfectbox img {width: auto !important; height: 60px !important; }
     .stepbox {padding: 0px 10px; }
-    .numberlist {padding: 0px 0px; margin-bottom: 10px !important; margin-top: 10px !important; }
+    .numberlist { padding: 0px 0px; margin-bottom: 10px !important; margin-top: 10px !important; font-size: 14px; }
     .iconimgperfect img {height: 60px; }
     ul.footer-list li {font-size: 14px; }
-    .footer { padding-right: 0px; padding-left: 0px; padding-top: 10px; }
-    .maintable th {padding: 18px 10px; font-size: 12px; font-weight: 400; text-transform: uppercase; }
+    .footer { padding-right: 0px; padding-left: 0px; }
+    .maintable th {padding: 18px 8px; font-size: 12px; font-weight: 400; text-transform: uppercase; }
     .nosaleyet{padding:0px !important; }  
     .pagebannerto {height: 300px !important; font-size: 24px; display: flex; align-items: center; justify-content: center; width: 100%;     flex-direction: column; }
     .weare {font-size: 20px; }
@@ -432,7 +433,7 @@ h2.alittle { margin-top: 20px; }
     .paymentzone small{font-size:12px; }
     .paymentzone .btn.btn-transparent{  }
     .topmobdiv .col-auto img {height: 50px !important; }
-    .registeryour h5 { font-size: 16px; }
+    .registeryour h5 { font-size: 15px; }
     .registeryour .btn-primary { border-radius: 100px; height: 50px; font-size: 18px; min-width: 100%; margin-top: 15px; }
     .tablepayme {border-radius: 10px;}
     .registeryour .form-control {border-radius: 5px; height: 50px; }
@@ -448,7 +449,14 @@ h2.alittle { margin-top: 20px; }
     .leadpromo {min-width: 80%; }
     .iconindex {margin-left: -15px; }
     .alittlepart {padding: 10px; }
-    .perfecticonpost {margin-bottom: 0px; }
+   .perfecticonpost {margin-bottom:0px; padding-left:0px; }
+    .avideostory { padding: 30px 10px; }
+    .mobilescreen .navbar-nav .nav-link { color:#969696 !important; }
+    .promodcode.perfectpostdemo { padding-left: 0px; }
+    .bg-white.productpresentation.p-4 { padding: 30px 0px 10px !important; }
+    .numberlist span { flex: 0 0 36px;  max-width: 36px; }
+    .postremaining {margin-left: 50px !important; }
+    .text-center.text-light.green {  margin-top: 15px; }
 }
 @media (max-width: 480px){
  .titleiconindex {line-height: 20px; font-size: 13px !important; }
