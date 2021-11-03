@@ -110,10 +110,10 @@ function PaypalEmailAddressUpdater(){
                     <Button className={'btn btn-primary border-0'}
                             loading={saving}
                             onClick={onSubmit}
-                            title={"submit"}/>
+                            title={"Register"}/>
                 </div>
             </form>
-            <div className="text-center text-light">{success ? 'Paypal email address updated successfully' : null}</div>
+            <div className="text-center text-light green">{success ? 'Paypal email address updated successfully' : null}</div>
     </div>
 }
 
