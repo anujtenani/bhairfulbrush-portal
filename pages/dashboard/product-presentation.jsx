@@ -17,7 +17,7 @@ const ProductPresentation = () => {
 
 const HairFactsContainer = () => {
     return (
-        <section className="bg-white p-4">
+        <section className="bg-white p-4 productpresentation">
             <div className={"container text-center text-dark"}>
                 <div className="row">
                     <div className="col-md-12">
@@ -56,17 +56,17 @@ const ProductContentContainer = () => {
             <div className="row">
                 <div className="col-md-4 giftpart">
                     <ProductContent src={'/presentation_pg_1.jpg'} title={"Gift"}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias doloremque dolores esse mollitia necessitatibus pariatur qui ratione reiciendis sunt.
+                        Donec dapibus mauris id odio ornare tempus. Duis sit amet accumsan justo, quis tempor ligula. Quisque quis pharetra felis. Ut quis consequat orci, at consequat felis. Suspendisse auctor laoreet placerat. Nam et risus non locus dignissim lacinia sit amet nec eros. Nulla vel urna quis libero pharetra varius. Nulla tellus nunc, malesuada at scelerisque eget, cursus at eros. Maecenas pellentesque locus quis erat eleifend sagittis.
                     </ProductContent>  
                 </div>
                 <div className="col-md-4 giftpart">
                     <ProductContent src={'/presentation_pg_2.jpg'} title={"Brush 1"}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis dicta exercitationem quis rem. Fugiat labore laborum nostrum odio voluptate?
+                        Donec dapibus mauris id odio ornare tempus. Duis sit amet accumsan iusto, quis tempor ligula. Quisque quis pharetra felis. Ut quis consequat orci, at consequat felis. Suspendisse auctor laoreet placerat. Nam et risus non locus dignissim lacinia sit amet nec eros. Nulla vel urna quis libero pharetra varius. Nulla tellus nunc, malesuada at scelerisque eget, cursus at eros. Maecenas pellentesque lacus quis erat eleifend sagittis.
                     </ProductContent>
                 </div>
                 <div className="col-md-4 giftpart">
                     <ProductContent src={'/presentation_pg_3.jpg'} title={"Brush 2"}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dicta exercitationem fugit, nesciunt optio quos recusandae ut veritatis. Cumque, excepturi?
+                        We test at every stage of our process, from manufacturing the gummy to quality checks upon packaging. We ensure that not only the highest quality ingredients are used, but that the highest standard of quality assurance is carried out throughout the whole process.
                     </ProductContent>
                 </div>
             </div>

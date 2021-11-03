@@ -14,7 +14,7 @@ function Sales(props) {
            <div className="salestype"> 
                 <PageHeaderBanner title={"Watch your sales grow"} src={"/dashboard/sales_banner.png"} height={500} />
             </div>
-                <div className="py-4">
+                <div className="salesbgpart">
                     <div className="container mt-4">
                         <div className="row">
                             <div className="col-lg-12  text-center">
