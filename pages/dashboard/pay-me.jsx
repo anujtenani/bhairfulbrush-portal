@@ -17,10 +17,10 @@ function PayMe(props) {
                     <div className="container">
                         <PayoutsTable />
                     </div>
-                </section>
+                </section> 
             <DashboardFooter />
         </DashboardContainer>
-    );
+    ); 
 }
 
 function PayoutsTable(){
@@ -70,6 +70,7 @@ function PaypalEmailAddressUpdater(){
     const {data, isLoading} = useProfile();
     const [saving, setSaving] = useState(false)
     const [success, setSuccess] = useState(false)
+    const [error, setError] = useState(false)
 
     useEffect(()=>{
         if(data) {
@@ -79,17 +80,34 @@ function PaypalEmailAddressUpdater(){
 
     if(isLoading) return <Skeleton count={4} />
 
-    function onSubmit(e){
+function onSubmit(e){
         if(e){
             e.preventDefault();
             e.stopPropagation();
         }
         setSaving(true)
+        setError(false)
+
+        if(!paypal_email) {
+            setSuccess(false)
+            setError(true)
+            setSaving(false)
+            return false
+        }
+        const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if(!paypal_email.match(mailformat)) {
+            setSuccess(false)
+            setError(true)
+            setSaving(false)
+            return false
+        }
         updateProfile({paypal_email})
             .then((data)=>{
                 setSuccess(true)
                 setSaving(false)
             })
+
     }
 
     return <div className="bg-white text-dark registeryour">
@@ -111,8 +129,11 @@ function PaypalEmailAddressUpdater(){
                             onClick={onSubmit}
                             title={"Register"}/>
                 </div>
-            </form>
+            </form> 
+
             <div className="text-center text-light green">{success ? 'Paypal email address updated successfully' : null}</div>
+            <div className="text-center text-light red">{error ? 'Please enter valid Email ID' : null}</div>
+
     </div>
 }
 
