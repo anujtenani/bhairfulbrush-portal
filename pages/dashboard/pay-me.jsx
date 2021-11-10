@@ -17,10 +17,10 @@ function PayMe(props) {
                     <div className="container">
                         <PayoutsTable />
                     </div>
-                </section>
+                </section> 
             <DashboardFooter />
         </DashboardContainer>
-    );
+    ); 
 }
 
 function PayoutsTable(){
@@ -107,7 +107,7 @@ function onSubmit(e){
                 setSuccess(true)
                 setSaving(false)
             })
-            
+
     }
 
     return <div className="bg-white text-dark registeryour">
