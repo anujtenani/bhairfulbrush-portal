@@ -12,25 +12,17 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 @font-face { font-family: 'futuramedium'; src: url('./fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('./fonts/futura_medium_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
-.loginscreen .alert.alert-danger a{
-    color:#000;
-}
+
+.loginscreen .alert.alert-danger a { color:#000; }
 .indopromo.promolink { flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }
 .indopromo.promolink .promotext { font-size: 18px; }
 .indopromo.promolink .promohead { flex-direction: column; font-size:18px; }
 .indopromo.promolink .promohead span{ flex-direction: column; font-size:18px; }
 .indopromo.promolink span { font-family: futuramedium; font-size: 20px; }
 .abouton { padding-top: 15px; }
-
-.abrotate{
-
-}
-.aboutme p{
-
-}
-.alettertext{
-
-}
+.abrotate{}
+.aboutme p{}
+.alettertext{}
 .promohead { display: flex; flex-wrap: wrap; justify-content: center; }
 .paymenbanner .pagebannerto { background-position: 0px 70% !important; }
 .indopromo.promocode { flex: 0 0 100%; max-width: 100%; align-items: center; display: flex; justify-content: center; }
@@ -112,18 +104,10 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 
 .footerloogo { margin: 25px 0px; }
 .menulink { color:#000; }
-.salestype .pagebannerhead {
-    background-position: 100% 80%!important;
-}
-.perfectpostpart .footer.footerful .logofotmother{
-  display: none;
-}
-.perfectpostpart .footer.footerful .together{
- display: none;
-}
-.together{
-    margin-bottom: 50px;
-}
+.salestype .pagebannerhead {background-position: 100% 80%!important; }
+.perfectpostpart .footer.footerful .logofotmother{display: none; }
+.perfectpostpart .footer.footerful .together{display: none; }
+.together{margin-bottom: 50px; }
 .dropdownnotification .dropdown-menu {overflow: auto; height: 300px; width: 250px;     border-radius: 0px; }
 /* width */
 .dropdownnotification .dropdown-menu::-webkit-scrollbar {width: 5px; }
@@ -285,14 +269,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .stepbox span {  font-family: 'futuramedium';  font-size: 20px; }
 .stepbox h3{}
 .promodcode { margin-bottom: 15px; }
-.promodcode h3 {
-    font-family: "futura-pt-bold";
-    font-size: 36px;
-    text-transform: capitalize;
-}
-.userdropd .dropdown-menu {
-    left:-40px !important;
-}
+.promodcode h3 {font-family: "futura-pt-bold"; font-size: 36px; text-transform: capitalize; }
+.userdropd .dropdown-menu {left:-40px !important; }
 .promodcode p {  }
 .promodcode:last-child{margin-bottom:0px; }
 .blueperefect { padding: 20px 20px 0px; }
@@ -302,20 +280,15 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .avideostory h3{ font-size:25px; }
 .oncepartbg{ padding:30px 30px; }
 .oncethat h2{}
-.oncethat h4{
-font-family:"FuturaLT";    
-}
+.oncethat h4{font-family:"FuturaLT"; }
 .loadmorebtn{font-family: 'futuralight'; }
 .feedbackpart h5{ font-family:"FuturaLT"; }
 .parapostperfect ul { margin: 0 0 0px 15px; display: inline-block; }
 .parapostperfect li{}
 h2.alittle { margin-top: 20px; }
-.displayhidecontent{
-    display: none;
-}
-.abrotate {
-    margin: 20px 0px 10px;
-}
+.displayhidecontent{display: none; }
+.abrotate {margin: 20px 0px 10px; }
+
 /*media css*/
 @media (min-width: 1400px){
   .sideoffbar,.sideoffbarmain{ min-width:300px; max-width:300px; width:300px; }
@@ -353,18 +326,9 @@ h2.alittle { margin-top: 20px; }
 }
 
 @media (max-width: 650px){
-    .loginscreen .card {
-    margin-top: 0;
-}
- .loginscreen .alert.alert-danger{
-
-}
-    .loginscreen .btn-primary {
-    font-size: 18px;
-    padding-left: 0px;
-    padding-right: 0px;
-    font-family: 'futuralight';
-}
+    .loginscreen .card {margin-top: 0; }
+    .loginscreen .alert.alert-danger {}
+    .loginscreen .btn-primary {font-size: 18px; padding-left: 0px; padding-right: 0px; font-family: 'futuralight'; }
     .loginscreen .row.flex-md-row-reverse {padding-left: 0px !important; padding-right: 0px !important; }
     .loginscreen .card-body {  padding: 20px; }
     .aboutme {padding: 10px 0px 20px; }
@@ -498,7 +462,7 @@ h2.alittle { margin-top: 20px; }
     .abouton .card-body {padding-bottom: 15px; }
 }
 @media (max-width: 480px){
- .titleiconindex {line-height: 20px; font-size: 13px !important; }
+    .titleiconindex {line-height: 20px; font-size: 13px !important; }
    .topmobdiv {padding-left: 15px !important; padding-right: 15px !important; }
    .dropdownnotification {left: 35px;}
    .dropdownnotification .btnnotification {transform: scale(0.8); }
