@@ -28,7 +28,7 @@ function Terms(props) {
                 <div className="card bg-dark">
                     <div className="card-body">
                         <div className="text-center">
-                            <img src={"/behairful-logo.png"} style={{height:100}} />
+                            <img src={"behairful-logo-main.svg"} style={{height:100}} />
                         </div>
                         <h1 className={"text-center"}>Terms and conditions</h1>
                         {
