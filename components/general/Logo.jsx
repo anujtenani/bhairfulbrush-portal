@@ -2,8 +2,11 @@ import Image from "next/image";
 
 const Logo = () => {
     return (
-        <header style={{textAlign: "center", padding: "2.5rem"}}>
-            <Image src={'/login-logo.png'} width={'259px'} height={'146px'} alt={'behairful-logo'} />
+        <header class="logologin" style={{textAlign: "center"}}>
+            <Image src={'/behairful-logo-main.svg'} width={'259px'} height={'146px'} alt={'behairful-logo'} class="logologindesign" />
+            <div class="signupheader"> 
+                <span>Partner hub</span><Image src={'/behairful-partners-logo-ai-mobile.svg'} width={'88px'} height={'88px'} alt={'behairful-logo'} class="logolmobile" />
+            </div>
         </header>
     );
 }
