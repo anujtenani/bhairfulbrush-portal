@@ -29,6 +29,7 @@ function PayoutsTable(){
         return <Skeleton count={20}/>
     }
     const items = data.data;
+    
     return <> <div className="tablepayme"> <div className="tablemore"> <table className="table maintable">
         <thead>
             <tr>
