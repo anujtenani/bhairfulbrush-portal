@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 .tablepayme{
     display: none;
 }
+#sidebar .sidecontainer .navbar-brand img {
+    height: 100px !important;
+}
 .loginscreen .alert.alert-danger a { color:#000; }
 .indopromo.promolink { flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }
 .indopromo.promolink .promotext { font-size: 18px; }
@@ -111,7 +114,7 @@ ul.getyourcode li span.getyour {
 .forecasterpart .pagebannerhead {
     background-position: 100% 93% !important;
 }
-#sidebar {background:#000; }
+#sidebar {background:#080809; }
 #sidebar li {  }
 #sidebar .sidecontainer li.active a { color:#fff !important; }
 
@@ -273,7 +276,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .earningfore {padding-right: 67px; text-align: left; line-height: 36px; font-size: 36px; margin-bottom: 15px; font-family: 'futuramedium'; }
 .registeryour .form-control {border: #000 1px solid; border-radius: 10px; height: 60px; }
 .registeryour .btn-primary {border-radius: 100px; height: 60px; font-size: 20px; font-family: 'futuralight'; }
-#sidebar .sidecontainer li a{position: relative; font-family:"FuturaLT"; color:#404042;}
+#sidebar .sidecontainer li a{position: relative; font-family:"FuturaLT"; color:#404042 !important; }
 #sidebar .sidecontainer li a:hover{ color:#fff;  }
 #sidebar .sidecontainer li a:hover span{ color:#fff; }
 #sidebar .sidecontainer li a:before{content:""; width:38px; height:38px; background:url('/iconall.png') no-repeat; background-position:-7px -8px; }
