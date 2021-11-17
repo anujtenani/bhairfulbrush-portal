@@ -35,7 +35,6 @@ function Inspiration(props) {
     );
 }
 
-
 export async function getServerSideProps(context) {
     const cookies = context.req.cookies;
     return !cookies.access_token ? {
