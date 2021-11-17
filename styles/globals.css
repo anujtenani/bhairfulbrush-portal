@@ -12,18 +12,10 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 @font-face { font-family: 'futuramedium'; src: url('./fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('./fonts/futura_medium_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
-.hidedesktop{
-    display: none; 
-}
-.showingenteries{
-    display: none;
-}
-.tablepayme{
-    display: none;
-}
-#sidebar .sidecontainer .navbar-brand img {
-    height: 100px !important;
-}
+.hidedesktop{display: none; }
+.showingenteries{display: none; }
+.tablepayme{display: none; }
+#sidebar .sidecontainer .navbar-brand img {height: 100px !important; }
 .loginscreen .alert.alert-danger a { color:#000; }
 .indopromo.promolink { flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }
 .indopromo.promolink .promotext { font-size: 18px; }
@@ -40,6 +32,8 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 .tenpercent{ font-family:"futura-pt-bold" !important; }
 .aboutme { padding:20px 0px; }
 .forcastearning .form-group .input-group-append { display:none; }
+ul.getyourcode li:nth-child(3) span.getyour {padding: 15px 60px; }
+ul.getyourcode li:nth-child(4) span.getyour {padding: 15px 60px; }
 .getyourcode{
 
 }
@@ -48,50 +42,16 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 }
 ul.getyourcode{list-style: none; padding: 0px; margin: 0px; display: -moz-inline-box; display: inline-flex; flex-wrap: wrap; }
 ul.getyourcode li { list-style: none; display: inline-block; width: 50%; }
-ul.getyourcode li .creatorsbox {
-    margin: 0 15px 20px;
-    padding: 10px;
-    border-radius: 30px;
-    overflow: hidden;
-    min-height: 300px;
-    background-color: #ffffff;
-}
-.signuptext h2 {
-    font-size: 24px;
-    font-family: 'futuramedium';
-}
-.imgautocont-1{
-display: none;
-}
+ul.getyourcode li .creatorsbox {margin: 0 15px 20px; padding: 10px; border-radius: 30px; overflow: hidden; min-height: 300px; background-color: #ffffff; }
+.signuptext h2 {font-size: 24px; font-family: 'futuramedium'; }
+.imgautocont-1{display: none; }
 
 
-ul.getyourcode li:nth-child(1) .creatorsbox{
-     background: #141414;
-}
-ul.getyourcode li:nth-child(1) .creatorsbox span.getyour{
-background: #fff;
-  color: #000;
-}
-ul.getyourcode li a{
-
-    display: inline-block;
-}
-ul.getyourcode li span.imgsignin {
-    display: flex;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-}
-ul.getyourcode li span.getyour {
-    display: block;
-    background: #000;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    min-height: 76px;
-    font-size: 16px;
-}
+ul.getyourcode li:nth-child(1) .creatorsbox{background: #141414; }
+ul.getyourcode li:nth-child(1) .creatorsbox span.getyour{background: #fff; color: #000; }
+ul.getyourcode li a{display: inline-block; }
+ul.getyourcode li span.imgsignin {display: flex; height: 200px; align-items: center; justify-content: center; }
+ul.getyourcode li span.getyour {display: block; background: #000; color: #fff; padding: 15px 30px; border-radius: 20px; text-transform: uppercase; min-height: 76px; font-size: 16px; }
 .faqitempart .pagebannerto {position: relative; background-position: 0 69% !important; }
 .faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center {}
 .faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center:before { content: ""; background: rgb(0 0 0 / 50%); position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }
@@ -350,18 +310,12 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 h2.alittle { margin-top: 20px; }
 .displayhidecontent{display: none; }
 .abrotate {margin: 20px 0px 10px; }
-.signupheader{
-    display: none;
-}
-.logologin{
-    padding:25px;
-}
+.signupheader{display: none; }
+.logologin{padding:25px; }
  .autosignbg{
 
     }
-    .autosignin{
-        display: none;
-    }
+    .autosignin{display: none; }
 /*media css*/
 @media (min-width: 1400px){
   .sideoffbar,.sideoffbarmain{ min-width:300px; max-width:300px; width:300px; }
@@ -401,16 +355,19 @@ h2.alittle { margin-top: 20px; }
 }
 
 @media (max-width: 650px){
+    ul.getyourcode li span.getyour{padding-right: 0px !important; }
+    ul.getyourcode li:nth-child(3) span.getyour {padding: 15px 15px; }
+    ul.getyourcode li:nth-child(4) span.getyour {padding: 15px 15px; }
     .logogeneral{display: none; }
     .homelogotop{display: none; }
-  .logomobile {width: 90px; height: 90px; background: url(/behairful-partners-logo-ai-mobile.svg) no-repeat; background-size: cover; }
+    .logomobile {width: 90px; height: 90px; background: url(/behairful-partners-logo-ai-mobile.svg) no-repeat; background-size: cover; }
     .autosignbg{display: none; }
     .autosignin {display: block; height: auto !important; top: -75px !important; position: relative; }
     .forgotpass{display: none; }
     .hidedesktop {display: block; margin-bottom: 0px; text-align: left !important; }
     .loginscreen .finally {font-size: 18px; font-family: 'futuramedium'; text-transform: uppercase; text-align: left !important; }
     .loginscreen h6 {text-align: right !important; }
-    ul.getyourcode li .creatorsbox {min-height: inherit; margin-bottom: 0px; margin: 0px 20px; background: transparent !important; display: -moz-box; display: flex; border-bottom: #fff 1px solid; border-radius: 0px; }
+    ul.getyourcode li .creatorsbox {min-height: inherit; margin-bottom: 0px; margin: 0px 10px; background: transparent !important; display: -moz-box; display: flex; border-bottom: #fff 1px solid; border-radius: 0px; }
     ul.getyourcode li:last-child .creatorsbox {border-bottom: none; }
     ul.getyourcode li span.imgsignin{display: none; }
     ul.getyourcode li span.imgsignin{display: none; }
