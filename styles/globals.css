@@ -15,6 +15,12 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 .hidedesktop{
     display: none; 
 }
+.showingenteries{
+    display: none;
+}
+.tablepayme{
+    display: none;
+}
 .loginscreen .alert.alert-danger a { color:#000; }
 .indopromo.promolink { flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }
 .indopromo.promolink .promotext { font-size: 18px; }

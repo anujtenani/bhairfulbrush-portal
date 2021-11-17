@@ -63,7 +63,7 @@ function PayoutsTable(){
             }
         </tbody>
     </table></div></div>
-        <p> Showing {items.length} of {items.length} entries </p>
+        <p className="showingenteries"> Showing {items.length} of {items.length} entries </p>
     </>
 }
 function PaypalEmailAddressUpdater(){
