@@ -42,7 +42,7 @@ const LoginForm = () => {
                      <input type = "email" className = "form-control" onChange={(e) => setEmail(e.target.value)}/>
                  </FormGroup>
 
-                 <div className={"form-group text-right forgotgroup"}>
+                 <div className={"form-group text-right forgotgroup forgotpass"}>
                      <Link href={'/forgot-password'} tabIndex={'-1'}>
                          <a className={"text-dark"}>Forgot Password?</a>
                      </Link>
@@ -58,6 +58,11 @@ const LoginForm = () => {
                          onChange={(e) => setPassword(e.target.value)}
                      />
                  </FormGroup>
+                 <div className={"form-group text-right forgotgroup hidedesktop"}>
+                     <Link href={'/forgot-password'} tabIndex={'-1'}>
+                         <a className={"text-dark"}>Forgot Password?</a>
+                     </Link>
+                 </div>
 
                  <Button loading={loading} type = "submit" className="btn btn-primary w-100">SIGN IN</Button>
 
