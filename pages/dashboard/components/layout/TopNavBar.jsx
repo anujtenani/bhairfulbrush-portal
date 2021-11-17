@@ -6,6 +6,8 @@ import NavMainItems, {NavBottomItems} from "./NavMainItems";
 import UserProfileDropdown from "./UserProfileDropdown";
 import UserNotification from "./UserNotification";
 import PayMeDropdown from "./PayMeDropdown";
+import logomain from "../../public/behairful-logo-main.svg";
+
 function TopNavBar(props) {
 const [open, setOpen] = useState(false)
 TopNavBar.handleClickOutside = () => setOpen(false);
@@ -34,7 +36,7 @@ return (
       <div className="d-block d-lg-none">
          <div className="col-auto text-center">
             <a href="/" className="logotop">
-            <img src="/behairful-logo-main.svg" style={{height:48}}
+            <img src={logomain} style={{height:48}}
                alt="Behairful logo" /></a>
          </div>
       </div>

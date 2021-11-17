@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import NavMainItems, {NavBottomItems} from "./NavMainItems";
+import logomain from "../../public/behairful-logo-main.svg";
+
 import Link from 'next/link'
 function NavSidebar({props, currentUrl}) {
     return (
@@ -12,7 +14,7 @@ function NavSidebar({props, currentUrl}) {
                      className="d-none sideoffbar  d-lg-block min-vh-100">
                 <div className="sidecontainer">
                     <Link className="" href="/" passHref>
-                       <a href="/dashboard" className={`navbar-brand ${currentUrl=='/dashboard'?'active':''}`}> <img src="/behairful-logo-main.svg"
+                       <a href="/dashboard" className={`navbar-brand ${currentUrl=='/dashboard'?'active':''}`}> <img src={logomain}
                              style={{maxWidth:'100%', maxHeight:80}}
                              alt="Behairful logo" className="logohome" />
                              </a>

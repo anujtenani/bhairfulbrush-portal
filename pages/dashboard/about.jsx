@@ -1,6 +1,7 @@
 import React from 'react';
 import DashboardContainer from "./components/layout/DashboardContainer";
 import DashboardFooter from "./components/layout/DashboardFooter";
+import logomain from "../../public/behairful-logo-main.svg";
 
 function About(props) {
     return (
@@ -9,7 +10,7 @@ function About(props) {
                 <div className="container p-4">
                     <div className="card bg-dark abouton">
                         <div className="text-center card-body">
-                            <img src={"/behairful-logo-main.svg"} style={{width:200, marginBottom:24}} />
+                            <img src={logomain} style={{width:200, marginBottom:24}} />
                             <div className="abrotate" style={{ transform:'rotate(-3deg)'}}>
                                 <span className={"bg-light text-dark px-2 py-1 alettertext"} style={{
                                         fontSize:28}}>A Letter from us to you.</span>
