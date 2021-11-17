@@ -401,18 +401,9 @@ h2.alittle { margin-top: 20px; }
 }
 
 @media (max-width: 650px){
-    .logogeneral{
-        display: none;
-    }
-    .homelogotop{
-        display: none;
-    }
-  .logomobile {
-    width: 90px;
-    height: 90px;
-    background: url(/behairful-partners-logo-ai-mobile.svg) no-repeat;
-    background-size: cover;
-}
+    .logogeneral{display: none; }
+    .homelogotop{display: none; }
+  .logomobile {width: 90px; height: 90px; background: url(/behairful-partners-logo-ai-mobile.svg) no-repeat; background-size: cover; }
     .autosignbg{display: none; }
     .autosignin {display: block; height: auto !important; top: -75px !important; position: relative; }
     .forgotpass{display: none; }
@@ -527,7 +518,7 @@ h2.alittle { margin-top: 20px; }
     .tablestyle {border-radius: 15px !important; }
     .screenopen {top: 74px; }
     .topmobdiv .col-auto {display: flex; align-items: center; }
-    .topmobdiv .col-auto a.logotop {background: url(/behairful-logo-m.jpg) no-repeat center; height: 60px; width: 109px; margin: 0 auto; }
+    .topmobdiv .col-auto a.logotop { height: 60px; width: 109px; margin: 0 auto; }
     .topmobdiv .col-auto a.logotop img{display:none; }
     .logotop {display: inline-block; }
     .gitoff h1.earning {font-size: 24px; text-align: center !important; display: block; }
@@ -575,9 +566,12 @@ h2.alittle { margin-top: 20px; }
    .topmobdiv {padding-left: 15px !important; padding-right: 15px !important; }
    .dropdownnotification {left: 35px;}
    .dropdownnotification .btnnotification {transform: scale(0.8); }
-   .topmobdiv .col-auto a.logotop {background: url(/behairful-logo-m.jpg) no-repeat center; height: 45px; width: 88px; background-size: contain; }
+   .topmobdiv .col-auto a.logotop { height: 45px; width: 88px;  }
    .paymentzone small {font-size: 10px; }
    .paymentzone strong.d-block {font-size: 10px !important; }
    .paymentzone svg {font-size: 12px !important; }
    .dropleft.dropdown .btn.btn-transparent .shadow-sm {width: 33px !important; height: 33px !important; background-size: 100%; }
+}
+@media (max-width: 320px){
+    .paymentzone .btn.btn-transparent { padding-right: 0px; padding-left: 0px; }
 }
