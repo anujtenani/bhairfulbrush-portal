@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 @font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
 .hidedesktop{
-    display: none;
+    display: none; 
 }
 .loginscreen .alert.alert-danger a { color:#000; }
 .indopromo.promolink { flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }

@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
+import Image from "next/image";
 import DashboardContainer from "./components/layout/DashboardContainer";
 import DashboardFooter from "./components/layout/DashboardFooter";
 import {useProfile} from "../../utils/api";
 import Skeleton from "react-loading-skeleton";
+import logomain from "../../public/behairful-logo-main.svg";
 
 function Terms(props) {
     const [text, setText] = useState(null);
@@ -28,7 +30,7 @@ function Terms(props) {
                 <div className="card bg-dark">
                     <div className="card-body">
                         <div className="text-center">
-                            <img src={"behairful-logo-main.svg"} style={{height:100}} />
+                            <Image src={logomain}  height={'100px'} alt={'behairful-logo'} />
                         </div>
                         <h1 className={"text-center"}>Terms and conditions</h1>
                         {
