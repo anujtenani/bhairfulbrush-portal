@@ -1,7 +1,7 @@
 body { font-family:"FuturaLT"; font-weight: 100; line-height: 1.5; text-align: left; min-height: 100vh; overflow-x: hidden; background:#0c0c0c;     font-size: 16px;  }
 
 h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
-
+   
 @font-face { font-family: 'futura_bkbook'; src: url('./fonts/futura_book-webfont.woff2') format('woff2'), url('./fonts/futura_book-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'a_futuraroundregular'; src: url('./fonts/futura_round-webfont.woff2') format('woff2'), url('./fonts/futura_round-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family:"FuturaLT"; src: url('./fonts/FuturaLT.woff2') format('woff2'), url('./fonts/FuturaLT.woff') format('woff'); font-weight: normal; font-style: normal; }
