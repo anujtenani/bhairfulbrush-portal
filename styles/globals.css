@@ -1,7 +1,7 @@
 body { font-family:"FuturaLT"; font-weight: 100; line-height: 1.5; text-align: left; min-height: 100vh; overflow-x: hidden; background:#0c0c0c;     font-size: 16px;  }
 
 h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
-
+   
 @font-face { font-family: 'futura_bkbook'; src: url('./fonts/futura_book-webfont.woff2') format('woff2'), url('./fonts/futura_book-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'a_futuraroundregular'; src: url('./fonts/futura_round-webfont.woff2') format('woff2'), url('./fonts/futura_round-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family:"FuturaLT"; src: url('./fonts/FuturaLT.woff2') format('woff2'), url('./fonts/FuturaLT.woff') format('woff'); font-weight: normal; font-style: normal; }
@@ -12,7 +12,9 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 @font-face { font-family: 'futuramedium'; src: url('./fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('./fonts/futura_medium_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
-
+.hidedesktop{
+    display: none;
+}
 .loginscreen .alert.alert-danger a { color:#000; }
 .indopromo.promolink { flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }
 .indopromo.promolink .promotext { font-size: 18px; }
@@ -29,7 +31,58 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 .tenpercent{ font-family:"futura-pt-bold" !important; }
 .aboutme { padding:20px 0px; }
 .forcastearning .form-group .input-group-append { display:none; }
+.getyourcode{
 
+}
+.signuptext{
+
+}
+ul.getyourcode{list-style: none; padding: 0px; margin: 0px; display: -moz-inline-box; display: inline-flex; flex-wrap: wrap; }
+ul.getyourcode li { list-style: none; display: inline-block; width: 50%; }
+ul.getyourcode li .creatorsbox {
+    margin: 0 15px 20px;
+    padding: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    min-height: 300px;
+    background-color: #ffffff;
+}
+.signuptext h2 {
+    font-size: 24px;
+    font-family: 'futuramedium';
+}
+.imgautocont-1{
+display: none;
+}
+
+
+ul.getyourcode li:nth-child(1) .creatorsbox{
+     background: #141414;
+}
+ul.getyourcode li:nth-child(1) .creatorsbox span.getyour{
+background: #fff;
+  color: #000;
+}
+ul.getyourcode li a{
+
+    display: inline-block;
+}
+ul.getyourcode li span.imgsignin {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+ul.getyourcode li span.getyour {
+    display: block;
+    background: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    min-height: 76px;
+    font-size: 16px;
+}
 .faqitempart .pagebannerto {position: relative; background-position: 0 69% !important; }
 .faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center {}
 .faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center:before { content: ""; background: rgb(0 0 0 / 50%); position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }
@@ -288,7 +341,18 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 h2.alittle { margin-top: 20px; }
 .displayhidecontent{display: none; }
 .abrotate {margin: 20px 0px 10px; }
+.signupheader{
+    display: none;
+}
+.logologin{
+    padding:25px;
+}
+ .autosignbg{
 
+    }
+    .autosignin{
+        display: none;
+    }
 /*media css*/
 @media (min-width: 1400px){
   .sideoffbar,.sideoffbarmain{ min-width:300px; max-width:300px; width:300px; }
@@ -297,9 +361,11 @@ h2.alittle { margin-top: 20px; }
 }
 .headingtitle {color: #000; text-align: center; font-weight: 500; font-size: 36px; margin-bottom: 35px; font-family: 'futuramedium'; }
 @media (max-width: 1200px){
-    .topmobdiv {width: 100%; }
+    .loginscreen .btn-primary{ padding: 10px 20px; }
+    .loginscreen .card-body { padding: 20px; }
+    .topmobdiv { width: 100%; }
     .inspirationpart .card-columns .card { height: 205px; }
-    .globeimgdown{height: 135px; }
+    .globeimgdown{ height: 135px; }
 }
 @media (max-width: 992px){
     .forcastearning .btn-primary {padding: 10px; }
@@ -326,6 +392,28 @@ h2.alittle { margin-top: 20px; }
 }
 
 @media (max-width: 650px){
+    .autosignbg{display: none; }
+    .autosignin {display: block; height: auto !important; top: -75px !important; position: relative; }
+    .forgotpass{display: none; }
+    .hidedesktop {display: block; margin-bottom: 0px; text-align: left !important; }
+    .loginscreen .finally {font-size: 18px; font-family: 'futuramedium'; text-transform: uppercase; text-align: left !important; }
+    .loginscreen h6 {text-align: right !important; }
+    ul.getyourcode li .creatorsbox {min-height: inherit; margin-bottom: 0px; margin: 0px 20px; background: transparent !important; display: -moz-box; display: flex; border-bottom: #fff 1px solid; border-radius: 0px; }
+    ul.getyourcode li:last-child .creatorsbox {border-bottom: none; }
+    ul.getyourcode li span.imgsignin{display: none; }
+    ul.getyourcode li span.imgsignin{display: none; }
+    ul.getyourcode {background: #1e1e1e; border-radius: 18px; }
+    ul.getyourcode li {width: 100%; }
+    ul.getyourcode li span.getyour {display: block; background: transparent !important; color: #fff !important; padding: 10px 15px; border-radius: 20px; min-height: inherit; font-size: 14px; }
+    .imgautocont-1{display: inline-block; }
+    .logologin div{ display:none !important; }
+    .logologin div.signupheader{display: flex !important; }
+    .logologin div.signupheader div{display: inline-block !important; }
+    .logologin div.signupheader span{font-size:24px; }
+    .logologindesign{}
+    .loginscreen{padding-top:100px; }
+    .logologin{padding:15px; } 
+    .signupheader {display: -moz-box; display: flex; -moz-box-align: center; align-items: center; text-transform: uppercase; justify-content: space-between; }
     .loginscreen .card {margin-top: 0; }
     .loginscreen .alert.alert-danger {}
     .loginscreen .btn-primary {font-size: 18px; padding-left: 0px; padding-right: 0px; font-family: 'futuralight'; }
@@ -412,9 +500,9 @@ h2.alittle { margin-top: 20px; }
     .footer { padding-right: 0px; padding-left: 0px; }
     .maintable th {padding: 18px 8px; font-size: 12px; font-weight: 400; text-transform: uppercase; }
     .nosaleyet{padding:0px !important; }  
-    .pagebannerto {height: 300px !important; font-size: 24px; display: flex; align-items: center; justify-content: center; width: 100%;     flex-direction: column; }
+    .pagebannerto {height: 300px !important; font-size: 24px; display: flex; align-items: center; justify-content: center; width: 100%;     flex-direction: column; }  
     .weare {font-size: 20px; }
-    .watchyour {font-size: 24px;}
+    .watchyour {font-size: 24px;} 
     .tablestyle {border-radius: 15px !important; }
     .screenopen {top: 74px; }
     .topmobdiv .col-auto {display: flex; align-items: center; }
