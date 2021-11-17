@@ -28,7 +28,7 @@ function Inspiration(props) {
                             }
                         </div>
                     </div>
-                </div>
+                </div>      
             }
             <DashboardFooter />
         </DashboardContainer>
