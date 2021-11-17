@@ -392,6 +392,18 @@ h2.alittle { margin-top: 20px; }
 }
 
 @media (max-width: 650px){
+    .logogeneral{
+        display: none;
+    }
+    .homelogotop{
+        display: none;
+    }
+  .logomobile {
+    width: 90px;
+    height: 90px;
+    background: url(/behairful-partners-logo-ai-mobile.svg) no-repeat;
+    background-size: cover;
+}
     .autosignbg{display: none; }
     .autosignin {display: block; height: auto !important; top: -75px !important; position: relative; }
     .forgotpass{display: none; }
