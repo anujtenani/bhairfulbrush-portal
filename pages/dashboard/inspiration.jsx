@@ -28,13 +28,12 @@ function Inspiration(props) {
                             }
                         </div>
                     </div>
-                </div>
+                </div>      
             }
             <DashboardFooter />
         </DashboardContainer>
     );
 }
-
 
 export async function getServerSideProps(context) {
     const cookies = context.req.cookies;
