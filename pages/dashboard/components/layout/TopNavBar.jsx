@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Image from "next/image";
 import HamburgerMenu from 'react-hamburger-menu'
 import onClickOutside from "react-onclickoutside";
 import {Collapse} from 'reactstrap'
@@ -6,7 +7,7 @@ import NavMainItems, {NavBottomItems} from "./NavMainItems";
 import UserProfileDropdown from "./UserProfileDropdown";
 import UserNotification from "./UserNotification";
 import PayMeDropdown from "./PayMeDropdown";
-import logomain from "../../public/behairful-logo-main.svg";
+import logomain from "../../../../public/behairful-logo-main.svg";
 
 function TopNavBar(props) {
 const [open, setOpen] = useState(false)
@@ -36,8 +37,8 @@ return (
       <div className="d-block d-lg-none">
          <div className="col-auto text-center">
             <a href="/" className="logotop">
-            <img src={logomain} style={{height:48}}
-               alt="Behairful logo" /></a>
+             <Image src={logomain} height={'48px'} alt={'behairful-logo'} />
+           </a>
          </div>
       </div>
       <div className="col d-flex align-items-center justify-content-end text-left paymentzone">

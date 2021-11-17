@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Image from "next/image";
 import DashboardContainer from "./components/layout/DashboardContainer";
 import DashboardFooter from "./components/layout/DashboardFooter";
 import {useProfile} from "../../utils/api";
@@ -29,7 +30,7 @@ function Terms(props) {
                 <div className="card bg-dark">
                     <div className="card-body">
                         <div className="text-center">
-                            <img src={logomain} style={{height:100}} />
+                            <Image src={logomain}  height={'100px'} alt={'behairful-logo'} />
                         </div>
                         <h1 className={"text-center"}>Terms and conditions</h1>
                         {

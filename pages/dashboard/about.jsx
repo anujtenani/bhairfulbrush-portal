@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 import DashboardContainer from "./components/layout/DashboardContainer";
 import DashboardFooter from "./components/layout/DashboardFooter";
 import logomain from "../../public/behairful-logo-main.svg";
@@ -9,8 +10,8 @@ function About(props) {
             <div>
                 <div className="container p-4">
                     <div className="card bg-dark abouton">
-                        <div className="text-center card-body">
-                            <img src={logomain} style={{width:200, marginBottom:24}} />
+                        <div className="text-center card-body">                            
+                            <Image src={logomain} width={'259px'} height={'146px'} alt={'behairful-logo'} />
                             <div className="abrotate" style={{ transform:'rotate(-3deg)'}}>
                                 <span className={"bg-light text-dark px-2 py-1 alettertext"} style={{
                                         fontSize:28}}>A Letter from us to you.</span>
