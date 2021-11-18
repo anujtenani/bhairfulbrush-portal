@@ -35,7 +35,7 @@ function DashboardFooter(props) {
                                     <ul className="list-unstyled footer-list">
                                         <li><FooterLink href={"/dashboard"} title={"Dashboard"} /></li>
                                         <li><FooterLink href={"/dashboard/pay-me"} title={"Pay Me"} /></li>
-                                        <li><FooterLink href="/forecaster/" title={"Earnings Forecaster"} /></li>
+                                        <li><FooterLink href="/dashboard/forecaster/" title={"Earnings Forecaster"} /></li>
                                         <li><FooterLink href="/dashboard/faq" title={"FAQ"} /></li>
                                         {
                                             false &&
