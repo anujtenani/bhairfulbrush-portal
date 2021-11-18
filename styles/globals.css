@@ -124,12 +124,12 @@ ul.getyourcode li span.getyour {display: block; background: #000; color: #fff; p
 /* Handle on hover */
 .tablemore::-webkit-scrollbar-thumb:hover {background: #060709; }
 
-.footerloogo { margin: 25px 0px; }
+.footerloogo { margin: 25px 0px 55px; }
 .menulink { color:#000; }
 .salestype .pagebannerhead {background-position: 100% 80%!important; }
 .perfectpostpart .footer.footerful .logofotmother{display: none; }
 .perfectpostpart .footer.footerful .together{display: none; }
-.together{margin-bottom: 50px; }
+.together{margin-bottom: 25px; }
 .dropdownnotification .dropdown-menu {overflow: auto; height: 300px; width: 250px;     border-radius: 0px; }
 /* width */
 .dropdownnotification .dropdown-menu::-webkit-scrollbar {width: 5px; }
@@ -152,7 +152,7 @@ ul.getyourcode li span.getyour {display: block; background: #000; color: #fff; p
 
 .imginspiration{}
 .imginspiration.last{ }
-img.main-footer-logo { width: 276px; margin-top: -20px; margin-left: -40px; }
+img.main-footer-logo {max-width: 252px; margin-top: -20px; margin-left: -40px; height: 124px; }
 ul.footer-list{}
 ul.footer-list li { font-size: 14px; }
 .footer h5 {font-size: 20px; margin-bottom: 20px; font-family:"FuturaLT"; }
@@ -198,7 +198,7 @@ img{max-width:100%; }
 .loginscreen .card .form-control {border: #000 1px solid; border-radius: 10px; padding: 20px; min-height: 60px; background-color: #fff !important; }
 .loginscreen .card-body {padding: 50px; }
 .loginscreen .card-body .form-group label { font-family: "futura-pt-bold"; text-transform: capitalize; }
-.loginscreen .btn-primary {border-radius: 100px; margin-top: 15px; }
+.loginscreen .btn-primary {border-radius: 100px; margin-top: 15px; font-size: 18px; }
 .forgotgroup { margin-bottom: -25px; }
 /*.givepayout {font-size: 18px; font-family: 'futura_xblk_btextra_black'; }*/
 .givepayout { font-size: 22px; font-family: "futura-pt-bold"; font-weight: 600; border-radius: 10px !important; }
