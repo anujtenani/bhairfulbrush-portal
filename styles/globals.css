@@ -124,7 +124,7 @@ ul.getyourcode li span.getyour {display: block; background: #000; color: #fff; p
 /* Handle on hover */
 .tablemore::-webkit-scrollbar-thumb:hover {background: #060709; }
 
-.footerloogo { margin: 25px 0px 55px; }
+.footerloogo { margin: 25px 0px 55px; }   
 .menulink { color:#000; }
 .salestype .pagebannerhead {background-position: 100% 80%!important; }
 .perfectpostpart .footer.footerful .logofotmother{display: none; }
