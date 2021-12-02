@@ -12,8 +12,8 @@ export default function UpdatePaymentCard(){
         setPaypal(data.paypal_email)
     },[data])
     if(isLoading) return <Skeleton count={20} />
-    return <div className={"card-group"}>
-        <div className="card bg-dark">
+    return <div className={"card-group paymepaymentpage"}>
+        <div className="card">
             <div className="card-body">
                 <FormGroup label={"PayPal Email"}>
                     <input type="email"  value={paypal} onChange={(e)=>setPaypal(e.target.value)} name={"email"} className="form-control"/>
@@ -21,7 +21,7 @@ export default function UpdatePaymentCard(){
                 <Button title={"Confirm"} loading={loading} className={"btn btn-primary"}/>
             </div>
         </div>
-        <div className="card bg-dark">
+        <div className="card">
             <div className="card-body">
                 <p>PayPal</p>
                 <small className={"text-secondary"}>Easy, Fast & Safe. Money Transfers made easy. Get Paid Faster</small>

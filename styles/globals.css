@@ -12,6 +12,42 @@ h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
 @font-face { font-family: 'futuramedium'; src: url('./fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('./fonts/futura_medium_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
 @font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
+.modal .form-control {
+    border-radius: 10px;
+    border: #000 1px solid;
+}
+.modal .modal-content{
+background:#fff;
+}
+.modal .modal-header .close{
+color:#000;
+opacity:1;
+}
+.paymepaymentpage{
+    background-color:#fff;
+    color:#000;
+}
+.paymepaymentpage .card{
+border-radius:0px;
+}
+.paymepaymentpage .form-control {
+    border-radius: 10px;
+    border: #000 1px solid;
+}
+.modal .btn.btn-primary {
+    border-radius: 100px;
+
+    height: 60px;
+    font-size: 20px;
+    font-family: 'futuralight';
+}
+.modal .modal-title{
+color:#000;
+}
+.modal-body{ color:#000; }
+.card-group .form-control {
+    border-radius: 10px;
+}
 .hidedesktop{display: none; }
 .showingenteries{display: none; }
 .tablepayme{display: none; }
