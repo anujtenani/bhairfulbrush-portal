@@ -16,7 +16,7 @@ function NavSidebar({props, currentUrl}) {
                 <div className="sidecontainer">
                     <Link className="" href="/" passHref>
                        <a href="/dashboard" className={`navbar-brand ${currentUrl=='/dashboard'?'active':''}`}> 
-                        <Image src={logomain} max-width={'100%'}  maxHeight={'80'} alt={'behairful-logo'} />
+                        <Image src={logomain} max-width={'100%'}  max-height={'80'} alt={'behairful-logo'} />
                              </a>
                     </Link>
                     <div className="d-flex flex-column h-100">
