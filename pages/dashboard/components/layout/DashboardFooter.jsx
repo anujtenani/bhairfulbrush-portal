@@ -12,11 +12,11 @@ function DashboardFooter(props) {
                     </div>
                 </div>
 
-                 <div className="row logofotmother">
+                 {/* <div className="row logofotmother">
                     <div className="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
                         <img src="/footerimglogo.png" className="footerloogo"/>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="row pt-3 fotlivepart">
                     <div className="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 text-center">
