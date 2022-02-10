@@ -1,0 +1,49 @@
+$body-bg: rgb(7,7,10);
+$body-color: #fff;
+$dark: rgb(7,7,10);
+$gray-900:#212529;
+$border-color:$gray-900;
+$primary:#fff;
+$card-border-color: $gray-900;
+$modal-content-color: #fff;
+$modal-content-bg: #000;
+$modal-content-border-color: $gray-900;
+$btn-border-radius:0;
+$input-border-radius:0px;
+$input-focus-border-color:$border-color;
+$pagination-disabled-bg:$gray-900;
+$pagination-disabled-color: $primary;
+$pagination-border-color:$dark;
+$pagination-color: white;
+$pagination-bg:$gray-900;
+$pagination-border-color:black;
+$pagination-disabled-border-color:black;
+$pagination-hover-bg:black;
+$pagination-hover-border-color:$gray-900;
+@import "node_modules/bootstrap/scss/bootstrap";
+$text-muted: $gray-100;
+
+.btn-primary:hover{
+  background-color: #000 !important;
+  color:#fff !important;
+  border-color: $gray-900 !important;
+}
+
+.btn-primary{
+  background-color: rgb(61, 63, 65) !important;
+  color:#fff !important;
+  border-bottom-width:1px;
+  border-color: $gray-900 !important;
+  letter-spacing: .1em;
+  font-size:.8125em;
+  min-height: 48px;
+  text-transform: uppercase;
+}
+.form-control{
+  min-height: 48px;
+}
+
+
+#topbar{
+  background-color: rgba(0,0,0,0.8);
+}

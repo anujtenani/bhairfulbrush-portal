@@ -1,0 +1,570 @@
+body { font-family:"FuturaLT"; font-weight: 100; line-height: 1.5; text-align: left; min-height: 100vh; overflow-x: hidden; background:#0c0c0c;     font-size: 16px;  }
+
+h1,h2,h3,h4,h5,h6 { font-family:"futura-pt-bold"; }
+   
+@font-face { font-family: 'futura_bkbook'; src: url('./fonts/futura_book-webfont.woff2') format('woff2'), url('./fonts/futura_book-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'a_futuraroundregular'; src: url('./fonts/futura_round-webfont.woff2') format('woff2'), url('./fonts/futura_round-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family:"FuturaLT"; src: url('./fonts/FuturaLT.woff2') format('woff2'), url('./fonts/FuturaLT.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'futura_thinnormal'; src: url('./fonts/futura_thin-webfont.woff2') format('woff2'), url('./fonts/futura_thin-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'futurabook'; src: url('./fonts/futura_book_font-webfont.woff2') format('woff2'), url('./fonts/futura_book_font-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'futuraheavy'; src: url('./fonts/futura_heavy_font-webfont.woff2') format('woff2'), url('./fonts/futura_heavy_font-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'futuralight'; src: url('./fonts/futura_light_bt-webfont.woff2') format('woff2'), url('./fonts/futura_light_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'futuramedium'; src: url('./fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('./fonts/futura_medium_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'futura_xblk_btextra_black'; src: url('./fonts/futura_xblk_bt-webfont.woff2') format('woff2'), url('./fonts/futura_xblk_bt-webfont.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family:"futura-pt-bold"; src: url('./fonts/futura-pt-bold.woff2') format('woff2'), url('./fonts/futura-pt-bold.woff') format('woff'); font-weight: normal; font-style: normal;}
+.modal .form-control {
+    border-radius: 10px;
+    border: #000 1px solid;
+}
+.modal .modal-content{
+background:#fff;
+}
+.modal .modal-header .close{
+color:#000;
+opacity:1;
+}
+.paymepaymentpage{
+    background-color:#fff;
+    color:#000;
+}
+.paymepaymentpage .card{
+border-radius:0px;
+}
+.paymepaymentpage .form-control {
+    border-radius: 10px;
+    border: #000 1px solid;
+}
+.modal .btn.btn-primary {
+    border-radius: 100px;
+
+    height: 60px;
+    font-size: 20px;
+    font-family: 'futuralight';
+}
+.modal .modal-title{
+color:#000;
+}
+.modal-body{ color:#000; }
+.card-group .form-control {
+    border-radius: 10px;
+}
+.hidedesktop{display: none; }
+.showingenteries{display: none; }
+.tablepayme{display: none; }
+#sidebar .sidecontainer .navbar-brand img {height: 100px !important; }
+.loginscreen .alert.alert-danger a { color:#000; }
+.indopromo.promolink { flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }
+.indopromo.promolink .promotext { font-size: 18px; }
+.indopromo.promolink .promohead { flex-direction: column; font-size:18px; }
+.indopromo.promolink .promohead span{ flex-direction: column; font-size:18px; }
+.indopromo.promolink span { font-family: futuramedium; font-size: 20px; }
+.abouton { padding-top: 15px; }
+.abrotate{}
+.aboutme p{}
+.alettertext{}
+.promohead { display: flex; flex-wrap: wrap; justify-content: center; }
+.paymenbanner .pagebannerto { background-position: 0px 70% !important; }
+.indopromo.promocode { flex: 0 0 100%; max-width: 100%; align-items: center; display: flex; justify-content: center; }
+.tenpercent{ font-family:"futura-pt-bold" !important; }
+.aboutme { padding:20px 0px; }
+.forcastearning .form-group .input-group-append { display:none; }
+ul.getyourcode li:nth-child(3) span.getyour {padding: 15px 60px; }
+ul.getyourcode li:nth-child(4) span.getyour {padding: 15px 60px; }
+.getyourcode{
+
+}
+.signuptext{
+
+}
+ul.getyourcode{list-style: none; padding: 0px; margin: 0px; display: -moz-inline-box; display: inline-flex; flex-wrap: wrap; }
+ul.getyourcode li { list-style: none; display: inline-block; width: 50%; }
+ul.getyourcode li .creatorsbox {margin: 0 15px 20px; padding: 10px; border-radius: 30px; overflow: hidden; min-height: 300px; background-color: #ffffff; }
+.signuptext h2 {font-size: 24px; font-family: 'futuramedium'; }
+.imgautocont-1{display: none; }
+
+
+ul.getyourcode li:nth-child(1) .creatorsbox{background: #141414; }
+ul.getyourcode li:nth-child(1) .creatorsbox span.getyour{background: #fff; color: #000; }
+ul.getyourcode li a{display: inline-block; }
+ul.getyourcode li span.imgsignin {display: flex; height: 200px; align-items: center; justify-content: center; }
+ul.getyourcode li span.getyour {display: block; background: #000; color: #fff; padding: 15px 30px; border-radius: 20px; text-transform: uppercase; min-height: 76px; font-size: 16px; }
+.faqitempart .pagebannerto {position: relative; background-position: 0 69% !important; }
+.faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center {}
+.faqitempart .pagebannerto .d-flex.justify-content-center.align-items-center:before { content: ""; background: rgb(0 0 0 / 50%); position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }
+.faqitempart .pagebannerto .titleclspage {position: relative; z-index: 0; }
+
+.red{ color:red !important; }
+.green{ color:green !important; }
+.registeryour h5 { font-size: 15px; font-family: 'futuramedium'; font-weight: 100; }
+.parapostperfect { padding: 0px 15px; font-size: 16px; }
+.parapostperfect ul li::marker { content: "\2022"; color: red; margin-left: -1em; font-size: 18px; }
+.parapostperfect ul{ margin:0px;  padding:0px;}
+.parapostperfect li{padding-left:15px; }
+.hairfacts { font-weight: 700; font-size: 36px; }
+.inspirationpart .card-columns .card { height: 300px; margin-bottom: 15px; border-radius: 5px; overflow: hidden; }
+.inspirationpart .card-columns .card img{border-radius:0px; width:100%; height:100%; object-fit: cover; object-position: center; }
+.inspirationpartmake .pagebannerto {background-position: 100% 66% !important; }
+.prdpart p {font-size: 20px; }
+.giftpart div{width:100%; }
+.giftpart h3{font-family: 'futuramedium'; }
+.forecasterpart .pagebannerhead {
+    background-position: 100% 93% !important;
+}
+#sidebar {background:#080809; }
+#sidebar li {  }
+#sidebar .sidecontainer li.active a { color:#fff !important; }
+
+#sidebar li a {}
+.sideoffbar,.sideoffbarmain{min-width:300px; max-width:300px; width:300px; }
+.sidecontainer {padding: 0 15px; }
+.sidecontainer .navbar-brand {padding: 30px 0px; }
+.sidecontainer .navbar-brand .logohome { width: 165px; height: 91px !important; max-height: 91px !important; padding: 0px !important; }
+.inspiration{ background-color:#fff; padding:50px 0px; }
+.webinspart { /*  display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(1, 37vw); grid-gap: 0px;*/ }
+.nosaleyet { display: block; padding: 20px; text-transform: uppercase; font-weight: 700; }
+.imginspiration{height:637px; }
+
+.feedbackborder {border: none; background: #0d0d0d !important; }
+.feedbackborder .card-body{ padding:0px; }
+.feedbackbg {background: #0d0d0d; }
+.borderrad {}
+.borderrad img{border:#fff 5px solid !important; }
+.iconimgperfect {min-height: 152px; }
+.feedbackborder .card-title { font-size: 20px; margin-bottom: 20px; font-weight: 700; letter-spacing: 1px; margin-top: 18px; }
+.copyrighttext p {font-size: 28px; font-family: 'futuralight'; }
+.titleclspage {font-family: 'futuralight'; text-transform: uppercase; font-weight: 100; }
+.feedbackborder p{font-size:15px; }
+.maintable{ background:#fff; margin-bottom: 0px; }
+.maintable th { background: #0c0c0c; padding: 30px; border-top: none; font-family: 'futuramedium'; font-weight: 300; text-transform: uppercase; font-size: 13px; }
+.maintable td{ color:#000; }
+
+.imginspiration img {object-fit: cover; object-position: top center; width: 100%; height: 100%; }
+.watchyour {font-weight: bold; font-size: 35px; margin-bottom: 30px; }
+.salesfor {}
+.salesbgpart{
+    padding:30px 0px 0px;
+}
+.salesfor select.form-control { background: transparent; border-radius: 20px !important; padding: 0px 14px; color: #fff; font-size: 16px; margin: 0 30px !important; background: url(../public/arrowselect.png) no-repeat 86% 50%; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.salesfor select.form-control option{color: #fff; background:#000; }
+.maintable td.noyetpart{}
+
+.tablestyle {padding: 0px 0px 15px; background: #fff; border: #fff 1px solid; }
+.tablemore {overflow-x: auto; }
+
+/* width */
+.tablemore::-webkit-scrollbar {width: 3px; height: 8px; border-radius:3px; background:#fff;}
+/* Track */
+.tablemore::-webkit-scrollbar-track {background:transparent; margin:0px; }
+/* Handle */
+.tablemore::-webkit-scrollbar-thumb {background: #000; border-radius:100px; }
+/* Handle on hover */
+.tablemore::-webkit-scrollbar-thumb:hover {background: #060709; }
+
+.footerloogo { margin: 25px 0px 55px; }   
+.menulink { color:#000; }
+.salestype .pagebannerhead {background-position: 100% 80%!important; }
+.perfectpostpart .footer.footerful .logofotmother{display: none; }
+.perfectpostpart .footer.footerful .together{display: none; }
+.together{margin-bottom: 25px; }
+.dropdownnotification .dropdown-menu {overflow: auto; height: 300px; width: 250px;     border-radius: 0px; }
+/* width */
+.dropdownnotification .dropdown-menu::-webkit-scrollbar {width: 5px; }
+/* Track */
+.dropdownnotification .dropdown-menu::-webkit-scrollbar-track {background: #f1f1f1; } 
+/* Handle */
+.dropdownnotification .dropdown-menu::-webkit-scrollbar-thumb {background: #000; }
+/* Handle on hover */
+.dropdownnotification .dropdown-menu::-webkit-scrollbar-thumb:hover {background: #555; }
+
+.notificationpart { display: flex;  padding:5px;  border-bottom: #ddd 1px solid; }
+.notificationpart:last-child{ border-bottom:none; }
+.iconnot {-moz-box-flex: 0; flex: 0 0 40px; max-width: 40px; width: 40px; height: 40px; background: url(/iconall.png) no-repeat; background-position: -6px -901px; display: block; }
+.linkformat {display: flex; flex-direction: column; padding-left: 5px; }
+.notificationpart a {color: #000; padding: 2px 0px; font-size: 14px;}
+.notificationpart a.menulink {color: #bbb; }
+.notificationpart a.cts {}
+.notificationpart a.actiontype {}
+.notificationpart a.dropdowntype {font-style: italic; font-size: 12px; color: #818181; }
+
+.imginspiration{}
+.imginspiration.last{ }
+img.main-footer-logo {max-width: 252px; margin-top: -20px; margin-left: -40px; height: 124px; }
+ul.footer-list{}
+ul.footer-list li { font-size: 14px; }
+.footer h5 {font-size: 20px; margin-bottom: 20px; font-family:"FuturaLT"; }
+ul.footer-list li a{padding:5px 0px; }
+.copyrighttext {border-top: #8e8e8e 1px solid; padding-top: 37px; margin-top: 50px; }
+.footer-list-social{}
+.footer-list-social li{margin-bottom:15px; }
+.footer-list-social li a {width: 38px; height: 38px; border-radius: 100px; border: #fff 2px solid; display: block; line-height: 32px; background:url(../public/iconall.png) no-repeat; }
+.footer-list-social li a:hover{opacity:0.5; }
+.footer-list-social li a.facebook{background-position:-8px -10px; }
+.footer-list-social li a.instagram{background-position:-9px -75px; }
+.footer-list-social li a.pinterest{background-position:-11px -138px; }
+
+.footer-list-social li svg{display: none; }
+img{max-width:100%; }
+.dropleft.dropdown{}
+.dropleft.dropdown .btn.btn-transparent {padding: 0px; display: block; border: none; outline: none; box-shadow: none; }
+.inspirationpart { padding-bottom: 0; }
+.dropleft.dropdown .btn.btn-transparent .shadow-sm {width: 86px !important; height: 86px !important; background: url(/behairful-side-logo.png) no-repeat; border-radius: 100px !important; overflow: hidden; }
+.dropleft.dropdown .btn.btn-transparent svg {width: 100% !important; height: 100% !important; background-size: cover; background-position: center; outline: none; }
+.dropleft.dropdown .btn.btn-transparent img {width: 100% !important; height: 100% !important; background-size: cover; background-position: center; outline: none; }
+.weare { text-align: center; margin-bottom: 20px; font-weight: 300; margin-bottom: 25px;  font-family:"FuturaLT"; }
+.dropdownnotification {display: inline-flex; float: left; margin: 11px 13px; }
+.dropdownnotification .dropdown{}
+.dropdownnotification .btnnotification { width: 38px; height: 38px; background: url(/iconall.png) no-repeat; background-position: -7px -829px; border: none; display: block; outline: none !important; box-shadow: none; }
+.dropdownnotification .dropdown-menu{}
+.btn-primary { border-radius: 10px; text-align: center; font-size: 25px; padding: 10px 50px; line-height: normal; min-height: auto; background: #000 !important; }
+#topbar { background-color: #0c0c0c !important; display: -moz-box; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: justify; justify-content: space-between; padding: 15px 0px; }
+.footer {background-color: #0c0c0c; padding: 50px 30px 20px; }
+.registeryour{padding:50px 20px; }
+.tablepayme {overflow: hidden; border-radius: 30px; border: #3a3a3a 1px solid; margin-bottom: 15px; }
+.faqopen {padding: 30px; font-size: 20px; font-family: "FuturaLT"; }
+.openfaqpage {}
+.faqitempart .together{display:none; }
+.faqitempart .logofotmother{display:none; }
+.gitoff{}
+.loginformmember { margin-bottom: 30px; }
+.feedbackpart h5{ margin-bottom:30px; }
+.loginscreen .card {border-radius: 18px; margin-top: 55px; }
+.loginscreen .card h2 {font-family: 'futuramedium'; font-weight: 300; }
+.loginscreen h6 {font-family: 'futuramedium'; font-size: 15px; }
+.loginscreen .finally {font-size: 24px; font-family: 'futuramedium'; }
+.loginscreen .card .form-control {border: #000 1px solid; border-radius: 10px; padding: 20px; min-height: 60px; background-color: #fff !important; }
+.loginscreen .card-body {padding: 50px; }
+.loginscreen .card-body .form-group label { font-family: "futura-pt-bold"; text-transform: capitalize; }
+.loginscreen .btn-primary {border-radius: 100px; margin-top: 15px; font-size: 18px; }
+.forgotgroup { margin-bottom: -25px; }
+/*.givepayout {font-size: 18px; font-family: 'futura_xblk_btextra_black'; }*/
+.givepayout { font-size: 22px; font-family: "futura-pt-bold"; font-weight: 600; border-radius: 10px !important; }
+.iconindex{}
+.iconindo { margin-right: 15px; }
+.gitoff p {font-size: 20px; line-height: normal; }
+.gitoff p strong { font-family: 'futura_xblk_btextra_black'; }
+.usepromo {display: block; padding: 10px; text-align: center; background: #cdcdcd; color: #000; font-weight: 600; font-size: 20px; font-family: 'futuralight'; }
+.iconindo svg{display:none; }
+.titleiconindex { font-family: "FuturaLT"; line-height: 24px; }
+.paymentzone {  }
+.paymetotal{  }
+.paymetotal strong {font-size: 12px !important; }
+.paymesmall small {display: block; text-align: left; }
+.faqpart { border: #fff 1px solid; margin: 0 15px; }
+.openfaqpage {padding: 30px; }
+.faqhead {font-size: 25px; font-weight: 300; font-family:"FuturaLT"; }
+.forcasterdiv h5 {font-weight: 700; font-size: 21px;  font-family: 'futuraheavy'; margin-bottom:0px; }
+.forcasterdiv h5 span {font-weight: 300; font-family:"FuturaLT"; }
+.forcasterdiv h4 {font-size: 60px; font-weight: 700; font-family: 'futuraheavy'; line-height: 54px; }
+.convertion{background:#c5c7c5; }
+.commisions{background:#c5c7c5; }
+
+.forcastedpart{color:#fff; font-size: 18px; }
+.forcastedpart p{color:#fff; }
+.forcastedpart p:last-child{ margin-bottom:0px; }
+.forcastearning .btn-primary {border-radius: 100px; font-size: 18px; margin-top: 10px; }
+.forcastearning {display: -moz-box; display: flex; -moz-box-align: center; flex-direction: column; padding: 15px 40px; }
+.forcastearning .form-control { border-radius: 18px; border: #000 1px solid; border-radius: 20px !important; }
+.perfectpst p { color:#515151; }
+
+.forcastearning label {text-transform: uppercase; font-weight: 700; }
+.forcastearning .input-group-append .input-group-text {border-radius: 0px 17px 17px 0px; border: #000 1px solid; }
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {opacity: 1; }
+.earningfore {padding-right: 67px; text-align: left; line-height: 36px; font-size: 36px; margin-bottom: 15px; font-family: 'futuramedium'; }
+.registeryour .form-control {border: #000 1px solid; border-radius: 10px; height: 60px; }
+.registeryour .btn-primary {border-radius: 100px; height: 60px; font-size: 20px; font-family: 'futuralight'; }
+#sidebar .sidecontainer li a{position: relative; font-family:"FuturaLT"; color:#5c5c5c!important; }
+#sidebar .sidecontainer li a:hover{ color:#fff;  }
+#sidebar .sidecontainer li a:hover span{ color:#fff; }
+#sidebar .sidecontainer li a:before{content:""; width:38px; height:38px; background:url('/iconall.png') no-repeat; background-position:-7px -8px; }
+#sidebar .sidecontainer li a.dashboard-div:before{background-position: -7px -198px; }
+#sidebar .sidecontainer li a.sales-div:before{background-position: -7px -264px; }
+#sidebar .sidecontainer li a.crafting-div:before{background-position: -7px -339px; }
+#sidebar .sidecontainer li a.inspiration-div:before{background-position: -7px -406px; }
+#sidebar .sidecontainer li a.product-div:before{background-position: -7px -477px; }
+#sidebar .sidecontainer li a.pay-div:before{background-position: -7px -546px; }
+#sidebar .sidecontainer li a.earnings-div:before{background-position:-7px -615px; }
+#sidebar .sidecontainer li a.faq-div:before{background-position: -7px -683px; }
+#sidebar .sidecontainer li a.about-div:before{background-position: -7px -757px; }
+#sidebar .sidecontainer li a svg{display: none; }
+.promocodetable { margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; }
+.indopromo { padding: 0 0px; flex: 0 0 40%; max-width: 40%; }
+.indopromo span{ font-family: 'futuramedium'; font-size:26px; }
+.indopromo span.yqdgca {display: none; }
+.indopromo.promocode {flex: 0 0 100%; }
+.indopromo.promocode .styprocode {background: #000; color: #fff; padding: 7px 15px; margin: 0 10px; }
+.postremaining{}
+.indopromo.promocode .promohead .promotext{ font-weight:300; }
+.gitoff h1.earning {font-size: 40px; font-weight: 700; font-family:"FuturaLT"; letter-spacing: 1px; line-height:54px; }
+.leadpromo { font-size: 32px; font-family: 'futuralight'; min-width: 460px; display: table; margin: 0 auto; }
+.promotext { font-size: 25px; font-weight: 700; font-family: 'futuramedium'; padding-right: 15px; text-transform: uppercase; }
+.mobilescreen .collapse{position: relative; background: #000;}
+.paymentzone {}
+.topmobdiv{ width:100%; }
+.stepbox { padding: 30px 30px; }
+.perfecticonpost{ margin-bottom:30px; }
+.imgperfectbox { width: 30%; }
+.circlei{ flex:0 0 32px; }
+.prdpart { margin-right:25px; }
+.productionpresent { justify-content: space-around; flex-wrap: wrap; }
+.paymepart { padding: 30px 30px 0; }
+.paypalemail h4{ text-transform:uppercase; font-family:"FuturaLT"; }
+.theperfect { display: -moz-box; display: flex; margin-top: 30px; margin-bottom: 30px; }
+.homesidebanner{padding:30px 0px; }
+.globehome{display: flex; flex-wrap: wrap; padding: 0 0px;}
+.globeimgdown{flex: 20%; max-width: 20%; padding: 0 0px; height:200px; background-color:#000; -webkit-transition: background-color 2s ease-out; -moz-transition: background-color 2s ease-out; -o-transition: background-color 2s ease-out; transition: background-color 2s ease-out; overflow: hidden; }
+.globeimgdown a{ display: block; }
+.globeimgdown a:hover{opacity:0.8; background-color:red; }
+.globeimgdown img{width:100%; height:100%; object-fit: cover; object-position: center; }
+ .perfectpst{padding:30px 0px; }
+.perfectpst h5 {font-family: 'futuramedium'; font-weight: 300; font-size: 20px; }
+.perfectpartdiv {background-color: #0c0c0c; padding: 50px 0px; }
+.numberlist { margin: 10px 0px; font-family: 'futuramedium'; font-size: 18px; font-weight: 300; }
+.perfectpartdiv h2 {margin-bottom: 20px; }
+.alittlepart {padding: 30px; }
+.whenperfect {padding: 50px 30px; }
+.parapostperfect {margin-bottom: 30px; padding: 0px 0px; font-size: 16px; }
+.parapostperfect p { font-size: 16px; }
+.stepbox span {  font-family: 'futuramedium';  font-size: 20px; }
+.stepbox h3{}
+.promodcode { margin-bottom: 15px; }
+.promodcode h3 {font-family: "futura-pt-bold"; font-size: 36px; text-transform: capitalize; }
+.userdropd .dropdown-menu {left:-40px !important; }
+.promodcode p {  }
+.promodcode:last-child{margin-bottom:0px; }
+.blueperefect { padding: 20px 20px 0px; }
+.blueperefect.last { padding: 20px 20px 20px; }
+.postingavid h2{ margin-bottom:30px; }
+.avideostory{ padding:30px 30px; }
+.avideostory h3{ font-size:25px; }
+.oncepartbg{ padding:30px 30px; }
+.oncethat h2{}
+.oncethat h4{font-family:"FuturaLT"; }
+.loadmorebtn{font-family: 'futuralight'; }
+.feedbackpart h5{ font-family:"FuturaLT"; }
+.parapostperfect ul { margin: 0 0 0px 15px; display: inline-block; }
+.parapostperfect li{}
+h2.alittle { margin-top: 20px; }
+.displayhidecontent{display: none; }
+.abrotate {margin: 20px 0px 10px; }
+.signupheader{display: none; }
+.logologin{padding:25px; }
+ .autosignbg{
+
+    }
+    .autosignin{display: none; }
+/*media css*/
+@media (min-width: 1400px){
+  .sideoffbar,.sideoffbarmain{ min-width:300px; max-width:300px; width:300px; }
+  .givepayout { font-size:24px; }
+  .gitoff h1.earning{font-size: 60px; }
+}
+.headingtitle {color: #000; text-align: center; font-weight: 500; font-size: 36px; margin-bottom: 35px; font-family: 'futuramedium'; }
+@media (max-width: 1200px){
+    .loginscreen .btn-primary{ padding: 10px 20px; }
+    .loginscreen .card-body { padding: 20px; }
+    .topmobdiv { width: 100%; }
+    .inspirationpart .card-columns .card { height: 205px; }
+    .globeimgdown{ height: 135px; }
+}
+@media (max-width: 992px){
+    .forcastearning .btn-primary {padding: 10px; }
+    .inspirationpart .card-columns .card {height: 205px; }
+    .screenopen {top: 121px; padding: 20px; overflow: auto; }
+    .topmobdiv .col-auto img {height: 91px !important; }
+    .dropleft.dropdown .btn.btn-transparent .shadow-sm {width: 50px !important; height: 50px !important; background-size: 100%; }
+    .feedbackborder .card-body {padding: 20px 0px; }
+    #topbar {background-color: #060608 !important; }
+    .mobilescreen {}
+}
+@media (max-width: 767px){
+    .globeimgdown {height: 100px; }
+    .faqhead {font-size: 18px; text-align: left !important; margin-right: 20px; }
+    .faqopen { padding: 24px; font-size: 18px; }
+    .productionpresent {justify-content: unset;}
+    .prdpart img {width: 90px !important; height: auto !important; min-width: auto !important; }
+    .prdpart {flex: 0 0 50%; max-width: 50%; margin-right:0px;}
+    .inspirationpart .card-columns .card {height: 150px; }
+    .promodcode h3{ margin-bottom:25px; }
+    .promodcode h4{ margin-bottom:25px; }
+    .pagebannerto {font-size: 36px; }
+    .dropdownnotification {position: absolute; left: 60px; z-index: 100; }
+}
+
+@media (max-width: 650px){
+    ul.getyourcode li span.getyour{padding-right: 0px !important; }
+    ul.getyourcode li:nth-child(3) span.getyour {padding: 15px 15px; }
+    ul.getyourcode li:nth-child(4) span.getyour {padding: 15px 15px; }
+    .logogeneral{display: none; }
+    .homelogotop{display: none; }
+    .logomobile {width: 90px; height: 90px; background: url(/behairful-partners-logo-ai-mobile.svg) no-repeat; background-size: cover; }
+    .autosignbg{display: none; }
+    .autosignin {display: block; height: auto !important; top: -75px !important; position: relative; }
+    .forgotpass{display: none; }
+    .hidedesktop {display: block; margin-bottom: 0px; text-align: left !important; }
+    .loginscreen .finally {font-size: 18px; font-family: 'futuramedium'; text-transform: uppercase; text-align: left !important; }
+    .loginscreen h6 {text-align: right !important; }
+    ul.getyourcode li .creatorsbox {min-height: inherit; margin-bottom: 0px; margin: 0px 10px; background: transparent !important; display: -moz-box; display: flex; border-bottom: #fff 1px solid; border-radius: 0px; }
+    ul.getyourcode li:last-child .creatorsbox {border-bottom: none; }
+    ul.getyourcode li span.imgsignin{display: none; }
+    ul.getyourcode li span.imgsignin{display: none; }
+    ul.getyourcode {background: #1e1e1e; border-radius: 18px; }
+    ul.getyourcode li {width: 100%; }
+    ul.getyourcode li span.getyour {display: block; background: transparent !important; color: #fff !important; padding: 10px 15px; border-radius: 20px; min-height: inherit; font-size: 14px; }
+    .imgautocont-1{display: inline-block; }
+    .logologin div{ display:none !important; }
+    .logologin div.signupheader{display: flex !important; }
+    .logologin div.signupheader div{display: inline-block !important; }
+    .logologin div.signupheader span{font-size:24px; }
+    .logologindesign{}
+    .loginscreen{padding-top:100px; }
+    .logologin{padding:15px; } 
+    .signupheader {display: -moz-box; display: flex; -moz-box-align: center; align-items: center; text-transform: uppercase; justify-content: space-between; }
+    .loginscreen .card {margin-top: 0; }
+    .loginscreen .alert.alert-danger {}
+    .loginscreen .btn-primary {font-size: 18px; padding-left: 0px; padding-right: 0px; font-family: 'futuralight'; }
+    .loginscreen .row.flex-md-row-reverse {padding-left: 0px !important; padding-right: 0px !important; }
+    .loginscreen .card-body {  padding: 20px; }
+    .aboutme {padding: 10px 0px 20px; }
+    .alettertext {font-size: 20px !important; }
+    .earningfore { font-size: 22px; }
+    .registeryour { padding: 40px 20px; }
+    .prdpart p { font-size: 16px; }
+    .giftpart{ margin-bottom:20px; }
+    .giftpart:last-child{ margin-bottom:0px; }
+    .footerloogo { margin: 0px 0px 30px; padding: 0px 50px; max-width: 286px; }
+    img.main-footer-logo { width: 190px; margin-left: auto; margin-right: auto; }
+    .forcasterdiv {padding-top: 30px; }
+    .oncepartbg {padding: 30px 10px; }
+    .parapostperfect{ margin-left: -5px;  margin-right: -5px; }
+    .salesbgpart { padding:0px 0px; }
+    .theperfect.displayhidecontent {display: flex; }
+    .footer-list-social {display: flex; }
+    .footer-list-social li a{margin-right: 10px; }
+    .footer-block-inner {display: block !important; }
+    .theperfect{display: none; }
+    .promocodetable { flex-direction: column; }
+    .indopromo { max-width:100%; flex:0 0 100%; }
+    .paymedroppage.dropdown-menu{left: -40px !important; }
+    .forcastedpart {text-align: center; display:none; } 
+    .faqpart {border-radius: 18px !important; }
+    .openfaqpage {padding: 20px; }
+    .commisions {margin: 30px 30px 0px !important; border-radius: 10px; padding-left: 0px !important; padding-right: 0px !important; background: #fff; }
+    .perfectpartdiv {  padding: 40px 13px; }
+    .whenperfect {padding: 40px 0px; }
+    .iconimgperfect {min-height: 110px; }
+    .blueperefect.last .promodcode{}
+    .alittlepart p { font-size: 15px; }
+    .feedbackbg {padding-bottom: 0px !important; }
+    .feedbackpart{padding-bottom:0px !important; }
+    .feedithas:last-child{  padding-bottom:0px !important; }
+    .headingtitle { font-size: 30px; }
+    .feedithas:last-child .feedbackborder{ border-bottom:none; }
+    .globeimgdown{ flex:0 0 33.3%; max-width:33.3%; height: 125px; }
+    .forcasterdiv h4 {margin-bottom: 0px; font-size: 40px; font-weight: 700; font-family: 'futuraheavy'; line-height: 40px; margin-top: 5px; }
+    .forcasterdiv h5 { margin-bottom: 0px;     font-size: 13px; }
+    .convertion { text-align: center; }
+    .commisions {text-align: center; margin:0px 26px 0px !important; }
+    .forcastearning {padding-left: 20px; padding-right: 20px; padding-bottom: 25px; }
+    .earningfore { padding-right: 0; text-align: center; }
+    .copyrighttext {margin-top: 30px; }
+    .footerloogo {margin: 30px 0px; padding: 0px 50px; }
+    .productionpresent { }
+    .prdpart {flex: 0 0 33.3%; max-width: 33.3%;  padding: 0 10px; margin-right: 0px; margin: 15px 0px 15px !important; }
+    .prdpart div{}
+    .inspirationpart .card-columns{column-count: 3; }
+    .inspirationpart .card-columns .card {height: 120px; }
+    .inspirationpart {padding-bottom: 15px; }
+    .pagebannerhead {height: 300px !important; }
+    .titleclspage {font-size: 24px; }
+    .promodcode{margin-bottom:0px; }
+    .paratextbanner {margin-top: 10px !important; padding: 0 15px; }
+    .perfectpst h5 {font-size: 16px;     font-weight: 400; }
+    .perfectpst{padding:30px 0px; }
+    .iconimgperfect{}
+    .promodcode h4 { margin-left: 10px !important; }
+    .postingavid{  }
+    .postingavid h2 {font-size: 24px; }
+    .postingavid h3{font-size: 18px; }
+    .oncethat h2 {font-size: 24px; }
+    .oncethat h3{font-size: 18px; }
+    .oncethat h4{font-size: 18px; }
+    .promodcode {padding: 15px 8px 0px; }
+    .promodcode h3{font-size:24px; }
+    .promodcode h4{font-size:18px;}
+    .imgboxpostperfect {padding: 0px !important; margin: 0px !important; }
+    .perfecticonpost{padding: 15px; }
+    .stepbox h3 {font-size: 18px; }
+    
+    .alittle {font-size: 24px; }
+    .imgperfectbox{width:100px;}
+    .imgperfectbox img {width: auto !important; height: 60px !important; }
+    .stepbox {padding: 0px 10px; }
+    .numberlist { padding: 0px 0px; margin-bottom: 10px !important; margin-top: 10px !important; font-size: 14px; }
+    .iconimgperfect img {height: 60px; }
+    ul.footer-list li {font-size: 14px; }
+    .footer { padding-right: 0px; padding-left: 0px; }
+    .maintable th {padding: 18px 8px; font-size: 12px; font-weight: 400; text-transform: uppercase; }
+    .nosaleyet{padding:0px !important; }  
+    .pagebannerto {height: 300px !important; font-size: 24px; display: flex; align-items: center; justify-content: center; width: 100%;     flex-direction: column; }  
+    .weare {font-size: 20px; }
+    .watchyour {font-size: 24px;} 
+    .tablestyle {border-radius: 15px !important; }
+    .screenopen {top: 74px; }
+    .topmobdiv .col-auto {display: flex; align-items: center; }
+    .topmobdiv .col-auto a.logotop { height: 60px; width: 109px; margin: 0 auto; }
+    .topmobdiv .col-auto a.logotop img{display:none; }
+    .logotop {display: inline-block; }
+    .gitoff h1.earning {font-size: 24px; text-align: center !important; display: block; }
+    .inspiration {padding: 40px 0px; }
+    .feedbackborder{border-bottom:#fff 1px solid; border-radius:0px !important; }
+    .usepromo {font-size: 12px; }
+    .imgdivlast {padding: 0; }
+    .mobilescreen .collapse{top: 90px !important; }
+    .leadpromo {font-size: 20px; }
+    .paymentzone strong.d-block {font-size: 11px !important; }    
+    .paymentzone small{font-size:12px; }
+    .paymentzone .btn.btn-transparent{  }
+    .topmobdiv .col-auto img { height: 50px !important; }
+    .registeryour h5 { font-size: 15px; }
+    .registeryour .btn-primary { border-radius: 100px; height: 50px; font-size: 18px; min-width: 100%; margin-top: 15px; }
+    .tablepayme {border-radius: 10px;}
+    .registeryour .form-control {border-radius: 5px; height: 50px; }
+    .paymepart{}
+    .salesfor select.form-control{border-radius:15px !important; }
+    .copyrighttext p {font-size: 16px; }
+    .convertion {background: #ffffff; margin: 0px 26px 26px !important; border-radius: 10px; }
+    .paymepart {padding: 30px 10px 0; }
+    .footer-block-inner {margin-top: 20px; padding-left: 10px; }
+    .gitoff {padding: 0px !important; }
+    .givepayout{display:none; }
+    .gitoff p{display:none; }
+    .leadpromo {min-width: 80%; }
+    .iconindex {margin-left: -15px; }
+    .alittlepart {padding: 10px; }
+   .perfecticonpost {margin-bottom:0px; padding-left:0px; }
+    .avideostory { padding: 30px 10px; }
+    .mobilescreen .navbar-nav .nav-link { color:#969696 !important; }
+    .promodcode.perfectpostdemo { padding-left: 0px; }
+    .bg-white.productpresentation.p-4 { padding: 30px 0px 10px !important; }
+    .numberlist span { flex: 0 0 36px;  max-width: 36px; }
+    .postremaining {margin-left: 50px !important; }
+    .text-center.text-light.green {  margin-top: 15px; }
+    .aboutsec {padding:0px 20px 15px; }
+    .abouton {    }
+    .abrotate {margin-top: 10px; }
+    .abouton .card-body {padding-bottom: 15px; }
+}
+@media (max-width: 480px){
+    .titleiconindex {line-height: 20px; font-size: 13px !important; }
+   .topmobdiv {padding-left: 15px !important; padding-right: 15px !important; }
+   .dropdownnotification {left: 35px;}
+   .dropdownnotification .btnnotification {transform: scale(0.8); }
+   .topmobdiv .col-auto a.logotop { height: 45px; width: 88px;  }
+   .paymentzone small {font-size: 10px; }
+   .paymentzone strong.d-block {font-size: 10px !important; }
+   .paymentzone svg {font-size: 12px !important; }
+   .dropleft.dropdown .btn.btn-transparent .shadow-sm {width: 33px !important; height: 33px !important; background-size: 100%; }
+}
+@media (max-width: 320px){
+    .paymentzone .btn.btn-transparent { padding-right: 0px; padding-left: 0px; }
+}
