@@ -86,7 +86,7 @@ function NavMainItems({props, currentUrl}) {
                 }
                           
                 .nav-link:hover, .nav-link:focus{
-                  color:black
+                  color:black;
                 }
             `}
             </style>
