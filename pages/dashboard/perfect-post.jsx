@@ -74,7 +74,7 @@ function PerfectPost(props) {
             <section className="whenperfect bg-white text-dark">
                <div className="container">
                   <Step
-                  image={"/post_large.png"}
+                  image={"/clock.png"}
                   step={"STEP 1"}
                   title={"When Should I Post?"}
                   text={"It's important to take into consideration the best times of the day to share, so you can capture the highest engagement. Most career influencers believe that a general rule to live by morning, noon and night, capitalizing on when people use their phones the most. Instagram's users are most active between 12pm and 3pm!"}
@@ -86,7 +86,7 @@ function PerfectPost(props) {
                   text={"Creating a scroll-stopping image / video is a great way to ensure engagement and interest. Every post should speak directly to your audience, knowing your demographic helps in creating the perfect post. Remember to be creative, be quirky, and most importantly have fun while creating your post. "}
                   />
                   <Step
-                  image={"/caption_large.png"}
+                  image={"/chat.png"}
                   step={"STEP 3"} 
                   title={"Captions, Captions, Captions"}
                   text={<>
@@ -227,7 +227,7 @@ function Step({reverse, image, step, title, text, Icon}){
                 <div className="col-lg-12">
                     <div className="d-flex perfecticonpost">
                       <div className="imgperfectbox">
-                         <Image src={image} alt={title} style={{height:150}} />
+                         <Image src={image} alt={title} />
                       </div>
                       <div className={"stepbox"}>
                          <Badge text={step} />
