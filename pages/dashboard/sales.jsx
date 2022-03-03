@@ -86,7 +86,8 @@ function Sales(props) {
     );
 }
 function RenderTableData({data}){
-    if(data.length === 0) return <tr>
+    console.log(data);
+    if(!data || data.length === 0) return <tr>
         <td colSpan={5} className="noyetpart">
             <div className={"mt-2 text-center nosaleyet"}>
                 No Sales yet
