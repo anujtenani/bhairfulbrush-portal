@@ -389,8 +389,8 @@ h2.alittle { margin-top: 20px; }
         text-align: center;
     }
     .promocodetable {
-        margin-top: 25px !important;
-    }
+    margin-top: 25px !important;
+}
     .giftpart div {
         font-size: 14px;
     }
@@ -632,7 +632,7 @@ h2.alittle { margin-top: 20px; }
     .gitoff {padding: 0px !important; }
     .givepayout{display:none; }
     .leadpromo {
-        min-width: 65%;
+        min-width: 58%;
         border-radius: 7px !important;
     }
     .iconindex {margin-left: -15px; }
