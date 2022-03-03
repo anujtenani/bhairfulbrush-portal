@@ -356,7 +356,7 @@ h2.alittle { margin-top: 20px; }
 @media (min-width: 1400px){
   .sideoffbar,.sideoffbarmain{ min-width:300px; max-width:300px; width:300px; }
   .givepayout { font-size:24px; }
-  .gitoff h1.earning{font-size: 60px; }
+  .gitoff h1.earning{font-size: 60px;line-height: normal; }
 }
 .headingtitle {color: #000; text-align: center; font-weight: 500; font-size: 36px; margin-bottom: 35px; font-family: 'futuramedium'; }
 @media (max-width: 1200px){
@@ -376,8 +376,83 @@ h2.alittle { margin-top: 20px; }
     #topbar {background-color: #060608 !important; }
     .mobilescreen {}
 }
+@media (max-width: 991px){
+    .topmobdiv {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
 @media (max-width: 767px){
     .globeimgdown {height: 100px; }
+    .gitoff p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .promocodetable {
+    margin-top: 25px !important;
+}
+    .giftpart div {
+        font-size: 14px;
+    }
+    .productionpresent .prdpart {
+        margin-bottom: 0px !important;
+    }
+    .faqpart {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        margin-bottom: 15px !important;
+    }
+    .inspirationpart+footer.footer.footerful {
+        padding-top: 20px;
+    }
+    .theperfect.displayhidecontent {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .gitoff h1.earning {
+        line-height: normal;
+        margin-top: 10px;
+    }
+    .leadpromo {
+        font-size: 14px !important;
+    }
+    .homesidebanner .text-center.mt-4 {
+        margin-top: 0px !important;
+    }
+    strong.lead.d-block.text-center.promotext {
+        font-size: 14px;
+        padding-right: 12px;
+        padding-top: 3px;
+    }
+    .indopromo span {
+        font-size: 16px;
+    }
+    body .btn-primary {
+        font-size: 14px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    .indopromo.promolink .promotext {
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        font-family: "futura-pt-bold" !important;
+    }
+    .indopromo.promolink .styprocode {
+        font-size: 14px !important;
+    }
+    .indopromo.promolink #tpmnjm {
+        font-size: 16px;
+        position: relative;
+        bottom: 2px;
+    }
+    .promohead {
+        align-items: center;
+    }
+    .indopromo.promocode .styprocode {
+        font-size: 14px;
+        margin-left: 0px;
+    }
     .faqhead {font-size: 18px; text-align: left !important; margin-right: 20px; }
     .faqopen { padding: 24px; font-size: 18px; }
     .productionpresent {justify-content: unset;}
@@ -388,6 +463,18 @@ h2.alittle { margin-top: 20px; }
     .promodcode h4{ margin-bottom:25px; }
     .pagebannerto {font-size: 36px; }
     .dropdownnotification {position: absolute; left: 60px; z-index: 100; }
+    #topbar .userdropd.dropbottom.dropdown>button {
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+    #topbar .paymentzone .dropdown>button {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .usepromo {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 @media (max-width: 650px){
@@ -466,13 +553,17 @@ h2.alittle { margin-top: 20px; }
     .commisions {text-align: center; margin:0px 26px 0px !important; }
     .forcastearning {padding-left: 20px; padding-right: 20px; padding-bottom: 25px; }
     .earningfore { padding-right: 0; text-align: center; }
-    .copyrighttext {margin-top: 30px; }
+    .copyrighttext {
+        margin-top: 15px;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
     .footerloogo {margin: 30px 0px; padding: 0px 50px; }
     .productionpresent { }
     .prdpart {flex: 0 0 33.3%; max-width: 33.3%;  padding: 0 10px; margin-right: 0px; margin: 15px 0px 15px !important; }
     .prdpart div{}
-    .inspirationpart .card-columns{column-count: 3; }
-    .inspirationpart .card-columns .card {height: 120px; }
+    .inspirationpart .card-columns{column-count: 3;column-gap: 8px; }
+    .inspirationpart .card-columns .card {height: 120px;margin-bottom: 8px; }
     .inspirationpart {padding-bottom: 15px; }
     .pagebannerhead {height: 300px !important; }
     .titleclspage {font-size: 24px; }
@@ -485,9 +576,9 @@ h2.alittle { margin-top: 20px; }
     .postingavid{  }
     .postingavid h2 {font-size: 24px; }
     .postingavid h3{font-size: 18px; }
-    .oncethat h2 {font-size: 24px; }
+    .oncethat h2 {font-size: 20px; }
     .oncethat h3{font-size: 18px; }
-    .oncethat h4{font-size: 18px; }
+    .oncethat h4{font-size: 14px; }
     .promodcode {padding: 15px 8px 0px; }
     .promodcode h3{font-size:24px; }
     .promodcode h4{font-size:18px;}
@@ -496,8 +587,11 @@ h2.alittle { margin-top: 20px; }
     .stepbox h3 {font-size: 18px; }
     
     .alittle {font-size: 24px; }
-    .imgperfectbox{width:100px;}
-    .imgperfectbox img {width: auto !important; height: 60px !important; }
+    .imgperfectbox{min-width:75px;}
+    .imgperfectbox img {
+        width: auto !important;
+        max-width: 65px;
+    }
     .stepbox {padding: 0px 10px; }
     .numberlist { padding: 0px 0px; margin-bottom: 10px !important; margin-top: 10px !important; font-size: 14px; }
     .iconimgperfect img {height: 60px; }
@@ -537,8 +631,10 @@ h2.alittle { margin-top: 20px; }
     .footer-block-inner {margin-top: 20px; padding-left: 10px; }
     .gitoff {padding: 0px !important; }
     .givepayout{display:none; }
-    .gitoff p{display:none; }
-    .leadpromo {min-width: 80%; }
+    .leadpromo {
+        min-width: 58%;
+        border-radius: 7px !important;
+    }
     .iconindex {margin-left: -15px; }
     .alittlepart {padding: 10px; }
    .perfecticonpost {margin-bottom:0px; padding-left:0px; }
