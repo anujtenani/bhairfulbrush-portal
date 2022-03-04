@@ -51,12 +51,11 @@ color:#000;
 .hidedesktop{display: none; }
 .showingenteries{display: none; }
 .tablepayme{display: none; }
-#sidebar .sidecontainer .navbar-brand img {height: 100px !important; }
 .loginscreen .alert.alert-danger a { color:#000; }
 .indopromo.promolink { flex: 0 0 100%; max-width: 100%; flex-direction: column; display: flex; flex-wrap: wrap; }
-.indopromo.promolink .promotext { font-size: 18px; }
+.indopromo.promolink .promotext {     font-family: "futura-pt-bold"; }
 .indopromo.promolink .promohead { flex-direction: column; font-size:18px; }
-.indopromo.promolink .promohead span{ flex-direction: column; font-size:18px; }
+.indopromo.promolink .promohead span{ flex-direction: column; font-size:20px; }
 .indopromo.promolink span { font-family: futuramedium; font-size: 20px; }
 .abouton { padding-top: 15px; }
 .abrotate{}
@@ -107,10 +106,12 @@ ul.getyourcode li span.getyour {display: block; background: #000; color: #fff; p
 .prdpart p {font-size: 20px; }
 .giftpart div{width:100%; }
 .giftpart h3{font-family: 'futuramedium'; }
-.forecasterpart .pagebannerhead {
-    background-position: 100% 93% !important;
+.paypalemail h4 {
+    letter-spacing: .1em;
 }
-#sidebar {background:#080809; }
+#sidebar {background:#080809;top: 0;
+    bottom: 0;
+    overflow: auto;}
 #sidebar li {  }
 #sidebar .sidecontainer li.active a { color:#fff !important; }
 
@@ -130,8 +131,14 @@ ul.getyourcode li span.getyour {display: block; background: #000; color: #fff; p
 .borderrad {}
 .borderrad img{border:#fff 5px solid !important; }
 .iconimgperfect {min-height: 152px; }
-.feedbackborder .card-title { font-size: 20px; margin-bottom: 20px; font-weight: 700; letter-spacing: 1px; margin-top: 18px; }
-.copyrighttext p {font-size: 28px; font-family: 'futuralight'; }
+.feedbackborder .card-title {
+    font-size: 25px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+.copyrighttext p {font-size: 24px; font-family: 'futuralight'; }
 .titleclspage {font-family: 'futuralight'; text-transform: uppercase; font-weight: 100; }
 .feedbackborder p{font-size:15px; }
 .maintable{ background:#fff; margin-bottom: 0px; }
@@ -192,7 +199,10 @@ img.main-footer-logo {max-width: 252px; margin-top: -20px; margin-left: -40px; h
 ul.footer-list{}
 ul.footer-list li { font-size: 14px; }
 .footer h5 {font-size: 20px; margin-bottom: 20px; font-family:"FuturaLT"; }
-ul.footer-list li a{padding:5px 0px; }
+ul.footer-list li a{padding:5px 0px;font-family: 'futuralight'; }
+.footer_text_left p {
+    font-family: 'futuralight';
+}
 .copyrighttext {border-top: #8e8e8e 1px solid; padding-top: 37px; margin-top: 50px; }
 .footer-list-social{}
 .footer-list-social li{margin-bottom:15px; }
@@ -210,13 +220,21 @@ img{max-width:100%; }
 .dropleft.dropdown .btn.btn-transparent .shadow-sm {width: 86px !important; height: 86px !important; background: url(/behairful-side-logo.png) no-repeat; border-radius: 100px !important; overflow: hidden; }
 .dropleft.dropdown .btn.btn-transparent svg {width: 100% !important; height: 100% !important; background-size: cover; background-position: center; outline: none; }
 .dropleft.dropdown .btn.btn-transparent img {width: 100% !important; height: 100% !important; background-size: cover; background-position: center; outline: none; }
-.weare { text-align: center; margin-bottom: 20px; font-weight: 300; margin-bottom: 25px;  font-family:"FuturaLT"; }
+.weare {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    font-family: "FuturaLT";
+    font-size: 30px;
+    letter-spacing: 2px;
+}
 .dropdownnotification {display: inline-flex; float: left; margin: 11px 13px; }
 .dropdownnotification .dropdown{}
 .dropdownnotification .btnnotification { width: 38px; height: 38px; background: url(/iconall.png) no-repeat; background-position: -7px -829px; border: none; display: block; outline: none !important; box-shadow: none; }
 .dropdownnotification .dropdown-menu{}
 .btn-primary { border-radius: 10px; text-align: center; font-size: 25px; padding: 10px 50px; line-height: normal; min-height: auto; background: #000 !important; }
-#topbar { background-color: #0c0c0c !important; display: -moz-box; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: justify; justify-content: space-between; padding: 15px 0px; }
+#topbar { background-color: #0c0c0c !important; display: -moz-box; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: justify; justify-content: space-between; padding: 44px 0px; }
 .footer {background-color: #0c0c0c; padding: 50px 30px 20px; }
 .registeryour{padding:50px 20px; }
 .tablepayme {overflow: hidden; border-radius: 30px; border: #3a3a3a 1px solid; margin-bottom: 15px; }
@@ -237,10 +255,10 @@ img{max-width:100%; }
 .loginscreen .btn-primary {border-radius: 100px; margin-top: 15px; font-size: 18px; }
 .forgotgroup { margin-bottom: -25px; }
 /*.givepayout {font-size: 18px; font-family: 'futura_xblk_btextra_black'; }*/
-.givepayout { font-size: 22px; font-family: "futura-pt-bold"; font-weight: 600; border-radius: 10px !important; }
+.givepayout { font-size: 20px; font-family: "futura-pt-bold"; font-weight: 600; border-radius: 10px !important; }
 .iconindex{}
 .iconindo { margin-right: 15px; }
-.gitoff p {font-size: 20px; line-height: normal; }
+.gitoff p {font-size: 20px; line-height: normal;padding-top: 8px; }
 .gitoff p strong { font-family: 'futura_xblk_btextra_black'; }
 .usepromo {display: block; padding: 10px; text-align: center; background: #cdcdcd; color: #000; font-weight: 600; font-size: 20px; font-family: 'futuralight'; }
 .iconindo svg{display:none; }
@@ -252,24 +270,46 @@ img{max-width:100%; }
 .faqpart { border: #fff 1px solid; margin: 0 15px; }
 .openfaqpage {padding: 30px; }
 .faqhead {font-size: 25px; font-weight: 300; font-family:"FuturaLT"; }
-.forcasterdiv h5 {font-weight: 700; font-size: 21px;  font-family: 'futuraheavy'; margin-bottom:0px; }
+.forcasterdiv h5 {font-weight: 700; font-size: 21px;  font-family: 'futuraheavy'; margin-bottom:15px; }
 .forcasterdiv h5 span {font-weight: 300; font-family:"FuturaLT"; }
-.forcasterdiv h4 {font-size: 60px; font-weight: 700; font-family: 'futuraheavy'; line-height: 54px; }
+.forcasterdiv h4 {font-size: 60px; font-weight: 700; font-family: 'futuraheavy'; line-height: 54px;margin-bottom: 0px; }
 .convertion{background:#c5c7c5; }
 .commisions{background:#c5c7c5; }
 
 .forcastedpart{color:#fff; font-size: 18px; }
-.forcastedpart p{color:#fff; }
+.forcastedpart p{color:#fff;margin-bottom: 20px;
+    margin-top: 15px; }
 .forcastedpart p:last-child{ margin-bottom:0px; }
 .forcastearning .btn-primary {border-radius: 100px; font-size: 18px; margin-top: 10px; }
-.forcastearning {display: -moz-box; display: flex; -moz-box-align: center; flex-direction: column; padding: 15px 40px; }
+.forcastearning {
+    display: -moz-box;
+    display: flex;
+    -moz-box-align: center;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    padding: 30px 10px 40px 10px;
+    width: 100%;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .forcastearning .form-control { border-radius: 18px; border: #000 1px solid; border-radius: 20px !important; }
 .perfectpst p { color:#515151; }
 
 .forcastearning label {text-transform: uppercase; font-weight: 700; }
 .forcastearning .input-group-append .input-group-text {border-radius: 0px 17px 17px 0px; border: #000 1px solid; }
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {opacity: 1; }
-.earningfore {padding-right: 67px; text-align: left; line-height: 36px; font-size: 36px; margin-bottom: 15px; font-family: 'futuramedium'; }
+.earningfore {
+    padding-right: 0px;
+    text-align: left;
+    line-height: 35px;
+    font-size: 36px;
+    margin-bottom: 5px;
+    font-family: futura-pt-bold;
+    width: 100%;
+    max-width: 200px;
+}
 .registeryour .form-control {border: #000 1px solid; border-radius: 10px; height: 60px; }
 .registeryour .btn-primary {border-radius: 100px; height: 60px; font-size: 20px; font-family: 'futuralight'; }
 #sidebar .sidecontainer li a{position: relative; font-family:"FuturaLT"; color:#5c5c5c!important; }
@@ -294,9 +334,16 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .indopromo.promocode .styprocode {background: #000; color: #fff; padding: 7px 15px; margin: 0 10px; }
 .postremaining{}
 .indopromo.promocode .promohead .promotext{ font-weight:300; }
-.gitoff h1.earning {font-size: 40px; font-weight: 700; font-family:"FuturaLT"; letter-spacing: 1px; line-height:54px; }
+.gitoff h1.earning {
+    font-size: 44px;
+    font-weight: 700;
+    font-family: "FuturaLT";
+    letter-spacing: 1px;
+    line-height: 59px;
+    margin-bottom: 12px;
+}
 .leadpromo { font-size: 32px; font-family: 'futuralight'; min-width: 460px; display: table; margin: 0 auto; }
-.promotext { font-size: 25px; font-weight: 700; font-family: 'futuramedium'; padding-right: 15px; text-transform: uppercase; }
+.promotext { font-size: 25px; font-weight: 700; font-family: 'futuramedium'; padding-right: 15px; text-transform: uppercase;line-height: 42px; }
 .mobilescreen .collapse{position: relative; background: #000;}
 .paymentzone {}
 .topmobdiv{ width:100%; }
@@ -339,7 +386,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .oncepartbg{ padding:30px 30px; }
 .oncethat h2{}
 .oncethat h4{font-family:"FuturaLT"; }
-.loadmorebtn{font-family: 'futuralight'; }
+.loadmorebtn{font-family: 'futuralight';letter-spacing: 0; }
 .feedbackpart h5{ font-family:"FuturaLT"; }
 .parapostperfect ul { margin: 0 0 0px 15px; display: inline-block; }
 .parapostperfect li{}
@@ -352,11 +399,30 @@ h2.alittle { margin-top: 20px; }
 
     }
     .autosignin{display: none; }
+    .indopromo span svg {
+        position: relative;
+        bottom: 4px;
+    }
 /*media css*/
+#sidebar li a {
+    font-size: 15px;
+}
+#sidebar li {
+    padding-bottom: 10px;
+}
+
 @media (min-width: 1400px){
   .sideoffbar,.sideoffbarmain{ min-width:300px; max-width:300px; width:300px; }
-  .givepayout { font-size:24px; }
-  .gitoff h1.earning{font-size: 60px;line-height: normal; }
+  .givepayout {
+    font-size: 22px;
+    line-height: normal;
+    padding: 11px 10px !important;
+}
+  .gitoff h1.earning {
+    font-size: 55px;
+    line-height: normal;
+    margin-bottom: 12px;
+}
 }
 .headingtitle {color: #000; text-align: center; font-weight: 500; font-size: 36px; margin-bottom: 35px; font-family: 'futuramedium'; }
 @media (max-width: 1200px){
@@ -381,6 +447,14 @@ h2.alittle { margin-top: 20px; }
         display: flex;
         flex-wrap: nowrap;
     }
+    #topbar {
+        padding: 15px 0px !important;
+    }
+    .iconindo {
+        margin-right: 7px;
+        min-width: 70px !important;
+        min-height: 70px !important;
+    }
 }
 @media (max-width: 767px){
     .globeimgdown {height: 100px; }
@@ -388,8 +462,67 @@ h2.alittle { margin-top: 20px; }
         font-size: 14px;
         text-align: center;
     }
+    .footer h5 {
+        margin-bottom: 15px;
+    }
+    .avideostory h3 {
+        font-size: 20px;
+    }
+    .postingavid h2 {
+        margin-bottom: 15px;
+    }
+    .avideostory h3.mt-4 {
+        margin-top: 10px !important;
+    }
+    .forcastearning .btn-primary {
+        font-size: 16px;
+        font-family: 'futuralight';
+    }
+    .perfectpst h5 {
+        white-space: nowrap;
+    }
+    .blueperefect .promodcode h3 {
+        margin-bottom: 8px;
+    }
+    .blueperefect .promodcode {
+        padding-top: 2px;
+    }
+    .blueperefect .promodcode h4 {
+        margin-bottom: 0px !important;
+        line-height: normal !important;
+    }
+    .blueperefect.last .col-lg-12 {
+        padding-top: 15px;
+    }
+    .blueperefect.last {
+        padding-top: 5px;
+    }
+    .weare {
+        font-family: "futura-pt-bold" !important;
+        margin-bottom: 15px !important;
+    }
+    .forcasterdiv h5 span {
+        display: block;
+        margin-top: 2px;
+    }
+    .indopromo.promolink .promohead>.promotext {
+        padding-right: 0px !important;
+        line-height: 15px;
+    }
+    .indopromo.promolink {
+        margin-top: 7px;
+        margin-bottom: 25px;
+    }
+    .indopromo span svg {
+        position: relative;
+        bottom: 1px;
+        font-size: 16px;
+    }
+    .promohead {
+        margin-bottom: 0px !important;
+    }
     .promocodetable {
-    margin-top: 25px !important;
+    margin-top: 10px !important;
 }
     .giftpart div {
         font-size: 14px;
@@ -412,6 +545,7 @@ h2.alittle { margin-top: 20px; }
     .gitoff h1.earning {
         line-height: normal;
         margin-top: 10px;
+        margin-bottom: 0px;
     }
     .leadpromo {
         font-size: 14px !important;
@@ -466,6 +600,8 @@ h2.alittle { margin-top: 20px; }
     #topbar .userdropd.dropbottom.dropdown>button {
         padding-right: 0px;
         padding-left: 5px;
+        width: 42px;
+        padding-bottom: 0px;
     }
     #topbar .paymentzone .dropdown>button {
         padding-left: 0px;
@@ -556,7 +692,13 @@ h2.alittle { margin-top: 20px; }
     .copyrighttext {
         margin-top: 15px;
         padding-top: 15px;
-        padding-bottom: 25px;
+        padding-bottom: 15px;
+    }
+    .copyrighttext>p {
+        margin-bottom: 0px;
+    }
+    .footer {
+        padding-bottom: 0px !important;
     }
     .footerloogo {margin: 30px 0px; padding: 0px 50px; }
     .productionpresent { }
@@ -595,7 +737,10 @@ h2.alittle { margin-top: 20px; }
     .stepbox {padding: 0px 10px; }
     .numberlist { padding: 0px 0px; margin-bottom: 10px !important; margin-top: 10px !important; font-size: 14px; }
     .iconimgperfect img {height: 60px; }
-    ul.footer-list li {font-size: 14px; }
+    ul.footer-list li {font-size: 14px;font-family: 'futuralight'; }
+    .footer_text_left p {
+        font-family: 'futuralight';
+    }
     .footer { padding-right: 0px; padding-left: 0px; }
     .maintable th {padding: 18px 8px; font-size: 12px; font-weight: 400; text-transform: uppercase; }
     .nosaleyet{padding:0px !important; }  
@@ -605,8 +750,14 @@ h2.alittle { margin-top: 20px; }
     .tablestyle {border-radius: 15px !important; }
     .screenopen {top: 74px; }
     .topmobdiv .col-auto {display: flex; align-items: center; }
-    .topmobdiv .col-auto a.logotop { height: 60px; width: 109px; margin: 0 auto; }
+    .topmobdiv .col-auto a.logotop { height: 48px; width: 109px; margin: 0 auto; }
     .topmobdiv .col-auto a.logotop img{display:none; }
+    .feedbackpart h5 {
+        margin-bottom: 15px;
+    }
+    .feedbackborder .card-title {
+        margin-top: 5px;
+    }
     .logotop {display: inline-block; }
     .gitoff h1.earning {font-size: 24px; text-align: center !important; display: block; }
     .inspiration {padding: 40px 0px; }
@@ -624,11 +775,14 @@ h2.alittle { margin-top: 20px; }
     .tablepayme {border-radius: 10px;}
     .registeryour .form-control {border-radius: 5px; height: 50px; }
     .paymepart{}
-    .salesfor select.form-control{border-radius:15px !important; }
+    .salesfor select.form-control{border-radius:13px !important; }
+    body .salesbgpart .salesfor select.form-control {
+        margin: 0px 15px !important;
+    }
     .copyrighttext p {font-size: 16px; }
     .convertion {background: #ffffff; margin: 0px 26px 26px !important; border-radius: 10px; }
     .paymepart {padding: 30px 10px 0; }
-    .footer-block-inner {margin-top: 20px; padding-left: 10px; }
+    .footer-block-inner {margin-top: 10px; padding-left: 10px; }
     .gitoff {padding: 0px !important; }
     .givepayout{display:none; }
     .leadpromo {
@@ -655,7 +809,6 @@ h2.alittle { margin-top: 20px; }
    .topmobdiv {padding-left: 15px !important; padding-right: 15px !important; }
    .dropdownnotification {left: 35px;}
    .dropdownnotification .btnnotification {transform: scale(0.8); }
-   .topmobdiv .col-auto a.logotop { height: 45px; width: 88px;  }
    .paymentzone small {font-size: 10px; }
    .paymentzone strong.d-block {font-size: 10px !important; }
    .paymentzone svg {font-size: 12px !important; }
@@ -663,4 +816,41 @@ h2.alittle { margin-top: 20px; }
 }
 @media (max-width: 320px){
     .paymentzone .btn.btn-transparent { padding-right: 0px; padding-left: 0px; }
+}
+@media (min-width: 1200px){
+    #sidebar .navbar-nav {
+        margin-top: -15px;
+    }
+    .sidecontainer .navbar-brand {
+        padding: 30px 0px;
+    }
+    #sidebar .navbar-nav.navbar-nav-bottom {
+        margin-top: 0px !important;
+    }
+    .theperfect>div:nth-child(even) {
+        position: relative;
+        left: 30px;
+    }
+    .iconindo {
+        margin-right: 22px;
+    }
+    .paypalemail h4 {
+        margin-bottom: 0px;
+    }
+    .titleclspage {
+        font-size: 70px;
+    }
+    .pagebannerto .paratextbanner {
+        margin-top: 0px !important;
+    }
+    .sidecontainer .navbar-brand {
+        padding-left: 9px;
+    }
+    .userdropd.dropbottom.dropdown>button.btn {
+        padding: 0px;
+    }
+    .paymentzone>.dropdown:first-child {
+        padding-right: 15px;
+    }
+
 }

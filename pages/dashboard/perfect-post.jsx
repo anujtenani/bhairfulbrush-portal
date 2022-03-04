@@ -153,16 +153,14 @@ function PerfectPost(props) {
                             </div>
                             <div className="row align-items-center">
                                 <div className="col-lg-12">
-                                    <h3><strong>IG Reels</strong></h3>
-                                    <p>Reels are more interactive, it gets your audience more involved and you can have more of a conversation about why you love Behairful. In addition to that, your followers can see the product in action in real-time enticing them to want to learn more. It is important to consistently post reels about the product if you find your commissions are not coming in as fast as you'd like.
+                                    <h3><strong>Videos</strong></h3>
+                                    <p>Videos are more interactive, it gets your audience more involved and you can have more of a conversation about why you love Goli Gummies. For example, why choosing Goli over the more traditional methods of ACV....well the taste is AMAZING. The draw back to video's unless pinned to your account, is that they expire after 24 hours. It is important to consistently post videos about the product if you find your commissions are not coming in as fast as you'd like.
                                     </p>
                                 </div>     
                                 <div className="col-lg-12">
-                                    <h3 className={"mt-4"}><strong>IG Photos</strong></h3>
-                                    <p>Photos never die! The reason we ask for a picture post in addition to a story is because it will always be live on your Instagram feed. Your picture posts will help new followers that organically find you, learn about Behairful and how they can grab your promo code and get a discount on their order. It's very valuable for you to have picture posts, with your promo code in the caption, remember you can capture 10% of the lifetime of all your sales!</p>
-                                </div>
-                                <div className="col-lg-12">
-                                    <p className={"mt-3"}>So, when trying to decide what type of post you want to do today, ask yourself, do you have time to create a short video for your story? Have you already posted your picture post for that month's campaign? These are all questions to consider prior to posting.</p>
+                                    <h3 className={"mt-4"}><strong>Pictures</strong></h3>
+                                    <p>Pictures never die! The reason we ask for a picture post in addition to a story is because it will always be live on your Instagram feed. Your picture posts will help new followers that organically find you, learn about Goli ACV Gummies and how they can grab your promo code and gets discount on their order. It's very valuable for you to have picture posts, with your promo code in the caption, remember you can capture 10% of the lifetime of all your sales! </p>
+                                    <p>So, when trying to decide what type of post you want to do today, ask yourself, do you have time to create a short video for your story? Have you already posted your picture post for that month's campaign? These are all questions to consider prior to posting.</p>
                                 </div>
                             </div>                           
                         </div>

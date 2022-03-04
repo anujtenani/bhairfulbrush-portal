@@ -4,9 +4,10 @@ const Feedback = () => {
             <div className={"container px-4"}>
                 <h5 className={"text-center text-light"}>OUR PARTNERS BEHAIRFUL</h5>
                 <div className="row">
-                    <FeedbackItem  src={'Review-1.png'} title={'Maegan Blinka'} content={"It’s been such a gift to have the opportunity to be a part of the Behairful ambassador program. I love talking to friends - new and old - about how this brush has benefited my hair care journey. But the best part is that I get to involve my kids in using, sharing, and promoting the products! They love to be included and are my little spokespeople themselves! Thank you for opening up and including me and my family! We are Behairful brand partners for life!"}/>
-                    <FeedbackItem  src={'Review-2.jpg'} title={'Kim'} content={"I love working with the Behairful brand. They treat their ambassadors with the utmost respect and integrity, knowing that this is how we help provide for families. They take care of us financially and are prompt with answering questions and guide us towards success as we all learn how to help customers better day after day!"}/>
-                    <FeedbackItem  src={'Review-3.png'} title={'Christina Rodriguez'} content={"It has been such a phenomenal experience working with Behairful, as a social media influencer, from a financial aspect, the commission earned has been a huge blessing to my family. I cannot thank Behairful enough and will continue to share the Behairful love!"}/>
+                    <FeedbackItem  src={'megan.png'} title={'Maegan Blinka'} content={"Its been such a gift working with Goli Gummies influencer progrom! I love talking to my friends - new and old - about how these little gems have benefited my own health!! But the coolest part is that I get to involve my kids in using, sharing and promoting the products! They love to be included and are little spokes people themselves! Thank you for opening up to include me and my family! We are goli gummy groupies no doubt!"}/>
+                    <FeedbackItem  src={'stacy.png'} title={'Stacy Joy'} content={"I absolutely love working with the Goli brand and family. They treat their influencers with the utmost respect and kindness, knowing and respecting that this is part of how we put food on the table for families. They take care of us financially and are quick to answer questions and guide us towards success as we all Iearn how to help customers better day by day!"}/>
+                    <FeedbackItem  src={'kim.png'} title={'Kim'} content={"It has been such a pleasure to partner with Goli, as a Social Media influencer, From a financial aspect, the commission earned has been a blessing to my family. And I LOVE that through each individual sale, I am indirectly helping provide children around the world with all the goodness of Goli."}/>
+                    <FeedbackItem  src={'christiana.png'} title={'Christina Rodriguez'} content={"The Goli partners program has helped me so much! I get to share this amazing product with my followers, and make money doing it! I love waking with Goli!"}/>
                 </div>
             </div>
         </section>
@@ -29,11 +30,11 @@ const Cards = ({ src, title, content }) => {
                         border: '2px solid white',
                         objectFit: "cover",
                         objectPosition: '75% 0',
-                        borderRadius: 64
+                        borderRadius: '100%',
                     }}
                          src = {src}
-                         width = {'128px'}
-                         height = {'128px'}
+                         width = {'145px'}
+                         height = {'145px'}
                          alt = {title}/>
                 </div>
 

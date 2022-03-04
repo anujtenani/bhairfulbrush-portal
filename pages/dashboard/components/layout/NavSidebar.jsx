@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Image from "next/image";
 import NavMainItems, {NavBottomItems} from "./NavMainItems";
-import logomain from "../../../../public/behairful-logo-main.svg";
+import logomain from "../../../../public/behair-logos.png";
 
 import Link from 'next/link'
 function NavSidebar({props, currentUrl}) {
