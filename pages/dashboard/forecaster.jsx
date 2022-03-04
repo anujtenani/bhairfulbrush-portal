@@ -44,7 +44,7 @@ function Forecaster(props) {
                                     <button className={"btn btn-primary w-100"}>Calculate</button>
                                 </div>
                             </div>
-                            <div className="col-md-8 col-xl-7 mt-auto">
+                            <div className="col-md-8 col-xl-7">
                                 <div className={"forcasterdiv"}>
                                     <div className={" mb-2 text-white p-4 forcastedpart"}>
                                        <p> Forecasted conversions Calculate at 4% conversion on engagements. Earnings per month (Take Home commissions)</p>

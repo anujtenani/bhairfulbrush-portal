@@ -10,8 +10,8 @@ function UserProfileDropdown(props) {
         <UncontrolledDropdown direction={"bottom"} className="userdropd">
             <DropdownToggle color={"transparent"}>
                 {
-                    isLoading ? <Skeleton height={48} width={48}/> :
-                        <Avatar size={48} identifier={data.email} src={data.profile_photo} alt={"Profile photo"} />
+                    isLoading ? <Skeleton/> :
+                        <Avatar identifier={data.email} src={data.profile_photo} alt={"Profile photo"} />
                 }
             </DropdownToggle>
             <DropdownMenu className={"p-0 userprofiledown"}>
