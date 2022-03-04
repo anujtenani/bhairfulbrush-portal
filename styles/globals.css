@@ -234,7 +234,7 @@ img{max-width:100%; }
 .dropdownnotification .btnnotification { width: 38px; height: 38px; background: url(/iconall.png) no-repeat; background-position: -7px -829px; border: none; display: block; outline: none !important; box-shadow: none; }
 .dropdownnotification .dropdown-menu{}
 .btn-primary { border-radius: 10px; text-align: center; font-size: 25px; padding: 10px 50px; line-height: normal; min-height: auto; background: #000 !important; }
-#topbar { background-color: #0c0c0c !important; display: -moz-box; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: justify; justify-content: space-between; padding: 44px 0px; }
+#topbar { background-color: #0c0c0c !important; display: -moz-box; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: justify; justify-content: space-between; padding: 30px 0px; }
 .footer {background-color: #0c0c0c; padding: 50px 30px 20px; }
 .registeryour{padding:50px 20px; }
 .tablepayme {overflow: hidden; border-radius: 30px; border: #3a3a3a 1px solid; margin-bottom: 15px; }
